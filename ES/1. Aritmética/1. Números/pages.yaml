@@ -1,1 +1,134 @@
 - page:
+  - head: |
+      Cuentame una historia graciosa que se relacione con los números enteros, racionales e irraccionales
+      Había una vez un número entero llamado 7 que estaba caminando por la calle cuando de repente se topó con un número racional llamado 2.5. El número 7 estaba confundido y le preguntó a 2.5: "¿Cómo es posible que seas un número con decimales?". A lo que 2.5 respondió: "Bueno, todos los números racionales pueden ser escritos como una fracción, incluso los que tienen decimales". Entonces, el número irracional pi (π) se acercó y dijo: "Hola chicos, ¿de qué están hablando?" y 7 dijo: "Estamos hablando de números, ¿eres tú también un número?". Pi respondió: "Sí, soy un número irracional que representa la relación entre la circunferencia de un círculo y su diámetro. Nunca podrás escribirme como una fracción exacta, ¡soy infinito y sin patrón!". Y así, los tres números continuaron su conversación mientras caminaban por la calle, cada uno con sus propias peculiaridades matemáticas.
+
+
+
+
+      Ernesto Riestra
+      ¿Cuando se descubrieron los números racionales e irracionales?
+      Los números racionales e irracionales no se descubrieron en un momento específico de la historia, ya que son conceptos matemáticos que han evolucionado con el tiempo. Los números racionales, que pueden ser expresados como una fracción de dos números enteros, han sido conocidos y utilizados desde la antigüedad. Por ejemplo, la fracción 3/4 se utilizó en el antiguo Egipto para dividir la tierra de manera justa entre los agricultores.
+
+      Por otro lado, los números irracionales, que no pueden ser expresados como una fracción de dos números enteros, fueron descubiertos en la antigua Grecia al tratar de encontrar la longitud de la diagonal de un cuadrado con lados de longitud 1. Los antiguos griegos descubrieron que esta longitud era un número irracional, lo que les llevó a la conclusión de que no todos los números podían ser expresados como una fracción de dos números enteros.
+
+      En resumen, aunque los números racionales e irracionales se han utilizado y descubierto a lo largo de la historia, fueron conceptos matemáticos que se han desarrollado gradualmente con el tiempo.
+
+
+
+
+      Ernesto Riestra
+      ¿Y qué diferencia tienen las operaciones aritméticas como la suma, resta, multiplicación y división dependiendo si los números son enteros, racionales o irracionales?
+      Las operaciones aritméticas básicas como la suma, resta, multiplicación y división funcionan de manera similar para los números enteros, racionales e irracionales, aunque hay algunas diferencias importantes que es necesario tener en cuenta:
+
+      Suma y resta: La suma y la resta de números enteros y racionales son operaciones directas, ya que los números pueden ser expresados como fracciones con denominador común. En el caso de los números irracionales, la suma y la resta pueden ser más complejas, ya que no hay una forma general de simplificarlos. Por ejemplo, la suma de dos números irracionales como π y √2 es un número irracional que no se puede expresar de forma sencilla.
+
+      Multiplicación: La multiplicación de números enteros y racionales es también una operación directa. En el caso de los números irracionales, la multiplicación puede ser más complicada, ya que el resultado puede ser un número irracional aún más complejo. Por ejemplo, la multiplicación de dos números irracionales como π y e es un número irracional que no se puede expresar de forma sencilla.
+
+      División: La división de números enteros y racionales también es una operación directa. En el caso de los números irracionales, la división puede ser más complicada, ya que el resultado puede ser un número irracional aún más complejo. Por ejemplo, la división de dos números irracionales como π y √2 es un número irracional que no se puede expresar de forma sencilla.
+
+      En general, las operaciones aritméticas para los números irracionales son más complejas que para los números enteros y racionales debido a que estos últimos tienen propiedades específicas que los hacen más fáciles de manejar. Aun así, los números irracionales son importantes en muchas áreas de las matemáticas y la física, y su estudio es fundamental para entender la naturaleza de los números y de nuestro universo.
+
+
+
+
+      Ernesto Riestra
+      ¿Y en algún caso particular la operación entre dos números irracionales puede dar como resultado un entero o un número racional?
+      Sí, en algunos casos particulares la operación entre dos números irracionales puede dar como resultado un número entero o un número racional. Por ejemplo:
+
+      La suma o la resta de un número irracional con su número opuesto (es decir, el número con el mismo valor absoluto pero signo opuesto) puede dar como resultado un número entero. Por ejemplo, la suma de π y -π es 0, que es un número entero.
+
+      La multiplicación de algunos números irracionales puede dar como resultado un número racional. Por ejemplo, la multiplicación de √2 y √2 es 2, que es un número racional. De manera más general, si se multiplican dos números irracionales algebraicos (es decir, que son soluciones de alguna ecuación polinómica con coeficientes racionales), el resultado puede ser un número racional.
+
+      La división de dos números irracionales puede dar como resultado un número racional. Por ejemplo, la división de π entre su seno (que también es un número irracional) da como resultado 2, que es un número racional.
+
+      Cabe destacar que estos casos son excepcionales y no representan la regla general. En general, la suma, resta, multiplicación y división de números irracionales dan como resultado números irracionales más complejos.
+
+
+
+
+      Ernesto Riestra
+      Y de qué tipo de número existen más? Es decir, si pudiera contar todos los números enteros, y todos los racionales, así como todos los irracionales, en qué caso tendría más números?
+      Hay infinitamente más números irracionales que enteros o racionales. De hecho, se puede demostrar que los números irracionales son un conjunto "mucho más grande" que los enteros y los racionales.
+
+      Los enteros son un conjunto infinito, pero son "menos" numerosos que los racionales, ya que los racionales también son infinitos, pero tienen una estructura más rica y "densa". Esto se debe a que entre dos números racionales siempre hay otro número racional. En otras palabras, los números racionales llenan todo el espacio numérico de una forma más densa que los enteros.
+
+      Por su parte, los números irracionales son aún más numerosos que los racionales. De hecho, se puede demostrar que la mayoría de los números en el espectro numérico son irracionales. La prueba de esta afirmación se basa en el hecho de que los números irracionales son "no contables", lo que significa que no se pueden enumerar en una secuencia infinita. Esta propiedad los hace aún más numerosos que los racionales, que son "contables" y pueden ser listados en una secuencia infinita.
+
+      En resumen, hay infinitamente más números irracionales que enteros o racionales, lo que significa que los números irracionales son el tipo de número "más común" en el espectro numérico.
+
+
+
+
+      Ernesto Riestra
+      En una recta numérica desde cero hasta infinito, qué tipos de números puedo encontrar? Bastaría con conocer todos los números enteros, racionales e irracionales para llenar completamente y de manera continua esta recta numérica?
+      En una recta numérica desde cero hasta infinito, se pueden encontrar todos los tipos de números: enteros, racionales e irracionales. De hecho, se puede demostrar que la recta numérica real, que va de menos infinito a más infinito, está completamente llena por números reales, que incluyen a los números enteros, racionales e irracionales.
+
+      Sin embargo, no bastaría con conocer todos los números enteros, racionales e irracionales para llenar completamente y de manera continua esta recta numérica. Esto se debe a que, aunque los números racionales son densos en la recta numérica (esto es, entre dos números racionales siempre hay otro número racional), todavía existen muchos números irracionales que también deben ser incluidos.
+
+      De hecho, se puede demostrar que los números irracionales son también densos en la recta numérica, lo que significa que entre dos números irracionales también hay infinitos números irracionales. Por lo tanto, para llenar completamente la recta numérica de manera continua, es necesario incluir todos los números enteros, racionales e irracionales.
+
+
+
+
+      Ernesto Riestra
+      Podrías hacer tres preguntas sobre la conversación previa, cada una con tres opciones de respuesta, una correcta y dos incorrectas?
+      ¡Por supuesto! Aquí tienes tres preguntas sobre la conversación previa:
+
+      ¿Qué tipo de número es más numeroso en la recta numérica real?
+      a) Números enteros
+      b) Números racionales
+      c) Números irracionales
+      Respuesta: c) Números irracionales
+
+      ¿Cuál de las siguientes afirmaciones es verdadera?
+      a) Todos los números irracionales pueden ser escritos como una fracción.
+      b) Entre dos números racionales siempre hay un número irracional.
+      c) Entre dos números irracionales siempre hay otro número irracional.
+      Respuesta: c) Entre dos números irracionales siempre hay otro número irracional.
+
+      ¿Cuál de las siguientes afirmaciones es falsa?
+      a) Los números enteros son un conjunto infinito.
+      b) Los números racionales son "más numerosos" que los enteros.
+      c) La suma de dos números irracionales siempre es un número irracional.
+      Respuesta: c) La suma de dos números irracionales no siempre es un número irracional.
+
+
+
+
+      Ernesto Riestra
+      Podrías darme un resumen de la conversación previa dirigido a jóvenes de 15 años con un estilo amable, curioso (que despierte la curiosidad) y con el mismo lenguaje de la edad?
+      ¡Hola! En nuestra conversación previa hablamos sobre los diferentes tipos de números que existen: los números enteros, racionales e irracionales.
+
+      Los números enteros son aquellos que se usan para contar cosas, como los números que usas en matemáticas básicas. Por ejemplo, 1, 2, 3, 4, 5, y así sucesivamente.
+
+      Los números racionales son aquellos que se pueden escribir como una fracción, es decir, una división entre dos números. Por ejemplo, 3/4 o 5/6 son números racionales. Los números racionales también incluyen los números enteros, ya que cualquier número entero se puede escribir como una fracción con el denominador 1.
+
+      Por otro lado, los números irracionales son aquellos que no se pueden escribir como una fracción. Ejemplos de números irracionales son pi (π) y la raíz cuadrada de 2 (√2). Estos números son muy interesantes porque, a diferencia de los números racionales, nunca terminan ni se repiten en una fracción o decimal finito.
+
+      En la recta numérica, que va desde menos infinito hasta más infinito, podemos encontrar todos estos tipos de números: enteros, racionales e irracionales. Aunque los números racionales son densos en la recta numérica, todavía existen muchos números irracionales que también deben ser incluidos.
+
+      Es muy interesante saber que, de todos estos tipos de números, los irracionales son los más numerosos. De hecho, se puede demostrar que la mayoría de los números en la recta numérica son irracionales. Esto significa que hay muchos más números irracionales que enteros o racionales.
+
+      ¡Espero que hayas encontrado esta conversación interesante y que te haya despertado la curiosidad por los números!
+
+
+
+
+      Ernesto Riestra
+      Podrías completar estos planteamientos?
+
+      ¿Las operaciones cambian dependiendo del tipo de número?
+
+      Las operaciones aritméticas básicas como la suma, resta, multiplicación y división funcionan de manera similar para los números enteros, racionales e irracionales, aunque hay algunas diferencias importantes que es necesario tener en cuenta. 
+
+      En general todas las operaciones aritméticas son operaciones directas, aunque es importante notar que algunas operaciones entre números enteros dan lugar a números racionales (división), y algunas operaciones entre números irracionales pueden producir números racionales o enteros.
+
+      También es notable que los números racionales pueden ser expresados por lo general como la razón entre dos números enteros, es decir, a través de una fracción. Y pueden ser expresados como fracciones o como números con parte decimal
+      ¡Exacto! Esa es una forma de completar los planteamientos que hiciste.
+
+      Además, es importante mencionar que la suma, resta y multiplicación de dos números racionales siempre produce otro número racional. En cambio, la división de dos números racionales puede producir un número irracional, como sucede al dividir 1 entre 3.
+
+      Por otro lado, al sumar o restar dos números irracionales, el resultado puede ser irracional o racional, dependiendo de los números que se estén sumando o restando. En cambio, al multiplicar dos números irracionales, el resultado siempre será irracional, excepto en casos muy especiales.
+
+      En resumen, las operaciones aritméticas básicas funcionan de manera similar para todos los tipos de números, pero hay algunas diferencias importantes que debemos tener en cuenta.
