@@ -1,0 +1,261 @@
+- page:
+  - box p-6 mt-6 mx-6: 
+    - title: Números primos
+    - subtitle: Teoría de Números
+    - box p-6 m-6 has-background-link-light:
+      - subtitle: "<b>Aprenderás:</b> Qué son los números primos y porqué son importantes en el mundo."
+
+  - box p-6 mx-6 has-background-white: 
+    - Columns:
+      - block py-0 pr-0:
+        - subtitle: <b>Contando...</b>
+        - text has-text-left my-5: Hay varias maneras de construir la secuencia de <b>números naturales. </b>
+        - text has-text-left my-5: Un número natural es un número entero positivo, es decir, los que comenzamos contando con los dedos y nunca terminaríamos porque son infinitos. Comienzan de esta manera ...
+        - Mathjax:
+          - subtitle has-text-centered my-5:  \(1, 2, 3, 4, 5 ...\)
+        - text has-text-left: Aquí ya me acabé una mano.
+        - Mathjax:
+          - subtitle has-text-centered my-5:  \(6, 7, 8, 9, 10 ...\)
+        - text has-text-left my-5: Y la segunda!
+      - block py-0 pl-0:
+        - Image: https://assets.yeira.training/platforms/yeiraacademy/ff6b49eab1a89f9f091a57eddb451f28.png
+        - box m-5 p-5 has-background-success-light:
+          - text: En la imagen podemos ver una manera muy ingeniosa de contar del 1 al 10, utilizada en China.
+
+  - box p-6 mx-6 has-background-white: 
+    - Columns:
+      - block py-0 pl-0:
+        - Image: factory.jpeg
+      - block py-0 pr-0:
+        - subtitle: <b>La fábrica de números...</b>
+        - text has-text-left:  La forma en que puedes generar todos los números naturales es a través de la suma de la <b>unidad</b> (es decir el número uno).
+        - text has-text-left my-5:  De esta forma es posible encontrar siempre el siguiente número natural, sin final.
+        - Mathjax:
+          - block mx-6 px-6:
+            - text has-text-left: \(1\)
+            - text has-text-left: \(1 + 1 = 2\)
+            - text has-text-left: \(2 + 1 = 3\)
+            - text has-text-left: \(n + 1 = n + 1\)
+            - text has-text-left: \((n + 1) + 1 = n + 2\)
+            - text has-text-left: \(...\)
+
+        - text has-text-left my-5: y así sucesivamente.
+    - columns is-centered:
+      - column is-6:
+        - box m-5 p-5 has-background-danger-light:
+          - text: La adición puede generar infinidad de números
+    - text has-text-left my-5: La operación \(+ 1\), si la puedo llamar así (en programación le llaman ++, que significa incrementar en una unidad), es una operación generadora de todos los naturales. Y de la misma manera la operación \(+ 2\) (doble incremento) es una función generadora especial que me permite producir los números nones (si comienzo en \(1\)), y los pares (si comienzo en \(2\)).
+
+    - text has-text-centered m-5: \(1,3,5,7,9... n + 2\) con \(n\) no divisible entre dos
+    - text has-text-centered m-5: \(2,4,6,8,10,... m + 2\) con \(m\) divisible entre dos
+
+    - text has-text-left my-5: De manera formal podemos definir a los pares y los nones como...
+
+    - text has-text-centered m-5: |
+        \(\{2k : k \in \mathbb{Z} \}\) Una serie infinita construida con el doble de cada número entero.
+    - text has-text-centered m-5: |
+        \(\{2k + 1 : k \in \mathbb{Z} \}\) Una serie infinita construida con el doble más uno de cada número entero.
+
+    - text has-text-right my-5: ... respectivamente.
+
+
+
+    - subtitle: <b>Pensemos juntos</b>
+    - text has-text-centered: ¿Qué es <b>más</b> infinito, los <b>números naturales</b>, los <b>números pares</b> o los <b>impares o nones</b>? <br>Comparte tu opinión y lee las opiniones de los demás.
+    - Board:
+        id: board-01
+        placeholder: Escribe tu mensaje
+
+  - box p-6 mx-6 has-background-white: 
+    - Columns:
+      - block py-0 pr-0:
+        - subtitle: <b>Una nueva Fábrica de números</b>
+        - text has-text-left my-5: También es posible producir algunos números a través de multiplicaciones. Por ejemplo, el \(4\) es un número al que puedo llegar si multiplico ...
+        - text has-text-left m-5: \(2 \times 2 = 4\)
+        - text has-text-left my-5: ¿Podemos llegar a producir todos y cada uno de los números naturales mediante multiplicaciones, de la misma forma que la operación suma o incremento genera todos los números naturales? 
+        - text has-text-centered m-5: <b>La respuesta es no.</b>
+
+        - text has-text-left my-5: Resulta que hay algunos números particulares a los que no se puede llegar simplemente multiplicando otros números. Es como cuando nos movemos en el metro, pero para llegar a una casa en particular aún tenemos que caminar.
+
+        - text has-text-left my-5: En palabras más simples, es como pensar la multiplicación al revés.
+
+        - text has-text-left m-5: |
+            Al derecho: \(2 \times 3\) en qué resulta?
+
+        - text has-text-left m-5: |
+            Al revés: \(6\) es resultado de qué multiplicación?
+
+
+      - block py-0 pl-0:
+        - Image: https://www.ancient-origins.net/sites/default/files/field/image/china-bamboo-strips.jpg
+        - box m-5 p-5 has-background-warning-light:
+          - text: Algunas de las tablas de multiplicar más antiguas se descubrieron en China.
+
+  - box p-6 mx-6 has-background-white: 
+    - Columns:
+      - block py-0 pl-0:
+        - Image: https://www3.ntu.edu.sg/home/ehchua/programming/opengl/images/GL_GeometricPrimitives.png
+        - box m-5 p-5 has-background-success-light:
+          - text: El concepto de primitivas se utiliza en geometría para describir objetos más complejos a partir de elementos básicos.
+      - block py-0 pr-0:
+        - subtitle: <b>La materia prima de mi nueva fábrica</b>
+        - text has-text-left my-5: 'Estos números que no son resultado de un producto se llaman primos. Son como la materia prima con la que podemos hacer otros números. Te preguntarás: <i>"¿Cómo que materia prima?"</i>'
+
+        - text has-text-left my-5: <b>¡Si, claro!</b> Porque además resulta que si tenemos la colección de todos los números primos, con ellos podemos producir a todos los demás números naturales, sólo multiplicando, sin necesidad de sumar. Son como los números primigenios, como los colores primarios, o las frecuencias armónicas de las notas musicales.
+
+        - text has-text-left my-5: Se dice que los números primos sólo son <b>divisibles entre sí mismos y la unidad.</b> Y los resultados podríamos llamarlos soluciones triviales (son un poco como hacer trampa). 
+        
+        - text has-text-left my-5: ¿Por qué triviales? Porque todo número dividido entre sí es igual a \(1\), y todo número dividido entre \(1\) es él mismo. Por eso el \(1\) es también llamado en teoría de números <b>Elemento Neutro</b> (no afecta al multiplicad o dividir a otro número).
+
+        - text has-text-left my-5: Es decir, si afirmo lo siguiente ...
+
+        - text has-text-left m-5: \(5\) es resultado de \(5 \times 1\)
+
+        - text has-text-left my-5: .. estoy afirmando una solución obvia que aplica a todos los números.
+
+  - box p-6 mx-6 has-background-white: 
+
+    - Columns:
+      - block py-0 pr-0 mr-5:
+        - subtitle: <b>Enlistando los primos</b>
+        - text has-text-left my-5: Veamos cuáles son los primeros números primos, y los que no lo son por qué no lo son (es decir, de quién son producto).
+
+        - text has-text-left mx-5: \(1\) (no se considera primo por ser el elemento neutro)
+        - text has-text-left mx-5: \(2\) es primo
+        - text has-text-left mx-5: \(3\) es primo
+        - text has-text-left mx-5: \(4\) no es primo porque \(4 = 2 \times 2 = 2^2\)
+        - text has-text-left mx-5: \(5\) es primo
+        - text has-text-left mx-5: \(6 = 2 \times 3\)
+        - text has-text-left mx-5: \(7\) es primo
+        - text has-text-left mx-5: \(8 = 2 \times 4\)
+        - text has-text-left mx-5: \(...\)
+        - text has-text-left my-5: Un momento, ¿cómo fue lo anterior?
+
+      - block py-0 pl-0:
+        - Image: https://images.fastcompany.net/image/upload/w_596,c_limit,q_auto:best,f_auto/fc/prime-number-96.jpg
+        - box m-5 p-5 has-background-info-light:
+          - text: Existen algunas formas de visualizar a los números primos que son ¡verdaderamente artísticas!
+
+  - box p-6 mx-6 has-background-white: 
+    - Columns:  
+      - block py-0 pl-0 is-5:
+        - Image: https://miro.medium.com/max/1200/1*bWWAvvGZxmaTZLDkxkuv0w.png
+        - box m-5 p-5 has-background-success-light:
+          - text: La <b>conjetura de Goldbach</b> (conjetura porque no ha sido confirmada o negada de forma matemática) establece que cualquier número par puede descomponerse en la suma de dos números primos.
+      - block py-0 pl-0 is-1:
+      - block py-0 pr-0 mr-5:
+        - subtitle: <b>Factores primos, semiprimos y números esfénicos</b>
+        - text has-text-left my-5: Aquí hacemos una pausa para ver a detalle un concepto más. 
+        - text has-text-left my-5: Este número \(8\) es el número más pequeño que proviene de un producto entre un número primo (\(2\)) y otro número no primo (\(4\)). 
+        - text has-text-left my-5: Pero este a su vez se puede descomponer en otro producto de dos números primos (en realidad el mismo \(2\)).
+
+        - text has-text-left my-5: A estos números primos que componen cualquier número les llamamos <b>factores primos.</b> Entonces al descomponer el \(8\) en factores primos resulta que tenemos 
+
+        - text has-text-left m-5: \(8 = 2 \times 2 \times 2 = 2^2\)
+
+        - text has-text-left my-5: Además, los números que son exactamente producto de dos números primos, se llaman <b>semiprimos.</b> Por ejemplo, \(4\), y \(6\), que además son los números semiprimos más pequeños. 
+        - text has-text-left my-5: Y los que son producto de 3 números primos que no se repiten se llaman <b>esfénicos</b> (del griego <i>sphen</i>, que significa cuña). \(8\) no es un número esfénico.
+        - block m-5 p-5:
+          - subtitle green: <i>¡Ojo, es esfénicos, no esféricos!</i>
+
+
+  - box p-6 mx-6 has-background-white: 
+    - Columns:
+      - block py-0 pr-0:
+        - text has-text-left my-5: Terminemos de revisar los primos hasta el 20...
+        - text has-text-left mx-5: \(...\)
+        - text has-text-left mx-5: \(9 = 3 \times 3\) es semiprimo
+        - text has-text-left mx-5: \(10 = 2 \times 5\) es semiprimo
+        - text has-text-left mx-5: \(11\) es primo
+        - text has-text-left mx-5: \(12 = 2 \times 2 \times 2 \times 3\)
+        - text has-text-left mx-5: \(13\) es primo
+        - text has-text-left mx-5: \(14 = 2 \times 7\) es semiprimo
+        - text has-text-left mx-5: \(15 = 3 \times 5\) es semiprimo
+        - text has-text-left mx-5: \(16 = 2 \times 2 \times 2 \times 2\)
+        - text has-text-left mx-5: \(17\) es primo 
+        - text has-text-left mx-5: \(18 = 2 \times 3 \times 3\)
+        - text has-text-left mx-5: \(19\) es primo
+        - text has-text-left mx-5: \(20 = 2 \times 2 \times 5\)
+        - text has-text-left mx-5: \(...\)
+        - text has-text-left m-5: Y ¡así hasta el infinito!
+      - block py-0 pl-0:
+        - Image: https://o.aolcdn.com/hss/storage/midas/ef8b1e08c2e0329ba693eb034df704b0/206154556/quant-ed.jpg
+        - box m-5 p-5 has-background-success-light:
+          - text my-5: Las computadoras cuánticas acelerarán los algoritmos para obtener números primos. Hoy en día(enero 2022) el número primo más grande conocido es
+          - Mathjax: 
+            - subtitle: \(2^{82,589,933} − 1\)
+
+
+  - box p-6 mx-6: 
+    - title: Responde y aprende
+    - instruction: Escribe un valor numérico en la respuesta
+    - stem: ¿Cuál es el número esfénico más pequeño?
+
+    - box:
+      - Numeric:
+          id: Q1
+          points: 10
+          value: 30
+          fullCredit: 0
+          halfCredit: 1
+          feedback:
+            fullCredit:
+            - Mathjax:
+              - text white: Así es, se trata del \(30\)
+            halfCredit:
+            - Mathjax:
+              - text white: Estás cerca, se trata del \(30\)
+            isWrong:
+            - Mathjax:
+              - text white: No es así, se trata del \(30\)
+          submitted:
+          - stem has-text-white: ¿Cuáles son los factores primos de ese número?
+          - instruction has-text-white: Marca los valores correctos
+          - Question:
+              id: question-03
+              points: 10
+              random: false
+              options: 
+              - value: 1
+                display:
+                  - Mathjax:
+                    - text: \(1\)
+                credit: 0
+                feedback: 
+                - text white: ¡Atención! El \(1\) no es un factor primo.
+              - value: 2
+                display:
+                  - Mathjax:
+                    - text: \(2\)
+                credit: 1
+                feedback: 
+                - text: 
+              - value: 3
+                display:
+                  - Mathjax:
+                    - text: \(3\)
+                credit: 1
+                feedback: 
+                - text: 
+              - value: 5
+                display:
+                  - Mathjax:
+                    - text: \(5\)
+                credit: 1
+                feedback: 
+                - text: 
+              - value: 7
+                display:
+                  - Mathjax:
+                    - text: \(7\)
+                credit: 0
+                feedback: 
+                - text: 
+              submitted: 
+              - Mathjax:
+                - text white: La respuesta correcta es \(2 \times 3 \times 5 = 30\)
+              - box p-6 m-6 has-background-link-light:
+                - subtitle: ¿No sabías?
+                - text: Los números primos son una parte fundamental  de muchos sistemas técnicos utilizados hoy en día en una diversidad enorme de aplicaciones, seguridad informática, comunicaciones, criptomonedas, y cómputo cuántico. 
+          ui: glass 
+      img: matrix-code.gif
