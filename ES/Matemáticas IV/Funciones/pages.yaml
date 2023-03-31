@@ -1,0 +1,427 @@
+# Guión del contenido de Funciones
+- page:
+  - head: |
+      <style>
+      .MathJax {
+        display: inline !important;
+      }
+      </style>
+  - Mathjax:
+  - block:
+    - title my-4: Función
+    - text left my-5: Una <b>función</b> es una <b>relación</b> en donde a cada elemento de un conjunto (A) le corresponde <b>uno y sólo un</b> elemento de otro conjunto (B)
+    - Tabs:
+      - header: Función
+        content: 
+          - Image: Funcion.png
+      - header: No Función
+        content: 
+          - Image: NoFuncion.png
+    - instruction center: Noción de función
+    
+
+    - text left my-5: En la figura mostramos que es posible establecer relaciones entre conjuntos, pero debemos tener en cuenta que no toda relación es una función.
+
+    - text left my-5: Muchas cantidades se relacionan o dependen de otras, por ejemplo:
+    - item: La ganancia de una empresa, depende de la cantidad de artículos por producir.
+    - item: La deformación que sufre un resorte depende de la fuerza aplicada sobre él
+    - item: El perímetro de una circunferencia depende de su radio.
+    - item: Tu calificación depende de la cantidad de trabajo que entregues.
+
+    - text left my-5: "En la siguiente actividad relacionarás el volumen de un cono y su altura, para comprender mejor, ve a la siguiente dirección y realiza las actividades para contestar unas preguntas:"
+
+  - Modal: 
+      fullscreen: true
+      header: 
+        - box:
+          - text: Abrir Actividad
+          - Image: GeoGebra.png
+          style: max-width:200px;margin:auto;
+      content: 
+        - Embed: "<iframe src=https://www.geogebra.org/classic/wutg7sp6?embed width=800 height=600 allowfullscreen style=border: 1px solid #e4e4e4;border-radius: 4px; frameborder=0></iframe>"
+  
+  - title my-5 py-5: Preguntas
+
+  - stem: ¿Todos los conos tienen el mismo volumen?
+  - instruction: Contesta la pregunta con Cierto o Falso
+  - Question: 
+      id: Q1
+      points: 10
+      display: grid
+      random: true
+      options: 
+      - value: True
+        display: 'Cierto'
+        credit: 0
+        feedback: 
+        - text: 
+      - value: False
+        display: 'Falso'
+        credit: 1
+        feedback:
+        - text: 
+      submitted:
+      - Note:
+          id: Q2
+          form:
+          - label: ¿De que depende el volumen del cono inscrito?
+            required: true
+            type: input
+            maxlength: 200
+            help: Escribe en un enunciado de qué depende el volumen del cono inscrito.
+
+  - stem: ¿Cuál es la máxima cantidad de conos que tienen el mismo volumen?
+  - instruction: Comparte tu respuesta en la casilla
+
+  - Numeric:
+      id: Q3
+      points: 10
+      value: 2
+      fullCredit: 0.01
+      halfCredit: 0.1
+      feedback:
+        fullCredit:
+        - text: ¡Correcto!, la máxima cantidad de conos con el mismo volumen es 2.
+        halfCredit:
+        - text: Estás cerca. la máxima cantidad de conos con el mismo volumen es 2.
+        isWrong:
+        - text: ¡No es así!, la máxima cantidad de conos con el mismo volumen es 2.
+
+  - stem: ¿La relación entre el volumen y la altura es una función?
+  - instruction: Contesta la pregunta con Cierto o Falso
+  - Question: 
+      id: Q4
+      points: 10
+      display: grid
+      random: true
+      options: 
+      - value: True
+        display: 'Cierto'
+        credit: 1
+        feedback: 
+        - text: 
+      - value: False
+        display: 'Falso'
+        credit: 0
+        feedback:
+        - text: 
+      submitted:
+      - Note:
+          id: Q5
+          form:
+          - label: ¿Por qué? 
+            required: true
+            type: input
+            maxlength: 200
+            help: Explica por qué esta relación es o no una función
+        
+  - stem: "El valor del volumen máximo que puede tener el cono es aproximadamente:"
+  - instruction: Comparte tu respuesta en la casilla
+
+  - Numeric:
+      id: Q6
+      points: 10
+      value: 2
+      fullCredit: 0.01
+      halfCredit: 0.1
+      feedback:
+        fullCredit:
+        - text: ¡Correcto!, la máxima cantidad de conos con el mismo volumen es 2.
+        halfCredit:
+        - text: Estás cerca. la máxima cantidad de conos con el mismo volumen es 2.
+        isWrong:
+        - text: ¡No es así!, la máxima cantidad de conos con el mismo volumen es 2.
+
+
+  - stem: "El Valor de la altura que deberá tener el cono para que éste tenga ese volumen es:"
+  - instruction: Comparte tu respuesta en la casilla
+
+  - Numeric:
+      id: Q7
+      points: 10
+      value: 2
+      fullCredit: 0.01
+      halfCredit: 0.1
+      feedback:
+        fullCredit:
+        - text: ¡Correcto!, la máxima cantidad de conos con el mismo volumen es 2.
+        halfCredit:
+        - text: Estás cerca. la máxima cantidad de conos con el mismo volumen es 2.
+        isWrong:
+        - text: ¡No es así!, la máxima cantidad de conos con el mismo volumen es 2.
+
+  - text left my-5: "Para continuar con nuestro estudio y entender mejor el concepto de función veamos el siguiente problema:"
+
+  - text left my-5: "En el mercado del centro están vendiendo juguetes artesanales por 7 pesos, ¿cuánto se paga por 3, 5, 7? Podemos establecer una relación entre la cantidad de lápices y el dinero:"
+
+  - text left my-5: "Tal como:"
+
+  - Table:
+      header:
+      - row:
+        - is-size-5 has-text-centered: Juguetes
+        - is-size-5 has-text-centered: Dinero
+      body:
+      - row: ["1", "$$ $7.00 $$"]
+      - row: ["2", "$$ $14.00 $$"]
+      - row: ["3", "$$ $21.00 $$"]
+      - row: ["5", "$$ $35.00 $$"]
+      - row: ["7", "$$ $49.00 $$"]
+      type: is-bordered is-narrow is-hoverable is-fullwidth
+
+  - text left my-5: Como podemos observar, a cada elemento del conjunto de los lápices se les asocia con un y sólo un elemento del conjunto dinero, un juguete no puede valer $7 pesos y $14 pesos al mismo tiempo, por lo que la relación que se muestra la tabla es una Función
+
+  - subtitle left my-5: Función en forma algebraica
+
+  - text left my-5: En algunas ocasiones es posible obtener una representación o modelo algebraico para las funciones la cual nos permite predecir. Para ver cómo y continuando con el ejemplo anterior respondamos la siguiente pregunta ¿Cuánto pagaría por 62 juguetes?
+
+  - subtitle left my-5: "Modelo algebraico del problema:"
+
+  - text: $$ y = 7x $$
+  
+  - text left my-5: En donde
+  - text: $$ y $$
+  - text left my-5: es la cantidad de juguetes, y
+  - text: $$ x $$
+  - text left my-5: es la cantidad de dinero.
+
+  - text left my-5: "Por 62 juguetes pagaríamos:"
+  - text: $$ 𝑦=7(62)=$434.00 $$
+
+  - text left my-5: "A continuación te invitamos a realizar las siguientes actividades y posteriormente contestar una serie de preguntas:"
+
+  - Modal: 
+      fullscreen: true
+      header: 
+        - box:
+          - text: Abrir Actividad
+          - Image: GeoGebra.png
+          style: max-width:200px;margin:auto;
+      content: 
+        - Embed: "<iframe src=https://www.geogebra.org/classic/p6pfagdv?embed width=800 height=600 allowfullscreen style=border: 1px solid #e4e4e4;border-radius: 4px; frameborder=0></iframe>"
+
+
+  - stem: "La función de la tabla 1 es:"
+  - instruction: Selecciona la opción correcta
+  - Question: 
+      id: Q8
+      points: 10
+      display: block
+      random: true
+      options: 
+      - value: y = x + 3
+        display: $$ y = x + 3 $$
+        credit: 0
+        feedback: 
+        - text: 
+      - value: y = 3x 
+        display: $$ y = 3x $$
+        credit: 1
+        feedback:
+        - text: 
+      - value: y = 3^x
+        display: $$ y = 3^x $$
+        credit: 0
+        feedback: 
+        - text: 
+      - value: y = x^3
+        display: $$ y = x^3 $$
+        credit: 0
+        feedback:
+        - text: 
+
+  - stem: "La función de la tabla 2 es:"
+  - instruction: Selecciona la opción correcta
+  - Question: 
+      id: Q9
+      points: 10
+      display: block
+      random: true
+      options: 
+      - value: y = 2x
+        display: $$ y = 2x $$
+        credit: 0
+        feedback: 
+        - text: 
+      - value: y = x^2
+        display: $$ y = x^2 $$
+        credit: 1
+        feedback:
+        - text: 
+      - value: y = x + 2
+        display: $$ y = x + 2 $$
+        credit: 0
+        feedback: 
+        - text: 
+      - value: y = 2^x
+        display: $$ y = 2^x $$
+        credit: 0
+        feedback:
+        - text: 
+
+  - stem: "La función de la tabla 3 es:"
+  - instruction: Selecciona la opción correcta
+  - Question: 
+      id: Q10
+      points: 10
+      display: block
+      random: true
+      options: 
+      - value: y = 2x
+        display: $$ y = 2x $$
+        credit: 0
+        feedback: 
+        - text: 
+      - value: y = x^2
+        display: $$ y = x^2 $$
+        credit: 0
+        feedback:
+        - text: 
+      - value: y = x + 2
+        display: $$ y = x + 2 $$
+        credit: 0
+        feedback: 
+        - text: 
+      - value: y = 2^x
+        display: $$ y = 2^x $$
+        credit: 1
+        feedback:
+        - text: 
+
+  - title my-4: Formas de representar una función
+  - text left my-5: "Como podrás notar, una función se puede representar a través de las siguientes formas:"
+  - item left my-5: Tabla numérica
+  - item left my-5: Gráfica
+  - item left my-5: Expresión Algebraica
+
+
+  - text left my-5: Te invitamos a que veas las gráficas que se generan por los modelos anteriores y contestar unas preguntas.
+
+  - text left my-5: "Instrucciones: Usa el enlace para abrir el graficador e inserta la función en la casilla de entrada como se muestra en la imagen:"
+
+
+  - box:
+    - text: Graficador
+    - Image: GeoGebra.png
+    style: max-width:200px;margin:auto;
+    action: https://www.geogebra.org/calculator
+
+
+  - stem: "¿Cuál es la gráfica que corresponden con la función $$y = 2x + 1$$?"
+  - instruction: Selecciona la opción correcta
+  - Question: 
+      id: Q11
+      points: 10
+      display: block
+      random: true
+      options: 
+      - value: Función 1
+        display:
+        - Image: 1.png
+        credit: 0
+        feedback: 
+        - text: 
+      - value: Función 2
+        display:
+        - Image: 1.png
+        credit: 0
+        feedback:
+        - text: 
+
+  - stem inline: "¿Cuál es la gráfica que corresponden con la función $$y = x^2 - x - 6 $$?"
+  - instruction: Selecciona la opción correcta
+  - Question: 
+      id: Q12
+      points: 10
+      display: block
+      random: true
+      options: 
+      - value: Función 3
+        display:
+        - Image: 3.png
+        credit: 0
+        feedback: 
+        - text: 
+      - value: Función 4
+        display:
+        - Image: 4.png
+        credit: 0
+        feedback:
+        - text: 
+
+  - stem: "<span>Cuál es la gráfica que corresponden con la función</span> <span>$$ y = 2 x - 2 $$</span><span>?</span>"
+  - instruction: Selecciona la opción correcta
+  - Question: 
+      id: Q13
+      points: 10
+      display: block
+      random: true
+      options: 
+      - value: Función 5
+        display:
+        - Image: 5.png
+        credit: 0
+        feedback: 
+        - text: 
+      - value: Función 6
+        display:
+        - Image: 6.png
+        credit: 0
+        feedback:
+        - text: 
+
+  - text left m-4: "Finalmente para terminar con el estudio de Función te invitamos a ver el siguiente video:"
+  - Youtube: 
+      id: Ll7xfe3HoZE
+
+  - title my-5 py-5: Preguntas
+
+  - Note:
+      id: Q14
+      form:
+      - label: ¿Qué es una Relación?
+        required: true
+        type: textarea
+        maxlength: 200
+        help: Describe con tus palabras qué es una relación
+
+  - stem: ¿Cuál de las siguientes afirmaciones es Falsa?
+  - instruction: Selecciona la opción correcta
+  - Question: 
+      id: Q13
+      points: 10
+      display: block
+      random: true
+      options: 
+      - value: Toda relación es una función
+        display: Toda relación es una función
+        credit: 
+        feedback:
+        - text: 
+      - value: Todas las funciones son relaciones
+        display: Todas las funciones son relaciones
+        credit: 
+        feedback:
+        - text: 
+      - value: No toda relación es una función
+        display: No toda relación es una función
+        credit: 
+        feedback:
+        - text: 
+      - value: Las funciones son relaciones que tienen una condición dada
+        display: Las funciones son relaciones que tienen una condición dada
+        credit: 
+        feedback:
+        - text: 
+
+  - Note:
+      id: Q16
+      form:
+      - label: Expresa en tus palabras que es una función y proporciona algún ejemplo
+        required: true
+        type: textarea
+        maxlength: 400
+        help: Describe con tus palabras qué es una relación
+
+  style: max-width:800px;margin:auto;
+
