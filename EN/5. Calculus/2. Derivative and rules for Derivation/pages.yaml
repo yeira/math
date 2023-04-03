@@ -116,6 +116,13 @@
     - text mx-5: "$$f'(x) = \\lim_{h \\to 0} \\frac{x^{n-1}(x + nh)}{h} = \\lim_{h \\to 0} (x^{n-1}(x + nh))' = x^{n-1} \\cdot 1 = nx^{n-1}$$"
     - text left m-5: "Thus, we have derived the power rule: if $$f(x) = x^n$$, then $$f'(x) = nx^{n-1}$$."
 
+    - stem: The Composition Rule
+    - text left m-5: The composition rule, also known as the chain rule, is one of the most important rules in calculus, as it appears frequently in many derivative calculations. It is used to find the derivative of a composite function, which is a function of a function.
+    - text left m-5: "According to the composition rule, if $$f(x) = g(h(x))$$, then:"
+    - text mx-5: "$$f'(x) = g'(h(x))h'(x)$$"
+    - text left m-5: "where $$g'(x)$$ and $$h'(x)$$ are the derivatives of $$g(x)$$ and $$h(x)$$, respectively, and the chain rule is used to evaluate $$g'(h(x))$$."
+
+
     - box has-background-success-light:
 
       - stem: Student Asks About Derivatives

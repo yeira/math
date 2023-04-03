@@ -1,1 +1,313 @@
 - page:
+  - head: |
+      <style>
+      .MathJax {
+        display: inline !important;
+      }
+      </style>
+  - Mathjax:
+  - block:
+
+# TRANSCENDENTAL FUNCTION DERIVATIVES
+
+    - title m-5 pt-5: Transcendental Function Derivatives
+    - subtitle left m-4: In this section, we will explore the derivatives of transcendental functions, which are essential for understanding the behavior of many functions in mathematics and science.
+    - stem: What are Transcendental Functions?
+    - text left m-5: Transcendental functions are functions that cannot be expressed using only algebraic operations, such as addition, subtraction, multiplication, and division. They include functions such as exponential, logarithmic, trigonometric, and inverse trigonometric functions. These functions are important in many areas of mathematics and science, including calculus, physics, and engineering.
+    - stem: Derivatives of Transcendental Functions
+    - text left m-5: The derivatives of transcendental functions follow a set of rules that are based on the properties of these functions. These rules allow us to find the derivatives of complex functions by breaking them down into simpler components. In this section, we will explore the rules for finding the derivatives of exponential, logarithmic, trigonometric, and inverse trigonometric functions.
+    - stem: Applications of Transcendental Function Derivatives
+    - text left m-5: The derivatives of transcendental functions are essential for understanding the behavior of many functions in mathematics and science. They are used in a wide range of applications, from physics and engineering to finance and economics. By understanding these derivatives, we can model and analyze complex systems and phenomena in the world around us.
+
+
+# STUDENT ASKS
+
+    - box has-background-success-light:
+      - stem: Student Asks About Derivatives of Transcendental Functions
+      - Image: BoardProf.png
+      - text left m-3: "<b>Student:</b> Professor, I have a question about the derivatives of transcendental functions."
+      - text left m-3: "<b>Math Teacher:</b> Sure, what's on your mind? 😊"
+      - text left m-3: "<b>Student:</b> I understand how to take derivatives of basic functions like polynomials, but I'm having trouble with functions like sine, cosine, and exponential functions. 😕"
+      - text left m-3: "<b>Math Teacher:</b> Those are called transcendental functions, and they can be a bit tricky to differentiate at first. But don't worry, there are rules and techniques you can use to find their derivatives. 😎"
+      - text left m-3: "<b>Student:</b> Can you show me an example? 🤔"
+      - text left m-3: "<b>Math Teacher:</b> Sure, let's start with the exponential function $$f(x) = e^x$$. The derivative of this function is simply itself, that is:"
+      - text mx-3 my-3: "$$f'(x) = e^x$$"
+      - text left m-3: "<b>Student:</b> That seems too easy. Are there any other transcendental functions with simple derivatives like this? 🤨"
+      - text left m-3: "<b>Math Teacher:</b> Yes, the derivative of the sine function is the cosine function, and the derivative of the cosine function is the negative sine function. In other words:"
+      - text mx-3 my-3: "$$(sin(x))' = cos(x)$$"
+      - text mx-3 my-3: "$$(cos(x))' = -sin(x)$$"
+      - text left m-3: "<b>Student:</b> Wow, that's pretty neat! Do you have any other examples? 😃"
+      - text left m-3: "<b>Math Teacher:</b> Yes, the derivative of the natural logarithm function is simply $$\\frac{1}{x}$$, that is:"
+      - text mx-3 my-3: "$$(ln(x))' = \\frac{1}{x}$$"
+      - text left m-3: "<b>Student:</b> Hold on a minute, professor! All that is great and all, but how do you know for sure? I mean, you certainly prefer your students to think rather than memorize, right? 🤔"
+      - text left m-3: "<b>Math Teacher:</b> Ahh, I was not expecting less from you. Glad you made this point. In fact, there is a way in which you can obtain all the derivative formulas that you want... 🤓"
+      - text left m-3: "<b>Student:</b> Really? How? 🤔"
+      - text left m-3: "<b>Math Teacher:</b> It involves using the limit definition of the derivative to obtain the formula for the derivative of any function. Want to see how?😎"
+      - text left m-3: "<b>Student:</b> Sure, can't wait to know more about it! 😃"
+
+
+# OBTAINING THE RULE FOR DERIVATION OF COSINE FUNCTION
+
+    - title m-5 pt-5: Derivative of Cosine Function
+    - subtitle left m-4: In this section, we will show step-by-step how to use the definition of derivative to obtain the rule for finding the derivative of the cosine function.
+
+    - box:
+      - Steps:
+        - header: Step 1
+          content:
+          - stem: Understand the Definition of Derivative
+          - text left m-5: "The derivative of a function $$f(x)$$ with respect to $$x$$ is defined as:"
+          - text mx-5 my-3: "$$f'(x) = \\lim_{h \\to 0} \\frac{f(x + h) - f(x)}{h}$$"
+          - text left m-5: "This definition gives us the instantaneous rate of change of $$f(x)$$ at a given point $$x$$. By applying this definition to various types of functions, we can derive rules for finding the derivative of those functions."
+
+        - header: Step 2
+          content:
+          - stem: Consider the Function
+          - text left m-5: "Let $$f(x) = cos(x)$$. We want to find the derivative of $$f(x)$$."
+          - text left m-5: "Using the definition of derivative, we have:"
+          - text mx-5 my-3: "$$f'(x) = \\lim_{h \\to 0} \\frac{cos(x + h) - cos(x)}{h}$$"
+
+        - header: Step 3
+          content:
+          - stem: Rewrite the Numerator
+          - text left m-5: "We can use the trigonometric identity:"
+          - text mx-5 my-3: "$$cos(a + b) = cos(a)cos(b) - sin(a)sin(b)$$"
+          - text left m-5: "to rewrite the numerator of the fraction:"
+          - text mx-5 my-3: "$$cos(x + h) - cos(x) = [cos(x)cos(h) - sin(x)sin(h)] - cos(x)$$"
+          - text left m-5: "Simplifying, we get:"
+          - text mx-5 my-3: "$$cos(x + h) - cos(x) = -sin(x)sin(h)$$"
+
+        - header: Step 4
+          content:
+          - stem: Substitute the Numerator into the Derivative Expression
+          - text left m-5: "Substituting this result into the derivative expression, we have:"
+          - text mx-5 my-3: "$$f'(x) = \\lim_{h \\to 0} \\frac{-sin(x)sin(h)}{h}$$"
+
+        - header: Step 5
+          content:
+          - stem: Apply the Limit Rule
+          - text left m-5: "Since $$-sin(x)$$ is a constant as seen by the limit in $$h$$, we can apply the rule of the limit of a function multiplied by a constant, which states that:"
+          - text mx-5 my-3: "$$\\lim_{h \\to 0} (-sin(x)\\cdot \\frac{sin(h)}{h}) = -sin(x) \\cdot \\lim_{h \\to 0} \\frac{sin(h)}{h}$$"
+          
+        - header: Step 6
+          content:
+          - stem: Evaluate the Limit
+          - text left m-5: "Since $$\\lim_{h \\to 0} \\frac{sin(h)}{h} = 1$$, we have:"
+          - text mx-5 my-3: "$$f'(x) = -sin(x)$$"
+          - text left m-5: "Therefore, the derivative of the cosine function is:"
+          - text mx-5 my-3: "$$(cos(x))' = -sin(x)$$"
+
+# OBTAINING THE RULE FOR DERIVATION OF EXPONENTIAL FUNCTION
+
+    - title m-5 pt-5: Derivative of Exponential Function
+    - subtitle left m-4: In this section, we will show step-by-step how to use the definition of derivative to obtain the rule for finding the derivative of the exponential function.
+
+    - box:
+      - Steps:
+        - header: Step 1
+          content:
+          - stem: Understand the Definition of Derivative
+          - text left m-5: "The derivative of a function $$f(x)$$ with respect to $$x$$ is defined as:"
+          - text mx-5 my-3: "$$f'(x) = \\lim_{h \\to 0} \\frac{f(x + h) - f(x)}{h}$$"
+          - text left m-5: "This definition gives us the instantaneous rate of change of $$f(x)$$ at a given point $$x$$. By applying this definition to various types of functions, we can derive rules for finding the derivative of those functions."
+
+        - header: Step 2
+          content:
+          - stem: Consider the Function
+          - text left m-5: "Let $$f(x) = e^x$$. We want to find the derivative of $$f(x)$$."
+          - text left m-5: "Using the definition of derivative, we have:"
+          - text mx-5 my-3: "$$f'(x) = \\lim_{h \\to 0} \\frac{e^{x + h} - e^x}{h}$$"
+
+        - header: Step 3
+          content:
+          - stem: Apply the Definition of Derivative
+          - text left m-5: "Simplifying the expression, we get:"
+          - text mx-5 my-3: "$$f'(x) = e^x \\lim_{h \\to 0} \\frac{e^h - 1}{h}$$"
+          - text left m-5: "Great progress, but we need to solve now that limit, and it seems to be inteterminate when we replace $$h = 0$$ directly."
+
+
+        - header: Step 4
+          content:
+          - stem: Let's talk about L'Hopital's rule
+          - text left m-5: "L'Hopital's rule is a technique used to evaluate limits of indeterminate forms of the form $$\\frac{0}{0}$$ or $$\\frac{\\infty}{\\infty}$$. If we have a limit of the form $$\\lim_{x \\to a} \\frac{f(x)}{g(x)}$$ where $$f(a) = g(a) = 0$$ or $$\\pm \\infty$$, then:"
+          - text mx-5 my-3: "$$\\lim_{x \\to a} \\frac{f(x)}{g(x)} = \\lim_{x \\to a} \\frac{f'(x)}{g'(x)}$$"
+          - text left m-5: "where $$f'(x)$$ and $$g'(x)$$ are the derivatives of $$f(x)$$ and $$g(x)$$, respectively, provided that the limit of the ratio of the derivatives exists."
+
+
+        - header: Step 5
+          content:
+          - stem: Evaluate the Limit
+          - text left m-5: "We need to find now this limit:"
+          - text mx-5 my-3: "$$\\lim_{x \\to 0} \\frac{e^x - 1}{x}$$"
+          - text left m-5: "We can evaluate the limit as follows:"
+          - text left m-5: "Let $$f(x) = e^x - 1$$ and $$g(x) = x$$."
+          - text left m-5: "Then, we can rewrite the original limit as:"
+          - text mx-5 my-3: "$$\\lim_{x \\to 0} \\frac{e^x - 1}{x} = \\lim_{x \\to 0} \\frac{f(x)}{g(x)}$$"
+          - text left m-5: "Applying L'Hopital's rule to this limit, we get:"
+          - text mx-5 my-3: "$$\\lim_{x \\to 0} \\frac{f'(x)}{g'(x)} = \\lim_{x \\to 0} \\frac{e^x}{1} = 1$$"
+
+        - header: Step 6
+          content:
+          - stem: Replace in original equation
+          - text left m-5: "Reminding that the derivative is obtained as:"
+          - text mx-5 my-3: "$$f'(x) = e^x \\lim_{h \\to 0} \\frac{e^h - 1}{h}$$"
+          - text left m-5: "Therefore, the derivative of the exponential function is:"
+          - text mx-5 my-3: "$$(e^x)' = e^x$$"
+
+
+    - text left m-5: "We can use the same process to derive the rules for other trigonometric functions, as well as, logarithmic, and other types of functions. By using the definition of derivative and applying our knowledge of algebra and trigonometry, we can find the derivatives of a wide range of functions."
+    - text left m-5: "Remember that understanding the rules of derivation for transcendental functions is essential for success in calculus and many other areas of mathematics and science. With practice and hard work, you can master this important topic and apply it to a variety of problems and applications."
+
+# STUDENT ASKS
+
+    - box has-background-success-light:
+      - stem: 🧑‍🎓 Student Asks About Derivatives of Transcendental Functions
+      - Image: BoardProf.png
+      - text left m-3: "<b>Student:</b> Professor, I have a question about the derivatives of transcendental functions. 🤔"
+      - text left m-3: "<b>Math Teacher:</b> Sure, what's on your mind? 😊"
+      - text left m-3: "<b>Student:</b> Well, I was wondering if transcendental functions can also have discontinuities and undefined derivatives like some other functions. 🤔"
+      - text left m-3: "<b>Math Teacher:</b> Absolutely. In fact, many transcendental functions have discontinuities or undefined derivatives at certain points. For example, the natural logarithm function, denoted by ln(x), has a discontinuity at x = 0, and its derivative is undefined at that point. 😮"
+      - text left m-3: "<b>Student:</b> Wow, I had no idea! What about the trigonometric functions? 🤔"
+      - text left m-3: "<b>Math Teacher:</b> Yes, even the trigonometric functions can have discontinuities and undefined derivatives. For instance, the tangent function, denoted by tan(x), has a discontinuity at x = π/2, and its derivative is undefined at that point. 😲"
+      - text left m-3: "<b>Student:</b> This is blowing my mind! Are there any other functions with similar properties? 🤔"
+      - text left m-3: "<b>Math Teacher:</b> Indeed there are, and exploring them is what makes calculus so fascinating. But that's a topic for another day. For now, just remember that understanding the behavior of functions and their derivatives is key to mastering calculus. 😎"
+
+    - block parallax:
+      img: MathProfessor.png
+      style: height:300px;
+
+# QUESTIONNAIRE
+
+    - title my-5: Questionnaire
+    - subtitle: Please answer the following questions.
+
+    - stem: What is a transcendental function?
+    - Question:
+        id: Q1
+        points: 8
+        display: grid
+        random: true
+        options:
+        - value: "A function that is not algebraic."
+          display: "A function that is not algebraic."
+          credit: 1
+          feedback: "Correct! A transcendental function is a function that is not algebraic."
+        - value: "A function that is defined only on transcendental numbers."
+          display: "A function that is defined only on transcendental numbers."
+          credit: 0
+          feedback: "Incorrect. This is not the definition of a transcendental function."
+        - value: "A function that is continuous everywhere."
+          display: "A function that is continuous everywhere."
+          credit: 0
+          feedback: "Incorrect. This is not the definition of a transcendental function."
+
+    - stem: Can a transcendental function have a discontinuity?
+    - Question:
+        id: Q2
+        points: 8
+        display: grid
+        random: true
+        options:
+        - value: "Yes, a transcendental function can have a discontinuity."
+          display: "Yes, a transcendental function can have a discontinuity."
+          credit: 1
+          feedback: "Correct! A transcendental function can have a discontinuity at certain points."
+        - value: "No, a transcendental function is always continuous."
+          display: "No, a transcendental function is always continuous."
+          credit: 0
+          feedback: "Incorrect. A transcendental function can have a discontinuity at certain points."
+        - value: "It depends on the specific transcendental function."
+          display: "It depends on the specific transcendental function."
+          credit: 0
+          feedback: "Incorrect. A transcendental function can have a discontinuity at certain points." 
+
+    - stem: "What is the derivative of the function $$f(x) = e^{2x}?$$"
+    - instruction: "Hint: Remember the chain rule for derivatives"
+    - Question: 
+        id: Q3
+        points: 10
+        display: grid
+        random: true
+        options: 
+        - value: "2e^{2x}"
+          display: "$$2e^{2x}$$"
+          credit: 1
+          feedback: 
+          - text: "Correct! This is the derivative of the given function."
+        - value: "e^{2x} + 1"
+          display: "$$e^{2x} + 1$$"
+          credit: 0
+          feedback:
+          - text: "That is incorrect. Please review the rules of differentiation."
+        - value: "2e^{2x} + 1"
+          display: "$$2e^{2x} + 1$$"
+          credit: 0
+          feedback:
+          - text: "That is not the correct derivative of the given function."
+          
+    - stem: "What is the derivative of the function $$f(x) = ln(x^3)?$$"
+    - instruction: "Hint: Remember the chain rule for derivatives"
+    - Question: 
+        id: Q4
+        points: 10
+        display: grid
+        random: true
+        options: 
+        - value: "3/x"
+          display: "$$\\frac{3}{x}$$"
+          credit: 1
+          feedback: 
+          - text: "Correct! This is the derivative of the given function."
+        - value: "ln(x) + 3"
+          display: "$$ln(x) + 3$$"
+          credit: 0
+          feedback:
+          - text: "That is incorrect. Please review the rules of differentiation."
+        - value: "x^2"
+          display: "$$x^2$$"
+          credit: 0
+          feedback:
+          - text: "That is not the correct derivative of the given function."
+          
+    - stem: "What is the derivative of the function $$f(x) = sin(3x)?$$"
+    - instruction: "Hint: Remember the chain rule for derivatives"
+    - Question: 
+        id: Q5
+        points: 10
+        display: grid
+        random: true
+        options: 
+        - value: "3cos(3x)"
+          display: "$$3cos(3x)$$"
+          credit: 1
+          feedback: 
+          - text: "Correct! This is the derivative of the given function."
+        - value: "cos(3x)"
+          display: "$$cos(3x)$$"
+          credit: 0
+          feedback:
+          - text: "That is incorrect. Please review the rules of differentiation."
+        - value: "3sin(3x)"
+          display: "$$3sin(3x)$$"
+          credit: 0
+          feedback:
+          - text: "That is not the correct derivative of the given function."
+
+
+
+
+# CONCLUSION
+
+    - title m-5 pt-5: Conclusion
+    - subtitle left m-4: Congratulations on completing the Derivatives of Transcendental Functions chapter! Here are some final thoughts on this topic.
+    - stem: The Importance of Derivatives of Transcendental Functions
+    - text left m-5: Derivatives of transcendental functions are a fundamental concept in calculus that allow us to study the rate of change of these functions. They are used to model a wide range of phenomena in mathematics, science, and engineering, from the behavior of natural phenomena like radioactive decay and population growth to artificial systems like financial markets and the design of computer algorithms. Without derivatives, many areas of modern technology and research would not be possible.
+    - stem: Practical Applications of Derivatives of Transcendental Functions
+    - text left m-5: Derivatives of transcendental functions have many practical applications in fields such as physics, engineering, economics, and biology. They can be used to optimize processes, design efficient systems, and understand complex behavior in natural and artificial systems. Knowing how to calculate derivatives of transcendental functions and apply them to real-world problems is an important skill for success in many careers.
+    - stem: Further Study
+    - text left m-5: This chapter has provided an introduction to derivatives of transcendental functions and their properties, but there is much more to learn about this topic. If you are interested in pursuing calculus further, there are many resources available to help you, including textbooks, online courses, and academic programs. With dedication and hard work, you can develop a deep understanding of derivatives of transcendental functions and their applications.
+    - text left m-5: We hope that you have found this chapter informative and engaging. Please don't hesitate to reach out if you have any questions or feedback. Good luck in your studies!
+
+
+
+    style: max-width:800px;margin:auto;
