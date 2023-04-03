@@ -1,11 +1,10 @@
 ---
-title: Yeira Author Math
-description: Arithmetic
-id: Math - Arithmetic - Numbers
+title: Bloom Toolkit
+description: This is the main Bloom Toolkit
+id: Bloom-Toolkit-E07
 highlight: '#EF7145'
 
 defaults:
-  navigation: false
   locale: en
   pointScale: 10
   passingGrade: 6

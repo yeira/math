@@ -1,1 +1,312 @@
 - page:
+  - head: |
+      <style>
+      .MathJax {
+        display: inline !important;
+      }
+      </style>
+  - Mathjax:
+  - block:
+
+# WHAT ARE LIMITS
+
+    - title m-5 pt-5: ¿Qué son los límites?
+    - subtitle left m-4: Comenzamos definiendo el concepto de límite y discutiendo por qué es importante en cálculo. Miraremos cómo se usan los límites para describir el comportamiento de las funciones cerca de un punto dado y exploraremos los diferentes tipos de límites.
+
+    - stem: Definición de un Límite
+    - text left m-5: "<b>Un límite</b> es un valor al que una función se aproxima a medida que la entrada se acerca a un valor específico. Por ejemplo, consideremos la función $$f(x) = \\frac{x^2-1}{x-1}$$. A medida que $$x$$ se acerca a 1, $$f(x)$$ se acerca a 2. Podemos escribir esto como:"
+
+    - subtitle: $$\lim_{x \to 1} f(x) = 2$$
+
+    - instruction: Puedes leer esta expresión como "<i>El límite de f de x cuando x se aproxima a 1 es igual a 2.</i>"
+
+    - text left m-5: "Esta notación indica que el límite de $$f(x)$$ cuando $$x$$ se aproxima a 1 es igual a 2. Los límites nos permiten describir el comportamiento de una función cerca de un punto dado, incluso si la función no está definida en ese punto. 💡📝"
+
+    - stem: Tipos de Límites
+    - text left m-5: "Existen varios tipos diferentes de límites, que incluyen límites unilaterales, límites infinitos y límites en el infinito. En esta sección, exploraremos estos tipos de límites y veremos ejemplos de cómo se usan en cálculo. También discutiremos cómo evaluar límites utilizando técnicas algebraicas, como factorización y simplificación. 🤔💡"
+
+    - stem: Importancia de los Límites en Cálculo
+    - text left m-5: "En cálculo, los límites se usan para definir la derivada, que es la tasa de cambio de una función en un punto dado. La derivada es un concepto fundamental en cálculo, y se utiliza para resolver una amplia gama de problemas en física, ingeniería y otros campos. 💻🌎"
+
+
+    - box has-background-success-light:
+
+      - stem: Estudiante Pregunta Sobre Límites
+      - Image: BoardProf.png
+      - text left m-3: "<b>Estudiante:</b> Oye, profe! He estado pensando mucho en límites últimamente. ¿Puedes decirme qué son?"
+      - text left m-3: "<b>Profesor de Matemáticas:</b> ¡Claro! En cálculo, un límite es un valor al que una función se aproxima a medida que la entrada se acerca a un valor específico."
+      - text left m-3: "<b>Estudiante:</b> Hmm, ya veo. Pero, ¿qué pasa si tengo un límite en mi paciencia? ¿Significa eso que me estoy acercando a un punto de quiebre? 😩"
+      - text left m-3: "<b>Profesor de Matemáticas:</b> (se ríe) Bueno, ciertamente esa es una forma de pensar en los límites, pero no es exactamente lo mismo que estamos hablando en cálculo."
+      - text left m-3: "<b>Estudiante:</b> Ah, ya veo. Entonces, ¿estás diciendo que no puedo usar los límites para describir mi estado emocional? 🤔"
+      - text left m-3: "<b>Profesor de Matemáticas:</b> (se ríe) Así es, pero siempre es interesante ver cómo diferentes personas interpretan los conceptos matemáticos a su manera."
+
+      - text left m-3: "Aunque <b>los límites pueden parecer un tema seco y técnico</b>, en realidad pueden ser bastante fascinantes y relacionarse con muchos aspectos de nuestra vida diaria. Ya sea que estemos hablando de límites en cálculo o límites en nuestra paciencia, comprender estos conceptos puede ayudarnos a dar sentido al mundo que nos rodea. 😃"
+
+
+
+# PROPIEDADES DE LOS LÍMITES
+
+    - title m-5 pt-5: Propiedades de los Límites
+    - subtitle left m-4: Después de introducir los límites, discutiremos las propiedades básicas de los límites, incluyendo cómo evaluar límites usando técnicas algebraicas como la factorización y la simplificación.
+
+    - stem: Propiedades Básicas de los Límites
+    - text left m-5: "Las propiedades básicas de los límites son las siguientes:"
+    - item left mx-5 my-3: "El límite de una suma o diferencia es igual a la suma o diferencia de los límites. Es decir,"
+    - text mx-5 my-3: "$$\\lim_{x \\to a} [f(x) \\pm g(x)] = \\lim_{x \\to a} f(x) \\pm \\lim_{x \\to a} g(x)$$"
+    - item left mx-5 my-3: "El límite de un producto es igual al producto de los límites. Es decir, "
+    - text mx-5 my-3: "$$\\lim_{x \\to a} [f(x) \\cdot g(x)] = \\lim_{x \\to a} f(x) \\cdot \\lim_{x \\to a} g(x)$$"
+    - item left mx-5 my-3: "El límite de un cociente es igual al cociente de los límites, siempre y cuando el límite del denominador no sea igual a cero. Es decir, "
+    - text mx-5 my-3: "$$\\lim_{x \\to a} \\frac{f(x)}{g(x)} = \\frac{\\lim_{x \\to a} f(x)}{\\lim_{x \\to a} g(x)}, \\text{siempre y cuando} \\lim_{x \\to a} g(x) \\neq 0$$"
+
+    - box has-background-danger-light:
+      - stem: 🤔 ¿Estás confundido/a?
+      - text left m-3: No te preocupes, pronto empezaremos a usar estas propiedades de manera más práctica. 😎👨‍🏫📈💡
+
+
+    - stem: Técnicas algebraicas para evaluar límites
+    - text left m-5: "Podemos utilizar técnicas algebraicas para simplificar funciones y evaluar límites. Algunas de estas técnicas incluyen:"
+    - item left mx-5 my-3: "Factorización"
+    - item left mx-5 my-3: "Simplificación mediante la racionalización del numerador o denominador"
+    - item left mx-5 my-3: "Pares conjugados"
+    - item left mx-5 my-3: "Multiplicación por el conjugado"
+    - item left mx-5 my-3: "Uso de la regla de L'Hôpital"
+
+    - text left m-5: "Exploraremos estas técnicas con más detalle en secciones posteriores."
+
+
+
+# LÍMITES UNILATERALES Y CONTINUIDAD
+
+    - title m-5 pt-5: Límites Unilaterales y Continuidad
+    - subtitle left m-4: También presentaremos el concepto de límites unilaterales y los usaremos para definir la continuidad. Exploraremos los diferentes tipos de continuidad y discutiremos cómo identificar discontinuidades.
+
+    - stem: Límites Unilaterales
+    - text left m-5: "Hasta ahora, hemos estado discutiendo límites cuando la entrada se acerca a un valor específico desde ambos lados. Sin embargo, a veces es útil considerar límites desde solo un lado. A estos los llamamos límites unilaterales."
+    - text left m-5: "Si estamos considerando un límite cuando la entrada se acerca a un valor específico desde el lado izquierdo, escribimos:"
+    - subtitle: $$\lim_{x \to a^-} f(x)$$
+    - text left m-5: "Si estamos considerando un límite cuando la entrada se acerca a un valor específico desde el lado derecho, escribimos:"
+    - subtitle: $$\lim_{x \to a^+} f(x)$$
+    - text left m-5: "Si ambos límites existen y son iguales, decimos que el límite existe cuando la entrada se acerca a un valor específico, y escribimos:"
+    - subtitle: $$\lim_{x \to a} f(x)$$
+    
+    - box has-background-danger-light:
+      - stem: 🤔🤯 ¿Puedes pensar en una función donde...
+      - text left m-3: ... un límite que se aproxima desde la izquierda para un valor dado es diferente cuando se aproxima desde la derecha? ¿Cómo definirías esa condición? 💭
+
+    - stem: Continuidad
+    - text left m-5: "La continuidad es un concepto importante en cálculo y está estrechamente relacionada con los límites. Decimos que una función es continua en un punto si el límite de la función cuando la entrada se aproxima a ese punto existe y es igual al valor de la función en ese punto."
+    - text left m-5: "Hay tres tipos de continuidad que discutiremos:"
+    - item left mx-5 my-3: "Continua en un punto"
+    - item left mx-5 my-3: "Continua en un intervalo abierto"
+    - item left mx-5 my-3: "Continua en un intervalo cerrado"
+    
+    - text left m-5: "Para que una función sea continua en un intervalo abierto, debe ser continua en cada punto de ese intervalo. Para que una función sea continua en un intervalo cerrado, debe ser continua en el intervalo y en los puntos finales del intervalo."
+    - text left m-5: "Podemos usar gráficos para ayudarnos a visualizar la continuidad y discontinuidad en las funciones. Por ejemplo, una función es continua en un punto si su gráfico no tiene cortes ni agujeros en ese punto. Si el gráfico tiene un corte o un agujero en un punto, la función no es continua en ese punto. También podemos usar gráficos para identificar tipos de discontinuidades, como discontinuidades de salto y discontinuidades asintóticas."
+
+
+# Leyes de los límites y Cálculo de Límites
+
+    - title m-5 pt-5: Leyes de los límites y Cálculo de Límites
+    - subtitle left m-4: A continuación, presentaremos las leyes de los límites, que se utilizan para simplificar la evaluación de los límites. También discutiremos cómo utilizar estas leyes para evaluar límites más complejos.
+
+    - stem: Leyes de los límites
+    - text left m-5: "Las leyes de los límites son un conjunto de reglas que nos permiten simplificar la evaluación de los límites. Estas leyes se basan en las propiedades de los límites que ya hemos discutido, como el hecho de que el límite de una suma es la suma de los límites. A continuación, se presentan algunas de las leyes de los límites más importantes:"
+    - item left mx-5 my-3: "El límite de una suma es la suma de los límites."
+    - text m-5: Si $$\lim_{x\to a} f(x) = L$$ y $$\lim_{x\to a} g(x) = M$$, entonces $$\lim_{x\to a} [f(x) + g(x)] = L + M$$.
+    - item left mx-5 my-3: "El límite de un producto es el producto de los límites."
+    - text m-5: Si $$\lim_{x\to a} f(x) = L$$ y $$\lim_{x\to a} g(x) = M$$, entonces $$\lim_{x\to a} [f(x) \cdot g(x)] = L \cdot M$$.
+    - item left mx-5 my-3: "El límite de un cociente es el cociente de los límites, siempre y cuando el límite del denominador no sea cero."
+    - text m-5: Si $$\lim_{x\to a} f(x) = L$$ y $$\lim_{x\to a} g(x) = M$$, y $$\lim_{x\to a} g(x) \neq 0$$, entonces $$\lim_{x\to a} [f(x) / g(x)] = L / M$$.
+    - item left mx-5 my-3: "El límite de una función de potencia es la función de potencia del límite."
+    - text m-5: Si $$\lim_{x\to a} f(x) = L$$ y $$n$$ es un entero positivo, entonces $$\lim_{x\to a} [f(x)^n] = L^n$$.
+
+    - stem: Cálculo de Límites
+    - text left m-5: "Usando las leyes de límites, podemos evaluar límites más complejos. A veces, es posible que necesitemos utilizar técnicas algebraicas como la factorización o simplificación antes de poder aplicar las leyes de límites. Aquí hay algunos ejemplos de cómo utilizar las leyes de límites para calcular límites:"
+    - subtitle: $$\lim_{x\to 3}(x^2+4x-7)$$
+    - text left m-5: "Podemos utilizar la ley de suma para escribir:"
+    - subtitle: $$\lim_{x\to 3} x^2 + \lim_{x\to 3} 4x - \lim_{x\to 3} 7$$
+    - text left m-5: "Luego, podemos utilizar la ley de funciones potenciales para evaluar cada límite:"
+    - subtitle: $$9 + 12 - 7 = 14$$
+
+    - subtitle: $$\lim_{x\to 0}\frac{x^2-x}{x^3-3x^2+2x}$$
+    - text left m-5: "Primero, podemos factorizar una $$x$$ del numerador y un $$x^2$$ del denominador:"
+    - subtitle: $$\lim_{x\to 0}\frac{x(x-1)}{x^2(x-3)+2x}$$
+    - text left m-5: "Luego, podemos cancelar los términos de $$x$$:"
+    - subtitle: $$\lim_{x\to 0}\frac{x-1}{x^2-3x+2}$$
+    - text left m-5: "Finalmente, podemos factorizar el denominador y usar la ley de cociente de límites:"
+    - subtitle: $$\frac{\lim_{x\to 0}(x-1)}{\lim_{x\to 0}(x-1)(x-2)} = \frac{1}{-2} = -\frac{1}{2}$$
+
+
+
+# INTERMEDIATE VALUE THEOREM
+
+    - title m-5 pt-5: Teorema del Valor Intermedio
+    - subtitle left m-4: Concluiremos este tema con el teorema del valor intermedio, que establece que si una función es continua en un intervalo cerrado, entonces toma cada valor entre los valores de la función en los extremos del intervalo. Veremos ejemplos de cómo este teorema se puede utilizar para resolver problemas en cálculo.
+
+    - stem: Teorema del Valor Intermedio
+    - text left m-5: "El teorema del valor intermedio es una herramienta poderosa en cálculo que nos permite probar la existencia de soluciones a ciertos tipos de ecuaciones. El teorema establece que si una función $$f$$ es continua en un intervalo cerrado $$[a,b]$$, y $$f(a) < c < f(b)$$, entonces existe un punto $$x$$ en $$[a,b]$$ tal que $$f(x) = c$$."
+    - text left m-5: "En otras palabras, si una función comienza en un punto y termina en otro punto, y sabemos que toma dos valores específicos entre esos puntos, entonces también debe tomar cada valor entre esos dos puntos."
+    - text left m-5: "El teorema del valor intermedio se puede utilizar para resolver una amplia gama de problemas en cálculo, como encontrar raíces de ecuaciones, probar la existencia de máximos y mínimos, y verificar soluciones a ecuaciones diferenciales."
+    - text left m-5: "Aquí hay un ejemplo de cómo utilizar el teorema del valor intermedio para encontrar una raíz de una ecuación:"
+    - subtitle: "Ejemplo: Encuentra una raíz de la ecuación $$x^3 - 4x - 9 = 0$$ en el intervalo $$[1,3]$$. "
+    - text left m-5: "Primero, podemos verificar que la función $$f(x) = x^3 - 4x - 9$$ es continua en el intervalo $$[1,3]$$, lo cual es cierto. Luego, podemos evaluar $$f(1)$$ y $$f(3)$$ para ver que:"
+    - subtitle: "$$f(1) = -12$$"
+    - subtitle: "$$f(3) = 12$$"
+    - text left m-5: "Dado que $$f(1) < 0 < f(3)$$, el teorema del valor intermedio garantiza que existe un punto $$x$$ en $$[1,3]$$ tal que $$f(x) = 0$$, lo que significa que $$x^3 - 4x - 9 = 0$$ tiene una raíz en el intervalo $$[1,3]$$. Podemos utilizar métodos numéricos para aproximar el valor de la raíz, o podemos utilizar técnicas algebraicas para encontrar una solución exacta. Primero, podemos factorizar un $$x$$ del numerador y un $$x^2$$ del denominador:"
+    - subtitle: $$\lim_{x\to 0}\frac{x(x-1)}{x^2(x-3)+2x}$$
+    - text left m-5: "Luego, podemos cancelar los términos de $$x$$:"
+
+
+
+    - box has-background-success-light:
+
+      - stem: Estudiante pregunta acerca de Límites
+      - Image: BoardProf.png
+      - text left m-3: "<b>Estudiante:</b> Pero, ¿por qué el infinito no puede ser un límite? ¿No se acerca la función al infinito a medida que la entrada se hace cada vez más grande?"
+      - text left m-3: "<b>Profesor de Matemáticas:</b> ¡Esa es una excelente pregunta! Aunque algunas funciones se acercan al infinito a medida que la entrada se acerca a un valor específico, el infinito no es un número real, por lo que no puede ser un límite en el sentido habitual. Los límites se usan para describir el comportamiento de las funciones cerca de un punto dado, y necesitamos un número real para describir ese comportamiento."
+      - text left m-3: "<b>Estudiante:</b> Mmm, supongo que tiene sentido. Entonces, lo que está diciendo es que no puedo usar el infinito como excusa por llegar tarde a clase porque me perdí en una carretera infinita, ¿verdad?"
+      - text left m-3: "<b>Profesor de Matemáticas:</b> (ríe) ¡Exactamente! No puedes usar el infinito para justificar tu tardanza. Pero puedes usar límites para explicar el comportamiento de una función a medida que la entrada se acerca a un valor específico. Así que, recuerda siempre, no importa cuán perdido te sientas, el límite de tu viaje nunca puede ser el infinito. 😄👨‍🏫"
+
+
+    - block parallax:
+      img: MathProfessor.png
+      style: height:300px;
+
+# CUESTIONARIO
+
+    - title my-5: Cuestionario
+    - subtitle: Por favor, responda las siguientes preguntas.
+
+    - stem: ¿Qué es un límite?
+    - Question:
+        id: Q1
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "El valor al que una función se aproxima a medida que la entrada se acerca a un valor específico."
+          display: "El valor al que una función se aproxima a medida que la entrada se acerca a un valor específico."
+          credit: 1
+          feedback: "¡Correcto! Esta es la definición de un límite."
+        - value: "El valor más alto de una función."
+          display: "El valor más alto de una función."
+          credit: 0
+          feedback: "Incorrecto. Esta no es la definición de un límite."
+        - value: "El valor más bajo de una función."
+          display: "El valor más bajo de una función."
+          credit: 0
+          feedback: "Incorrecto. Esta no es la definición de un límite."
+
+    - stem: ¿Qué es el teorema del valor intermedio?
+    - Question:
+        id: Q2
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "Si una función es continua en un intervalo cerrado, entonces toma todos los valores entre los valores de la función en los extremos del intervalo."
+          display:
+          - block:
+            - text left: "Si una función es continua en un intervalo cerrado, entonces toma todos los valores entre los valores de la función en los extremos del intervalo."
+            style: width:600px;
+          credit: 1
+          feedback: "¡Correcto! Esta es la afirmación del teorema del valor intermedio."
+        - value: "Si una función es continua en un intervalo abierto, entonces toma todos los valores entre los valores de la función en los extremos del intervalo."
+          display:
+          - block:
+            - text left: "Si una función es continua en un intervalo abierto, entonces toma todos los valores entre los valores de la función en los extremos del intervalo."
+            style: width:600px;
+          credit: 0
+          feedback: "Incorrecto. Esta afirmación no es cierta para intervalos abiertos."
+        - value: "Si una función es discontinua en un intervalo cerrado, entonces toma todos los valores entre los valores de la función en los extremos del intervalo."
+          display:
+          - block:
+            - text left: "Si una función es discontinua en un intervalo cerrado, entonces toma todos los valores entre los valores de la función en los extremos del intervalo."
+            style: width:600px;
+          credit: 0
+          feedback: "Incorrecto. Esta afirmación no es cierta para funciones discontinuas."      
+
+    - stem: "¿Cuál es el límite de la función $$f(x) = \\frac{x^2-4}{x-2}$$ cuando <br> $$x$$ se acerca a 2?"
+    - Question: 
+        id: Q3
+        points: 10
+        display: grid
+        random: true
+        options: 
+        - value: "0"
+          display: "0"
+          credit: 0
+          feedback: 
+          - text: "Eso es incorrecto. La respuesta correcta es 4."
+        - value: "4"
+          display: "4"
+          credit: 1
+          feedback:
+          - text: "¡Correcto! Esta es la respuesta correcta."
+        - value: "undefined"
+          display: "Indefinido"
+          credit: 0
+          feedback:
+          - text: "Eso es incorrecto. La respuesta correcta es 4."
+          
+    - stem: "¿Cuál es el límite de la función $$g(x) = \\frac{x^3-8}{x-2}$$ cuando <br> $$x$$ se acerca a 2?"
+    - Question: 
+        id: Q4
+        points: 10
+        display: grid
+        random: true
+        options: 
+        - value: "6"
+          display: "6"
+          credit: 0
+          feedback: 
+          - text: "Eso es incorrecto. La respuesta correcta es 12."
+        - value: "12"
+          display: "12"
+          credit: 1
+          feedback:
+          - text: "¡Correcto! Esta es la respuesta correcta."
+        - value: "undefined"
+          display: "No está definido"
+          credit: 0
+          feedback:
+          - text: "Eso es incorrecto. La respuesta correcta es 12."
+
+
+    - stem: "Evalúa el límite $$\\lim_{x\\to 0} \\frac{1}{x}$$"
+    - instruction: "Selecciona la respuesta correcta."
+
+    - Question: 
+        id: Q5
+        points: 10
+        display: grid
+        random: true
+        options: 
+        - value: "$$\\infty$$"
+          display: "$$\\infty$$ (Infinito)"
+          credit: 0
+          feedback: 
+            - text: Incorrecto. El límite no está definido porque la función tiende a infinito cuando x se acerca a 0 desde la izquierda o la derecha.
+        - value: "$$\\nexists$$"
+          display: "$$\\nexists$$ (No existe)"
+          credit: 1
+          feedback:
+            - text: ¡Correcto! El límite no está definido porque la función tiende a infinito cuando x se acerca a 0 desde la izquierda o la derecha.
+
+
+
+# CONCLUSIÓN
+
+    - title m-5 pt-5: Conclusión
+    - subtitle left m-4: ¡Felicitaciones por completar el capítulo sobre límites! Aquí hay algunas reflexiones finales sobre este tema.
+    - stem: La importancia de los límites
+    - text left m-5: Los límites son un concepto fundamental en cálculo que nos permiten describir el comportamiento de las funciones cerca de un punto dado. Se utilizan para definir las derivadas y las integrales, que son herramientas clave en muchas áreas de las matemáticas y la ciencia. Sin los límites, no podríamos estudiar la tasa de cambio, la continuidad y otras propiedades importantes de las funciones.
+    - stem: Aplicaciones prácticas de los límites
+    - text left m-5: Los límites se utilizan en una amplia gama de campos, desde la física y la ingeniería hasta la economía y la biología. Se pueden utilizar para modelar fenómenos físicos, como el movimiento de objetos y el flujo de fluidos, y para analizar sistemas complejos, como los mercados financieros y las poblaciones ecológicas. Saber cómo evaluar los límites y comprender sus propiedades es esencial para tener éxito en muchas carreras.
+    - stem: Estudios futuros
+    - text left m-5: Este capítulo ha proporcionado una introducción a los límites y sus propiedades, pero hay mucho más que aprender sobre este tema. Si estás interesado en profundizar en cálculo, hay muchos recursos disponibles para ayudarte, incluyendo libros de texto, cursos en línea y programas académicos. Con dedicación y trabajo duro, puedes desarrollar una comprensión profunda de los límites y sus aplicaciones.
+    - text left m-5: Esperamos que hayas encontrado este capítulo informativo y atractivo. Por favor, no dudes en contactarnos si tienes alguna pregunta o comentario. ¡Buena suerte en tus estudios!
+
+
+
+    style: max-width:800px;margin:auto;

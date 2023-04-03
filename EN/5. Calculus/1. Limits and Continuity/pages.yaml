@@ -1,1 +1,305 @@
 - page:
+  - head: |
+      <style>
+      .MathJax {
+        display: inline !important;
+      }
+      </style>
+  - Mathjax:
+  - block:
+
+# WHAT ARE LIMITS
+
+    - title m-5 pt-5: What are Limits?
+    - subtitle left m-4: We begin by defining the concept of a limit and discussing why it is important in calculus. We will look at how limits are used to describe the behavior of functions near a given point and explore the different types of limits.
+
+    - stem: Definition of a Limit
+    - text left m-5: "<b>A limit</b> is a value that a function approaches as the input approaches a specific value. For example, consider the function $$f(x) = \\frac{x^2-1}{x-1}$$. As $$x$$ approaches 1, $$f(x)$$ approaches 2. We can write this as:"
+
+    - subtitle: $$\lim_{x \to 1} f(x) = 2$$
+
+    - instruction: You can read this expression as "<i>The limit of f of x as x approaches 1 equals 2.</i>"
+
+    - text left m-5: "This notation indicates that the limit of $$f(x)$$ as $$x$$ approaches 1 is equal to 2. Limits allow us to describe the behavior of a function near a given point, even if the function is not defined at that point. 💡📝"
+
+    - stem: Types of Limits
+    - text left m-5: "There are several different types of limits, including one-sided limits, infinite limits, and limits at infinity. In this section, we will explore these types of limits and look at examples of how they are used in calculus. We will also discuss how to evaluate limits using algebraic techniques, such as factoring and simplification. 🤔💡"
+
+    - stem: Importance of Limits in Calculus
+    - text left m-5: "In calculus, limits are used to define the derivative, which is the rate of change of a function at a given point. The derivative is a fundamental concept in calculus, and it is used to solve a wide range of problems in physics, engineering, and other fields. 💻🌎"
+
+
+    - box has-background-success-light:
+
+      - stem: Student Asks About Limits
+      - Image: BoardProf.png
+      - text left m-3: "<b>Student:</b> Hey, teacher! I've been thinking about limits a lot lately. Can you tell me what they are?"
+      - text left m-3: "<b>Math Teacher:</b> Sure! In calculus, a limit is a value that a function approaches as the input approaches a specific value."
+      - text left m-3: "<b>Student:</b> Hmm, I see. But what if I have a limit on my patience? Does that mean I'm approaching a breaking point? 😩"
+      - text left m-3: "<b>Math Teacher:</b> (laughs) Well, that's certainly a way to think about limits, but it's not exactly the same thing we're talking about in calculus."
+      - text left m-3: "<b>Student:</b> Oh, I see. So, you're saying that I can't use limits to describe my emotional state? 🤔"
+      - text left m-3: "<b>Math Teacher:</b> (chuckles) That's right, but it's always interesting to see how different people interpret mathematical concepts in their own way."
+
+      - text left m-3: "Although <b>limits may seem like a dry and technical topic</b>, they can actually be quite fascinating and can be related to many aspects of our daily lives. Whether we're talking about limits in calculus or limits on our patience, understanding these concepts can help us make sense of the world around us. 😃"
+
+
+
+
+# PROPERTIES OF LIMITS
+
+    - title m-5 pt-5: Properties of Limits
+    - subtitle left m-4: After introducing limits, we will discuss the basic properties of limits, including how to evaluate limits using algebraic techniques such as factoring and simplification.
+
+    - stem: Basic Properties of Limits
+    - text left m-5: "The basic properties of limits are as follows:"
+    - item left mx-5 my-3: "The limit of a sum or difference is equal to the sum or difference of the limits. That is,"
+    - text mx-5 my-3: "$$\\lim_{x \\to a} [f(x) \\pm g(x)] = \\lim_{x \\to a} f(x) \\pm \\lim_{x \\to a} g(x)$$"
+    - item left mx-5 my-3: "The limit of a product is equal to the product of the limits. That is, "
+    - text mx-5 my-3: "$$\\lim_{x \\to a} [f(x) \\cdot g(x)] = \\lim_{x \\to a} f(x) \\cdot \\lim_{x \\to a} g(x)$$"
+    - item left mx-5 my-3: "The limit of a quotient is equal to the quotient of the limits, provided the limit of the denominator is not equal to zero. That is, "
+    - text mx-5 my-3: "$$\\lim_{x \\to a} \\frac{f(x)}{g(x)} = \\frac{\\lim_{x \\to a} f(x)}{\\lim_{x \\to a} g(x)}, \\text{provided} \\lim_{x \\to a} g(x) \\neq 0$$"
+
+    - box has-background-danger-light:
+      - stem: 🤔 Are you confused?
+      - text left m-3: Don't worry, we will soon start using these properties in a more practical way. 😎👨‍🏫📈💡
+
+
+    - stem: Algebraic Techniques for Evaluating Limits
+    - text left m-5: "We can use algebraic techniques to simplify functions and evaluate limits. Some of these techniques include:"
+    - item left mx-5 my-3: "Factoring"
+    - item left mx-5 my-3: "Simplification by rationalizing the numerator or denominator"
+    - item left mx-5 my-3: "Conjugate pairs"
+    - item left mx-5 my-3: "Multiplying by the conjugate"
+    - item left mx-5 my-3: "Using L'Hôpital's rule"
+
+    - text left m-5: "We will explore these techniques in more detail in later sections."
+
+
+# ONE SIDED LIMITS AND CONTINUITY
+
+    - title m-5 pt-5: One-sided Limits and Continuity
+    - subtitle left m-4: We will also introduce the concept of one-sided limits and use them to define continuity. We will explore the different types of continuity and discuss how to identify discontinuities.
+
+    - stem: One-sided Limits
+    - text left m-5: "So far, we have been discussing limits as the input approaches a specific value from both sides. However, sometimes it is useful to consider limits from just one side. We call these one-sided limits."
+    - text left m-5: "If we are considering a limit as the input approaches a specific value from the left-hand side, we write:"
+    - subtitle: $$\lim_{x \to a^-} f(x)$$
+    - text left m-5: "If we are considering a limit as the input approaches a specific value from the right-hand side, we write:"
+    - subtitle: $$\lim_{x \to a^+} f(x)$$
+    - text left m-5: "If both of these limits exist and are equal, we say that the limit exists as the input approaches a specific value, and we write:"
+    - subtitle: $$\lim_{x \to a} f(x)$$
+    
+    - box has-background-danger-light:
+      - stem: 🤔🤯 Can you think of a function where...
+      - text left m-3: ... a limit approached from the left for a given value is different when approached from the right? How would you define that condition? 💭
+
+    - stem: Continuity
+    - text left m-5: "Continuity is an important concept in calculus, and it is closely related to limits. We say that a function is continuous at a point if the limit of the function as the input approaches that point exists and is equal to the value of the function at that point."
+    - text left m-5: "There are three types of continuity that we will discuss:"
+    - item left mx-5 my-3: "Continuous at a point"
+    - item left mx-5 my-3: "Continuous on an open interval"
+    - item left mx-5 my-3: "Continuous on a closed interval"
+    
+    - text left m-5: "In order for a function to be continuous on an open interval, it must be continuous at every point in that interval. In order for a function to be continuous on a closed interval, it must be continuous on the interval and at the endpoints of the interval."
+    - text left m-5: "We can use graphs to help us visualize continuity and discontinuity in functions. For example, a function is continuous at a point if its graph has no breaks or holes at that point. If the graph has a break or a hole at a point, the function is not continuous at that point. We can also use graphs to identify types of discontinuities, such as jump discontinuities and asymptotic discontinuities."
+
+
+# Limit Laws and Calculating Limits
+
+    - title m-5 pt-5: Limit Laws and Calculating Limits
+    - subtitle left m-4: Next, we will introduce the limit laws, which are used to simplify the evaluation of limits. We will also discuss how to use these laws to evaluate more complex limits.
+
+    - stem: Limit Laws
+    - text left m-5: "The limit laws are a set of rules that allow us to simplify the evaluation of limits. These laws are based on the properties of limits that we have already discussed, such as the fact that the limit of a sum is the sum of the limits. Here are some of the most important limit laws:"
+    - item left mx-5 my-3: "The limit of a sum is the sum of the limits."
+    - text m-5: If $$\lim_{x\to a} f(x) = L$$ and $$\lim_{x\to a} g(x) = M$$, then $$\lim_{x\to a} [f(x) + g(x)] = L + M$$.
+    - item left mx-5 my-3: The limit of a product is the product of the limits."
+    - text m-5: If $$\lim_ {x\to a} f(x) = L$$ and $$\lim_{x\to a} g(x) = M$$, then $$\lim_{x\to a} [f(x) \cdot g(x)] = L \cdot M$$.
+    - item left mx-5 my-3: The limit of a quotient is the quotient of the limits, provided the limit of the denominator is not zero.
+    - text m-5: If $$\lim_{x\to a} f(x) = L$$ and $$\lim_{x\to a} g(x) = M$$, and $$\lim_{x\to a} g(x) \neq 0$$, then $$\lim_{x\to a} [f(x) / g(x)] = L / M$$.
+    - item left mx-5 my-3: The limit of a power function is the power function of the limit.
+    - text m-5: If $$\lim_{x\to a} f(x) = L$$ and $$n$$ is a positive integer, then $$\lim_{x\to a} [f(x)^n] = L^n$$.
+
+    - stem: Calculating Limits
+    - text left m-5: "Using the limit laws, we can evaluate more complex limits. Sometimes, we may need to use algebraic techniques such as factoring or simplification before we can apply the limit laws. Here are some examples of how to use the limit laws to calculate limits:"
+    - subtitle: $$\lim_{x\to 3}(x^2+4x-7)$$
+    - text left m-5: "We can use the limit law for sums to write:"
+    - subtitle: $$\lim_{x\to 3} x^2 + \lim_{x\to 3} 4x - \lim_{x\to 3} 7$$
+    - text left m-5: "Then, we can use the limit law for power functions to evaluate each limit:"
+    - subtitle: $$9 + 12 - 7 = 14$$
+
+    - subtitle: $$\lim_{x\to 0}\frac{x^2-x}{x^3-3x^2+2x}$$
+    - text left m-5: "First, we can factor out an $$x$$ from the numerator and a $$x^2$$ from the denominator:"
+    - subtitle: $$\lim_{x\to 0}\frac{x(x-1)}{x^2(x-3)+2x}$$
+    - text left m-5: "Then, we can cancel out the $$x$$ terms:"
+    - subtitle: $$\lim_{x\to 0}\frac{x-1}{x^2-3x+2}$$
+    - text left m-5: "Finally, we can factor the denominator and use the limit law for quotients:"
+    - subtitle: $$\frac{\lim_{x\to 0}(x-1)}{\lim_{x\to 0}(x-1)(x-2)} = \frac{1}{-2} = -\frac{1}{2}$$
+
+# INTERMEDIATE VALUE THEOREM
+
+    - title m-5 pt-5: Intermediate Value Theorem
+    - subtitle left m-4: We will conclude this topic with the intermediate value theorem, which states that if a function is continuous on a closed interval, then it takes on every value between the function values at the endpoints of the interval. We will look at examples of how this theorem can be used to solve problems in calculus.
+
+    - stem: Intermediate Value Theorem
+    - text left m-5: "The intermediate value theorem is a powerful tool in calculus that allows us to prove the existence of solutions to certain types of equations. The theorem states that if a function $$f$$ is continuous on a closed interval $$[a,b]$$, and $$f(a) < c < f(b)$$, then there exists a point $$x$$ in $$[a,b]$$ such that $$f(x) = c$$."
+    - text left m-5: "In other words, if a function starts at one point and ends at another point, and we know that it takes on two specific values between those points, then it must take on every value between those two points as well."
+    - text left m-5: "The intermediate value theorem can be used to solve a wide range of problems in calculus, such as finding roots of equations, proving the existence of maxima and minima, and verifying solutions to differential equations."
+    - text left m-5: "Here is an example of how to use the intermediate value theorem to find a root of an equation:"
+    - subtitle: "Example: Find a root of the equation $$x^3 - 4x - 9 = 0$$ on the interval $$[1,3]$$. "
+    - text left m-5: "First, we can check that the function $$f(x) = x^3 - 4x - 9$$ is continuous on the interval $$[1,3]$$, which it is. Next, we can evaluate $$f(1)$$ and $$f(3)$$ to see that:"
+    - subtitle: "$$f(1) = -12$$"
+    - subtitle: "$$f(3) = 12$$"
+    - text left m-5: "Since $$f(1) < 0 < f(3)$$, the intermediate value theorem guarantees that there exists a point $$x$$ in $$[1,3]$$ such that $$f(x) = 0$$, which means that $$x^3 - 4x - 9 = 0$$ has a root in the interval $$[1,3]$$. We can use numerical methods to approximate the value of the root, or we can use algebraic techniques to find an exact solution." 
+
+
+    - box has-background-success-light:
+
+      - stem: Student Asks About Limits
+      - Image: BoardProf.png
+      - text left m-3: "<b>Student:</b> But why can't infinity be a limit? Doesn't the function approach infinity as the input gets larger and larger?"
+      - text left m-3: "<b>Math Teacher:</b> That's a great question! While some functions do approach infinity as the input approaches a specific value, infinity is not a real number, so it can't be a limit in the usual sense. Limits are used to describe the behavior of functions near a given point, and we need a real number to describe that behavior."
+      - text left m-3: "<b>Student:</b> Hmm, I guess that makes sense. So what you're saying is that I can't use infinity as an excuse for being late to class because I got lost on an infinite road, right?"
+      - text left m-3: "<b>Math Teacher:</b> (laughs) Exactly! You can't use infinity to explain away your tardiness. But you can use limits to explain the behavior of a function as the input approaches a specific value. So, always remember, no matter how lost you get, the limit of your journey can never be infinity. 😄👨‍🏫"
+
+
+    - block parallax:
+      img: MathProfessor.png
+      style: height:300px;
+
+# QUESTIONNAIRE
+
+    - title my-5: Questionnaire
+    - subtitle: Please answer the following questions.
+
+    - stem: What is a limit?
+    - Question:
+        id: Q1
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "The value that a function approaches as the input approaches a specific value."
+          display: "The value that a function approaches as the input approaches a specific value."
+          credit: 1
+          feedback: "Correct! This is the definition of a limit."
+        - value: "The highest value of a function."
+          display: "The highest value of a function."
+          credit: 0
+          feedback: "Incorrect. This is not the definition of a limit."
+        - value: "The lowest value of a function."
+          display: "The lowest value of a function."
+          credit: 0
+          feedback: "Incorrect. This is not the definition of a limit."
+
+    - stem: What is the intermediate value theorem?
+    - Question:
+        id: Q2
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "If a function is continuous on a closed interval, then it takes on every value between the function values at the endpoints of the interval."
+          display:
+          - block:
+            - text left: "If a function is continuous on a closed interval, then it takes on every value between the function values at the endpoints of the interval."
+            style: width:600px;
+          credit: 1
+          feedback: "Correct! This is the statement of the intermediate value theorem."
+        - value: "If a function is continuous on an open interval, then it takes on every value between the function values at the endpoints of the interval."
+          display:
+          - block:
+            - text left: "If a function is continuous on an open interval, then it takes on every value between the function values at the endpoints of the interval."
+            style: width:600px;
+          credit: 0
+          feedback: "Incorrect. This statement is not true for open intervals."
+        - value: "If a function is discontinuous on a closed interval, then it takes on every value between the function values at the endpoints of the interval."
+          display:
+          - block:
+            - text left: "If a function is discontinuous on a closed interval, then it takes on every value between the function values at the endpoints of the interval."
+            style: width:600px;
+          credit: 0
+          feedback: "Incorrect. This statement is not true for discontinuous functions."      
+
+
+    - stem: "What is the limit of the function $$f(x) = \\frac{x^2-4}{x-2}$$ as <br> $$x$$ approaches 2?"
+    - Question: 
+        id: Q3
+        points: 10
+        display: grid
+        random: true
+        options: 
+        - value: "0"
+          display: "0"
+          credit: 0
+          feedback: 
+          - text: "That is incorrect. The correct answer is 4."
+        - value: "4"
+          display: "4"
+          credit: 1
+          feedback:
+          - text: "Right! This is the correct answer."
+        - value: "undefined"
+          display: "Undefined"
+          credit: 0
+          feedback:
+          - text: "That is incorrect. The correct answer is 4."
+          
+    - stem: "What is the limit of the function $$g(x) = \\frac{x^3-8}{x-2}$$ as <br> $$x$$ approaches 2?"
+    - Question: 
+        id: Q4
+        points: 10
+        display: grid
+        random: true
+        options: 
+        - value: "6"
+          display: "6"
+          credit: 0
+          feedback: 
+          - text: "That is incorrect. The correct answer is 12."
+        - value: "12"
+          display: "12"
+          credit: 1
+          feedback:
+          - text: "Right! This is the correct answer."
+        - value: "undefined"
+          display: "It is not Defined"
+          credit: 0
+          feedback:
+          - text: "That is incorrect. The correct answer is 12."
+
+    - stem: "Evaluate the limit $$\\lim_{x\\to 0} \\frac{1}{x}$$"
+    - instruction: "Select the correct answer."
+
+    - Question: 
+        id: Q5
+        points: 10
+        display: grid
+        random: true
+        options: 
+        - value: "$$\\infty$$"
+          display: "$$\\infty$$ (Infinite)"
+          credit: 0
+          feedback: 
+            - text: That is incorrect. The limit is undefined because the function goes to infinity as x approaches 0 from the left or right.
+        - value: "$$\\nexists$$"
+          display: "$$\\nexists$$ (Does not exist)"
+          credit: 1
+          feedback:
+            - text: Right! The limit is undefined because the function goes to infinity as x approaches 0 from the left or right.
+
+
+# CONCLUSION
+
+    - title m-5 pt-5: Conclusion
+    - subtitle left m-4: Congratulations on completing the Limits chapter! Here are some final thoughts on this topic.
+    - stem: The Importance of Limits
+    - text left m-5: Limits are a fundamental concept in calculus that allow us to describe the behavior of functions near a given point. They are used to define derivatives and integrals, which are key tools in many areas of mathematics and science. Without limits, we would not be able to study the rate of change, continuity, and other important properties of functions.
+    - stem: Practical Applications of Limits
+    - text left m-5: Limits are used in a wide range of fields, from physics and engineering to economics and biology. They can be used to model physical phenomena, such as the motion of objects and the flow of fluids, and to analyze complex systems, such as financial markets and ecological populations. Knowing how to evaluate limits and understand their properties is essential for success in many careers.
+    - stem: Further Study
+    - text left m-5: This chapter has provided an introduction to limits and their properties, but there is much more to learn about this topic. If you are interested in pursuing calculus further, there are many resources available to help you, including textbooks, online courses, and academic programs. With dedication and hard work, you can develop a deep understanding of limits and their applications.
+    - text left m-5: We hope that you have found this chapter informative and engaging. Please don't hesitate to reach out if you have any questions or feedback. Good luck in your studies!
+
+
+    style: max-width:800px;margin:auto;
