@@ -1,1 +1,270 @@
 - page:
+  - head: |
+      <style>
+      .MathJax {
+        display: inline !important;
+      }
+      </style>
+  - Mathjax:
+  - block:
+
+# WHAT ARE DERIVATIVES
+
+    - title m-5 pt-5: What are Derivatives?
+    - subtitle left m-4: Derivatives are a fundamental concept in calculus that describe the rate of change of a function at a given point. In this section, we will define derivatives and explore some of the key concepts and applications of this important calculus tool.
+
+    - stem: Definition of a Derivative
+    - text left m-5: "A derivative is the instantaneous rate of change of a function at a given point. It describes how much the function is changing at that specific point, and in which direction. The derivative is defined as the limit of the difference quotient, as the change in input approaches zero."
+
+    - subtitle: $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
+
+    - instruction: You can read this expression as "<i>The derivative of f of x equals the limit as h approaches zero of the quantity f of x plus h minus f of x over h.</i>"
+
+    - text left m-5: "This expression represents the formal definition of a derivative. It tells us that the derivative of a function f at a point x is equal to the limit of the difference quotient as h approaches zero. In other words, the derivative gives us the slope of the tangent line to the graph of the function at that specific point."
+
+    - stem: Applications of Derivatives
+    - text left m-5: "Derivatives have many applications in mathematics, science, engineering, and other fields. Some of the key applications include:"
+    - item left mx-5 my-3: "Finding the maximum and minimum values of a function"
+    - item left mx-5 my-3: "Solving optimization problems"
+    - item left mx-5 my-3: "Describing rates of change in physics and engineering"
+    - item left mx-5 my-3: "Modeling complex systems and phenomena"
+
+    - text left m-5: "By understanding the concept of derivatives and their applications, we can gain deeper insights into the behavior of functions and solve a wide range of real-world problems."
+
+    - title: Properties of Derivatives
+    - text left m-5: "The properties of derivatives include:"
+    - item left mx-5 my-3: "The derivative of a constant function is zero"
+    - item left mx-5 my-3: "The derivative of the identity function is one"
+    - item left mx-5 my-3: "The power rule: the derivative of $$x^n$$ is $$nx^{n-1}$$"
+    - item left mx-5 my-3: "The sum and difference rules: the derivative of a sum or difference is the sum or difference of the derivatives"
+    - item left mx-5 my-3: "The product rule: the derivative of a product is the first function times the derivative of the second function, plus the second function times the derivative of the first function"
+    - item left mx-5 my-3: "The quotient rule: the derivative of a quotient is the denominator times the derivative of the numerator, minus the numerator times the derivative of the denominator, all divided by the square of the denominator"
+
+    - stem: Higher-Order Derivatives
+    - text left m-5: "The derivative of a function can be taken more than once. The second derivative of a function is the derivative of the derivative, and it measures the rate at which the slope of the function is changing. Higher-order derivatives can also be defined, although they are less commonly used."
+
+    - stem: Implicit Differentiation
+    - text left m-5: "Implicit differentiation is a technique used to find the derivative of a function that is defined implicitly by an equation. It involves differentiating both sides of the equation with respect to the independent variable, and then solving for the derivative of the dependent variable. Implicit differentiation is often used in problems involving curves and surfaces."
+
+# STUDENT ASKS
+
+    - box has-background-success-light:
+
+      - stem: Student Asks About Derivatives
+      - Image: BoardProf.png
+      - text left m-3: "<b>Student:</b> Hey, teacher! I've been thinking about derivatives, and I think I finally understand what they are."
+      - text left m-3: "<b>Math Teacher:</b> Great to hear! So, what do you think a derivative is?"
+      - text left m-3: "<b>Student:</b> Well, I think it's like the coffee I had this morning. When I take a sip, I'm getting the change in the temperature and the taste all at once. 🤔"
+      - text left m-3: "<b>Math Teacher:</b> (surprised) Hmm, that's certainly an interesting way to think about it! But in a way, you're right. The derivative of a function does give us information about how it changes with respect to the input variable, just like how taking a sip of coffee gives us information about how its temperature and taste are changing."
+      - text left m-3: "<b>Student:</b> Wow, I never thought about it like that before! Calculus is pretty cool. 😎"
+      - text left m-3: "<b>Math Teacher:</b> (smiling) Yes, it is! And there's a lot more to learn, so let's keep going. ☕️📈"
+
+      - text left m-3: "Although <b>derivatives may seem like a dry and technical topic</b>, they can actually be quite fascinating and can be related to many aspects of our daily lives. Whether we're talking about the rate of change of a function, the slope of a curve, or even the optimal brewing time for a cup of coffee, understanding these concepts can help us make sense of the world around us. 😃"
+
+
+
+
+    # APPLYING THE DEFINITION OF DERIVATIVE
+
+    - title m-5 pt-5: Applying the Definition of Derivative
+    - subtitle left m-4: In this section, we will show how the definition of derivative can be used to obtain the rules of derivation for various types of functions.
+
+    - stem: Definition of Derivative
+    - text left m-5: "The derivative of a function $$f(x)$$ with respect to $$x$$ is defined as:"
+    - text mx-5 my-3: "$$f'(x) = \\lim_{h \\to 0} \\frac{f(x + h) - f(x)}{h}$$"
+    - text left m-5: "This definition gives us the instantaneous rate of change of $$f(x)$$ at a given point $$x$$. By applying this definition to various types of functions, we can derive rules for finding the derivative of those functions."
+
+    - stem: The constant rule
+    - text left m-5: "Let's see what happens when you apply the derivative definition to a constant."
+    - text mx-5 my-3: "$$\\frac{d}{dx}(c) = \\lim_{h\\to 0} \\frac{c-c}{h} = 0$$"
+    - text left m-5: "This means that the derivative of a constant is always 0, since the value of the function doesn't change."
+    - text left m-5: "Now let's look at what happens when we take the derivative of $$x$$ with respect to $$x$$."
+    - text mx-5 my-3: "$$\\frac{d}{dx}(x) = \\lim_{h\\to 0} \\frac{(x+h) - x}{h} = \\lim_{h\\to 0} \\frac{h}{h} = 1$$"
+    - text left m-5: "So the derivative of $$x$$ with respect to $$x$$ is 1. This might seem trivial, but it's an important result that will come up again and again in calculus."
+
+    - stem: Sum and Difference Rules
+    - text left m-5: "The sum and difference rules state that the derivative of a sum or difference of two functions $$f(x)$$ and $$g(x)$$ is:"
+    - text mx-5 my-3: "$$(f(x) \\pm g(x))' = f'(x) \\pm g'(x)$$"
+    - text left m-5: "To derive these rules, we can apply the definition of derivative as follows:"
+    - text mx-5 my-3: "$$(f(x) + g(x))' = \\lim_{h \\to 0} \\frac{f(x+h) + g(x+h) - f(x) - g(x)}{h}$$"
+    - text mx-5 my-3: "$$= \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h} + \\frac{g(x+h) - g(x)}{h}$$"
+    - text mx-5 my-3: "$$= f'(x) + g'(x)$$"
+    - text mx-5 my-3: "$$(f(x) - g(x))' = \\lim_{h \\to 0} \\frac{f(x+h) - g(x+h) - f(x) + g(x)}{h}$$"
+    - text mx-5 my-3: "$$= \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h} - \\frac{g(x+h) - g(x)}{h}$$"
+    - text mx-5 my-3: "$$= f'(x) - g'(x)$$"
+
+    - stem: The Product Rule
+    - text left m-5: "The product rule is a rule for finding the derivative of a product of two functions. According to the product rule, if $$f(x) = g(x)h(x)$$, then:"
+    - text mx-5: "$$f'(x) = g'(x)h(x) + g(x)h'(x)$$"
+    - text left m-5: "where $$g'(x)$$ and $$h'(x)$$ are the derivatives of $$g(x)$$ and $$h(x)$$, respectively."
+
+    - stem: The Quotient Rule
+    - text left m-5: "The quotient rule is a rule for finding the derivative of a quotient of two functions. According to the quotient rule, if $$f(x) = \\frac{g(x)}{h(x)}$$, where $$h(x) \\neq 0$$, then:"
+    - text mx-5: "$$f'(x) = \\frac{g'(x)h(x) - g(x)h'(x)}{(h(x))^2}$$"
+    - text left m-5: "where $$g'(x)$$ and $$h'(x)$$ are the derivatives of $$g(x)$$ and $$h(x)$$, respectively."
+
+    - stem: The Power Rule
+    - text left m-5: "The power rule is a useful rule for finding the derivative of a function of the form $$f(x) = x^n$$ where $$n$$ is a constant. According to the definition of the derivative, we have:"
+    - text mx-5: "$$f'(x) = \\lim_{h \\to 0} \\frac{(x+h)^n - x^n}{h}$$"
+    - text left m-5: "Expanding the binomial and cancelling like terms, we get:"
+    - text mx-5: "$$f'(x) = \\lim_{h \\to 0} \\frac{x^n + nx^{n-1}h + \\text{(terms with } h^2 \\text{ or higher powers)}}{h}$$"
+    - text left m-5: "As $$h$$ approaches 0, all the terms with higher powers of $$h$$ become insignificant, and we are left with:"
+    - text mx-5: "$$f'(x) = \\lim_{h \\to 0} \\frac{x^n + nx^{n-1}h}{h}$$"
+    - text left m-5: "Factoring out $$x^{n-1}$$, we obtain:"
+    - text mx-5: "$$f'(x) = \\lim_{h \\to 0} \\frac{x^{n-1}(x + nh)}{h}$$"
+    - text left m-5: "As $$h$$ approaches 0, the term $$x+nh$$ approaches $$x$$, and we are left with:"
+    - text mx-5: "$$f'(x) = \\lim_{h \\to 0} \\frac{x^{n-1}(x + nh)}{h} = \\lim_{h \\to 0} (x^{n-1}(x + nh))' = x^{n-1} \\cdot 1 = nx^{n-1}$$"
+    - text left m-5: "Thus, we have derived the power rule: if $$f(x) = x^n$$, then $$f'(x) = nx^{n-1}$$."
+
+    - box has-background-success-light:
+
+      - stem: Student Asks About Derivatives
+      - Image: BoardProf.png
+      - text left m-3: "<b>Student:</b> Professor, I think I discovered something about derivatives. 🤔"
+      - text left m-3: "<b>Math Teacher:</b> Oh, great, and what is that? 🧐"
+      - text left m-3: "<b>Student:</b> I realized that sometimes they don't exist. Like, right at the edges of a plot chart. If it can't be plotted, it doesn't exist! 🤷‍♀️"
+      - text left m-3: "<b>Math Teacher:</b> Well, that is a very interesting observation, but not for the right reasons. While it's true that some functions may not have a derivative at certain points, it's not because they can't be plotted. In fact, some functions that have a discontinuity can still be plotted, but they don't have a well-defined derivative at the point of discontinuity. 😎"
+      - text left m-3: "<b>Student:</b> Wait, so what exactly is a discontinuity? And why does it affect the derivative? 🤔"
+      - text left m-3: "<b>Math Teacher:</b> A discontinuity is a point where a function is not continuous. In other words, it's a point where the function has a sudden jump, hole, or infinite oscillation. Since the derivative measures the rate of change of a function, it can't be well-defined at a point where the function is discontinuous. So, while the function may still be plotted, its derivative is undefined at the point of discontinuity. 🤯"
+      - text left m-3: "<b>Student:</b> Ah, I see. That makes sense now. Thanks for explaining it to me, professor. 😄"
+      - text left m-3: "<b>Math Teacher:</b> Anytime, always happy to help! Remember, understanding the behavior of functions and their derivatives is key to mastering calculus. 🧑‍🏫"
+
+
+    - block parallax:
+      img: MathProfessor.png
+      style: height:300px;
+
+# QUESTIONNAIRE
+
+    - title my-5: Questionnaire
+    - subtitle: Please answer the following questions.
+
+    - stem: What is a derivative?
+    - Question:
+        id: Q1
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "The rate at which a function is changing at a specific point."
+          display: "The rate at which a function is changing at a specific point."
+          credit: 1
+          feedback: "Correct! This is the definition of a derivative."
+        - value: "The highest value of a function."
+          display: "The highest value of a function."
+          credit: 0
+          feedback: "Incorrect. This is not the definition of a derivative."
+        - value: "The lowest value of a function."
+          display: "The lowest value of a function."
+          credit: 0
+          feedback: "Incorrect. This is not the definition of a derivative."
+          
+    - stem: What is the purpose of the derivative?
+    - Question:
+        id: Q2
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "To describe the rate of change of a function at a specific point."
+          display: "To describe the rate of change of a function at a specific point."
+          credit: 1
+          feedback: "Correct! This is the purpose of a derivative."
+        - value: "To find the highest value of a function."
+          display: "To find the highest value of a function."
+          credit: 0
+          feedback: "Incorrect. This is not the purpose of a derivative."
+        - value: "To find the lowest value of a function."
+          display: "To find the lowest value of a function."
+          credit: 0
+          feedback: "Incorrect. This is not the purpose of a derivative."
+
+
+    - stem: "What is the derivative of the function $$f(x) = 3x^2 - 2x + 1?$$"
+    - Question: 
+        id: Q3
+        points: 10
+        display: grid
+        random: true
+        options: 
+        - value: "6x - 2"
+          display: "$$6x - 2$$"
+          credit: 1
+          feedback: 
+          - text: "Correct! This is the derivative of the given function."
+        - value: "3x^3 - x^2 + x"
+          display: "$$3x^3 - x^2 + x$$"
+          credit: 0
+          feedback:
+          - text: "That is incorrect. Please review the rules of differentiation."
+        - value: "3x^2 - 2x"
+          display: "$$3x^2 - 2x$$"
+          credit: 0
+          feedback:
+          - text: "That is not the correct derivative of the given function."
+          
+    - stem: "What is the derivative of the function $$g(x) = \\sqrt{2x - 1}?$$"
+    - Question: 
+        id: Q4
+        points: 10
+        display: grid
+        random: true
+        options: 
+        - value: "$$\\frac{1}{\\sqrt{2x - 1}}$$"
+          display: "$$\\frac{1}{\\sqrt{2x - 1}}$$"
+          credit: 1
+          feedback: 
+          - text: "Correct! This is the derivative of the given function."
+        - value: "$$\\frac{1}{2\\sqrt{2x - 1}}$$"
+          display: "$$\\frac{1}{2\\sqrt{2x - 1}}$$"
+          credit: 0
+          feedback:
+          - text: "That is incorrect. Please review the rules of differentiation."
+        - value: "$$\\sqrt{2x - 1}$$"
+          display: "$$\\sqrt{2x - 1}$$"
+          credit: 0
+          feedback:
+          - text: "That is not the correct derivative of the given function."
+
+
+    - stem: "What is the derivative of the function $$f(x) = |x|$$ at $$x = 0$$?"
+    - instruction: "Select the correct answer."
+
+    - Question: 
+        id: Q5
+        points: 10
+        display: grid
+        random: true
+        options: 
+        - value: "$$1$$"
+          display: "$$1$$"
+          credit: 0
+          feedback: 
+            - text: "That is incorrect. The derivative does not exist at x = 0."
+        - value: "$$-1$$"
+          display: "$$-1$$"
+          credit: 0
+          feedback:
+            - text: "That is incorrect. The derivative does not exist at x = 0."
+        - value: "indeterminate"
+          display: "indeterminate"
+          credit: 1
+          feedback:
+            - text: "Right! The derivative does not exist at x = 0 because the function has a sharp corner at that point. However, it's interesting to note that the derivative when approaching from the right is 1, while the derivative when approaching from the left is -1."
+
+
+
+# CONCLUSION
+
+    - title m-5 pt-5: Conclusion
+    - subtitle left m-4: Congratulations on completing the Derivatives chapter! Here are some final thoughts on this topic.
+    - stem: The Importance of Derivatives
+    - text left m-5: Derivatives are a fundamental concept in calculus that allow us to study the rate of change of functions. They are used to model a wide range of phenomena in mathematics, science, and engineering, from the motion of objects and the growth of populations to the behavior of financial markets and the design of computer algorithms. Without derivatives, many areas of modern technology and research would not be possible.
+    - stem: Practical Applications of Derivatives
+    - text left m-5: Derivatives have many practical applications in fields such as physics, engineering, economics, and biology. They can be used to optimize processes, design efficient systems, and understand complex behavior in natural and artificial systems. Knowing how to calculate derivatives and apply them to real-world problems is an important skill for success in many careers.
+    - stem: Further Study
+    - text left m-5: This chapter has provided an introduction to derivatives and their properties, but there is much more to learn about this topic. If you are interested in pursuing calculus further, there are many resources available to help you, including textbooks, online courses, and academic programs. With dedication and hard work, you can develop a deep understanding of derivatives and their applications.
+    - text left m-5: We hope that you have found this chapter informative and engaging. Please don't hesitate to reach out if you have any questions or feedback. Good luck in your studies!
+
+
+    style: max-width:800px;margin:auto;
