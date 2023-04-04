@@ -1,1 +1,189 @@
 - page:
+  - head: |
+      <style>
+      .MathJax {
+        display: inline !important;
+      }
+      </style>
+  - Mathjax:
+  - block:
+
+# DERIVATIVES IN PHYSICS
+
+    - title m-5 pt-5: Derivatives in Physics
+    - text left m-5: "Calculus is a powerful tool for understanding the behavior of physical systems, and rates of change are a fundamental concept in this regard. Rates of change are used to describe how a physical quantity, such as position, velocity, or acceleration, changes over time, and are closely related to the concept of derivative."
+    - text left m-5: "In this chapter, we will explore a couple of physics problems that make use of derivatives. This will demonstrate how the seemingly abstract concept of derivatives is actually highly applicable to real-world situations." 
+
+# MOTION AND CLASSICAL MECHANICS
+
+    - title m-5 pt-5: Motion and Classical Mechanics
+    - text left m-5: "Classical mechanics is the branch of physics that deals with the motion of objects under the influence of forces. Calculus plays a fundamental role in classical mechanics, as it allows us to describe and analyze the motion of objects using rates of change, such as velocity and acceleration."
+    - text left m-5: "Velocity is the rate of change of position with respect to time, while acceleration is the rate of change of velocity with respect to time. Both velocity and acceleration can be measured using calculus, by finding the derivatives of position and velocity with respect to time, respectively."
+    - text left m-5: "For example, if we have a particle moving in a straight line, we can measure its velocity by finding the derivative of its position with respect to time. If the position of the particle is given by the function $$x(t) = 3t^2 + 2t + 1$$, then its velocity is given by the derivative of the function, which is $$v(t) = x'(t) = 6t + 2$$."
+    - text left m-5: "Acceleration is also an important concept in classical mechanics, as it is related to the forces acting on a physical system. For example, the acceleration of an object is proportional to the net force acting on it, according to Newton's second law of motion."
+
+
+# DERIVATIVES IN PHYSICS
+
+    - stem: Free Fall Motion
+    - text left m-5: "One of the most fundamental applications of calculus in physics is the study of free fall motion. Free fall motion refers to the motion of an object that is only subject to the force of gravity, and is an example of uniformly accelerated motion."
+    - text left m-5: "The position of an object in free fall can be determined using calculus, specifically by finding the derivative of the velocity function with respect to time. The key formulas for free fall motion are:"
+    - item left mx-5 my-3: "The position function: $$s(t) = \\frac{1}{2}gt^2 + v_0t + s_0$$ where $$s_0$$ is the initial position, $$v_0$$ is the initial velocity, $$g$$ is the acceleration due to gravity (approximately 9.8 m/s^2), and $$t$$ is time."
+    - item left mx-5 my-3: "The velocity function: $$v(t) = gt + v_0$$ where $$v_0$$ is the initial velocity, $$g$$ is the acceleration due to gravity, and $$t$$ is time."
+    - item left mx-5 my-3: "The acceleration function: $$a(t) = g$$ where $$g$$ is the acceleration due to gravity, and is a constant."
+    - text left m-5: "By using these formulas, we can model the motion of objects in free fall and make predictions about their behavior. Understanding free fall motion is essential in many areas of physics and engineering, from designing parachutes and airbags to studying the behavior of celestial bodies."
+
+
+
+
+# STUDENT ASKS
+
+    - box has-background-success-light:
+      - stem: Student Asks About Free Fall Motion
+      - Image: BoardProf.png
+      - text left m-3: "<b>Student:</b> Professor, I have a question, sorry if it is totally unrelated to derivatives, but, I was wondering how can you know the time of an object in free fall to hit the ground."
+      - text left m-3: "<b>Math Teacher:</b> Actually, that's a great question, and it's more related to derivatives than you might think. One way to solve this problem is to use calculus and the equations of motion, which involve derivatives of position and time. So, you're right on topic! 😄"
+      - text left m-3: "<b>Student:</b> Really? I thought I was falling through the lecture! 😅"
+      - text left m-3: "<b>Math Teacher:</b> Haha, don't worry, we won't let you fall. But speaking of falling, did you know that the famous physicist Galileo Galilei conducted experiments on falling objects by dropping them off the Leaning Tower of Pisa? 🤯"
+      - text left m-3: "<b>Student:</b> Wow, really? That's kind of crazy! 😲"
+      - text left m-3: "<b>Math Teacher:</b> Yes, it is! But it just goes to show that even the most unexpected things can lead to scientific discoveries. So don't be afraid to ask seemingly unrelated questions, you never know where they might lead! 👍"
+
+
+    # - box has-background-success-light:
+    #   - stem: Un Estudiante Pregunta Sobre el Movimiento de Caída Libre
+    #   - Image: BoardProf.png
+    #   - text left m-3: "<b>Estudiante:</b> Profesor, tengo una pregunta, perdón si no tiene nada que ver con las derivadas, pero me preguntaba cómo se puede saber el tiempo que tarda un objeto en caída libre en llegar al suelo."
+    #   - text left m-3: "<b>Profesor:</b> En realidad, es una excelente pregunta, y está más relacionada con las derivadas de lo que podrías pensar. Una forma de resolver este problema es usar el cálculo y las ecuaciones de movimiento, que involucran derivadas de la posición y el tiempo. ¡Así que estás en el tema correcto! 😄"
+    #   - text left m-3: "<b>Estudiante:</b> ¿En serio? ¡Pensé que se me caía la cara de la pena por hacer una pregunta fuera de lugar!"
+    #   - text left m-3: "<b>Profesor:</b> ¡No te preocupes! Aquí no dejamos nada caer. Pero hablando de caídas, ¿sabías que el famoso físico Galileo Galilei realizó experimentos con objetos en caída libre dejándolos caer desde la Torre Inclinada de Pisa?"
+    #   - text left m-3: "<b>Estudiante:</b> ¡Wow, en serio? ¡Eso es algo loco!"
+    #   - text left m-3: "<b>Profesor:</b> ¡Sí, lo es! Pero demuestra que incluso las cosas más inesperadas pueden llevar a descubrimientos científicos. Así que no tengas miedo de hacer preguntas aparentemente no relacionadas, nunca sabes a dónde pueden llevar."
+
+
+    - stem: Free Fall Example
+    - text left m-5: "Suppose we drop a ball from the top of a 100-meter building. The position of the ball at any time t can be described by the function:"
+    - text center my-3: $$s(t) = 100 - \frac{1}{2}gt^2$$
+    - text left m-5: "Where g is the acceleration due to gravity (approximately 9.8 meters per second squared)."
+    - text left m-5: "To find the velocity of the ball at any time t, we can take the first derivative of the position function:"
+    - text center my-3: $$v(t) = s'(t) = -gt$$
+    - text left m-5: "To find the acceleration of the ball at any time t, we can take the second derivative of the position function:"
+    - text center my-3: $$a(t) = v'(t) = s''(t) = -g$$
+    - text left m-5: "Notice that the acceleration is constant and equal to the acceleration due to gravity. This makes sense, since the only force acting on the ball is gravity, which is a constant force."
+    - text left m-5: "Using these equations, we can answer questions such as how long it takes for the ball to hit the ground. This occurs when the position of the ball is equal to zero:"
+    - text center my-3: $$0 = 100 - \frac{1}{2}gt^2$$
+    - text left m-5: "Solving for t gives:"
+    - text center my-3: $$t = \sqrt{\frac{200}{g}} \approx 4.52$$
+    - text left m-5: "So the ball hits the ground approximately 4.52 seconds after being dropped."
+
+    - block parallax:
+      img: MathProfessor.png
+      style: height:300px;
+
+# QUESTIONNAIRE
+
+    - title my-5: Questionnaire
+    - subtitle: Please answer the following questions.
+
+    - stem: What is the definition of a derivative?
+    - Question:
+        id: Q1
+        points: 8
+        display: grid
+        random: true
+        options:
+        - value: "The rate of change of a function with respect to its input."
+          display: "The rate of change of a function with respect to its input."
+          credit: 1
+          feedback: "Correct! The derivative of a function is the rate of change of the function with respect to its input."
+        - value: "The value of a function at a specific point."
+          display: "The value of a function at a specific point."
+          credit: 0
+          feedback: "Incorrect. This is not the definition of a derivative."
+        - value: "The integral of a function."
+          display: "The integral of a function."
+          credit: 0
+          feedback: "Incorrect. This is not the definition of a derivative."
+
+    - stem: What is the relationship between velocity and acceleration?
+    - Question:
+        id: Q2
+        points: 8
+        display: grid
+        random: true
+        options:
+        - value: "Acceleration is the rate of change of velocity with respect to time."
+          display: "Acceleration is the rate of change of velocity with respect to time."
+          credit: 1
+          feedback: "Correct! Acceleration is the rate of change of velocity with respect to time."
+        - value: "Velocity is the rate of change of acceleration with respect to time."
+          display: "Velocity is the rate of change of acceleration with respect to time."
+          credit: 0
+          feedback: "Incorrect. This is not the relationship between velocity and acceleration."
+        - value: "Velocity and acceleration are independent quantities."
+          display: "Velocity and acceleration are independent quantities."
+          credit: 0
+          feedback: "Incorrect. Velocity and acceleration are related quantities." 
+
+    - stem: "Suppose a ball is thrown upward from the ground with an initial velocity of 20 m/s. What is its velocity at a height of 50 meters? (Neglect air resistance)"
+    - instruction: "Hint: Use the equation of motion for free fall."
+    - Question:
+        id: Q4
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "10 m/s"
+          display: "10 m/s"
+          credit: 1
+          feedback:
+          - text: "Correct! You can solve this problem by using the equation of motion for free fall and finding the velocity at a height of 50 meters."
+        - value: "20 m/s"
+          display: "20 m/s"
+          credit: 0
+          feedback:
+          - text: "Incorrect. Remember that the acceleration due to gravity causes the velocity to decrease as the ball rises."
+        - value: "0 m/s"
+          display: "0 m/s"
+          credit: 0
+          feedback:
+          - text: "Incorrect. Remember that the ball still has some upward velocity when it reaches a height of 50 meters."
+          
+    - stem: "A car traveling at a constant speed of 60 km/h accelerates uniformly to a speed of 90 km/h over a distance of 300 meters. What is its acceleration?"
+    - instruction: "Hint: Use the equation for acceleration in terms of initial and final velocities, and distance."
+    - Question:
+        id: Q5
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "2.78 m/s^2"
+          display: "2.78 m/s^2"
+          credit: 1
+          feedback:
+          - text: "Correct! You can use the equation for acceleration in terms of initial and final velocities, and distance, to solve for the acceleration."
+        - value: "9.81 m/s^2"
+          display: "9.81 m/s^2"
+          credit: 0
+          feedback:
+          - text: "Incorrect. This is the acceleration due to gravity, but it is not relevant to this problem."
+        - value: "0.93 m/s^2"
+          display: "0.93 m/s^2"
+          credit: 0
+          feedback:
+          - text: "Incorrect. Please review the equation for acceleration in terms of initial and final velocities, and distance."
+
+
+# CONCLUSION
+
+    - title m-5 pt-5: Conclusion
+    - subtitle left m-4: Congratulations on completing the Derivatives in Physics chapter! Here are some final thoughts on this topic.
+    - stem: The Importance of Derivatives in Physics
+    - text left m-5: Derivatives are a fundamental concept in physics that allow us to study the behavior of physical systems. They are used to describe rates of change of physical quantities, such as position, velocity, and acceleration, and are essential to understanding the motion of objects, the behavior of fluids, and the transfer of energy in systems. Without derivatives, we would not be able to make accurate predictions or design efficient systems in many areas of physics.
+    - stem: Practical Applications of Derivatives in Physics
+    - text left m-5: Derivatives have many practical applications in fields such as mechanics, thermodynamics, fluid dynamics, and many more. They can be used to model the motion of objects, design efficient systems for energy transfer, and optimize processes in a variety of natural and artificial systems. Knowing how to apply derivatives to real-world problems is an important skill for success in many physics-related careers.
+    - stem: Further Study
+    - text left m-5: This chapter has provided an introduction to derivatives in physics and their applications, but there is much more to learn about this topic. If you are interested in pursuing physics further, there are many resources available to help you, including textbooks, online courses, and academic programs. With dedication and hard work, you can develop a deep understanding of derivatives and their applications in physics.
+    - text left m-5: We hope that you have found this chapter informative and engaging. Please don't hesitate to reach out if you have any questions or feedback. Good luck in your studies!
+
+
+    style: max-width:800px;margin:auto;
