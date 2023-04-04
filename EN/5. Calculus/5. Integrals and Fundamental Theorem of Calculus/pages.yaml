@@ -1,0 +1,292 @@
+- page:
+  - head: |
+      <style>
+      .MathJax {
+        display: inline !important;
+      }
+      </style>
+  - Mathjax:
+  - block:
+
+# INDEFINITE INTEGRALS AND INTEGRATION RULES
+
+
+    - title m-5 pt-5: Integrals and Fundamental Theorem of Calculus
+    - subtitle left m-4: The integral is the opposite of the derivative and is a fundamental concept in calculus. In this section, we will define the integral and explore some of the key concepts and applications of this important calculus tool.
+
+    - stem: Applications of the Integral
+    - text left m-5: "The  integral has many applications in mathematics, science, and engineering. It is used to find areas under curves, volumes of solids of revolution, and the solutions to differential equations. The ability to evaluate integrals is a crucial skill in many fields, including physics, economics, and statistics."
+
+    - stem: The History of Integrals
+    - text left m-5: "The concept of integration has its roots in ancient civilizations, where people used numerical methods to solve problems related to finding the area of shapes. For example, the Egyptians used a formula for the area of a trapezoid that was equivalent to integrating a linear function. However, it wasn't until the invention of calculus that the integral became a well-defined concept."
+
+    - stem: The Idea of a Summation
+    - text left m-5: "The idea of an integral is based on the concept of a summation. A summation is the process of adding up a sequence of numbers, and it can be used to find the area under a curve by dividing it into small rectangles and adding up their areas."
+
+    - stem: The Infinitesimal Sum
+    - text left m-5: "In the 17th century, mathematicians began to use the concept of the infinitesimal to define the integral. The idea was to divide a curve into an infinite number of infinitesimal rectangles, each with a width of dx and a height of f(x). The area of each rectangle is given by f(x)dx, and the total area under the curve is the sum of all these rectangles."
+
+
+# STUDENT ASKS
+
+    - box has-background-success-light:
+      - stem: Student Asks About Integrals
+      - Image: BoardProf.png
+      - text left m-3: "<b>Student:</b> Integrals then are like sums, and derivatives are like the opposite operation, that would be differences, right professor? 🤔"
+      - text left m-3: "<b>Math Teacher:</b> Yes, that is a good way of looking at it. 👍"
+      - text left m-3: "<b>Student:</b> Then why is it that in calculus we start first with derivatives and then integrals? It is like learning first to subtract and then to add. 🤔"
+      - text left m-3: "<b>Math Teacher:</b> That's a great question! The reason we start with derivatives is because they are easier to understand and calculate than integrals. Derivatives give us information about how a function is changing at a particular point, which is often more useful than just knowing the total change over an interval. Once we have a good understanding of derivatives, we can move on to integrals, which give us information about the total change over an interval. So while it may seem backwards, starting with derivatives is actually a natural progression towards understanding integrals. Does that make sense? 🤔👨‍🏫"
+      - text left m-3: "<b>Student:</b> Yes, I think I understand. It's like building up from the basics to the more complex concepts. Thanks for explaining it, professor! 😊"
+      - text left m-3: "<b>Math Teacher:</b> Exactly! And don't hesitate to ask if you have any more questions. Learning calculus can be challenging, but it's also a fascinating subject with many real-world applications. 😃"
+
+    
+    - title m-5 pt-5: Definite and Indefinite Integrals
+    - text left m-5: "There are two types of integrals: definite and indefinite. A definite integral is used to find the area under a curve between two specific points, and is denoted by the symbol $$\\int_a^b f(x)dx$$. An indefinite integral is used to find a function that, when differentiated, gives the original function, and is denoted by the symbol $$\\int f(x)dx$$. The process of finding an indefinite integral is called integration, and is essentially the reverse of differentiation."
+
+    - stem: Definition of an Indefinite Integral
+    - text left m-5: "The indefinite integral of a function is a family of functions that have the original function as their derivative. It is also called the antiderivative of the function. The indefinite integral is represented by the symbol $$\\int f(x) dx$$, where $$f(x)$$ is the function being integrated, and $$dx$$ represents the variable of integration. The process of finding the indefinite integral is called integration."
+
+    - stem: Definition of a Definite Integral
+    - text left m-5: "The definite integral of a function is a number that represents the area under the curve of the function over a specific interval. It is represented by the symbol $$\\int_a^b f(x) dx$$, where $$f(x)$$ is the function being integrated, and $$a$$ and $$b$$ represent the lower and upper bounds of the interval of integration, respectively. The process of finding the definite integral is called integration, and the result is a numerical value."
+
+    - box has-background-success-light:
+      - stem: Student Asks About Integrals
+      - Image: BoardProf.png
+      - text left m-3: "<b>Student:</b> Ok, I can understand why we first learn limits, then derivatives and then integrals, as it is the best way to explain. But were these concept developed together and in that order too? 🤔"
+      - text left m-3: "<b>Math Teacher:</b> Well, at the time, mathematicians were interested in solving different types of problems, and they realized that these two concepts were closely related but distinct. Derivatives were useful for studying rates of change and slopes of curves, while integrals were useful for calculating areas, volumes, and accumulations. It wasn't until much later that the connection between derivatives and integrals was fully understood, and it's now known as the Fundamental Theorem of Calculus. 😉"
+      - text left m-3: "<b>Student:</b> I see, that makes sense. So, how do we go from a summation to an integral? 🤔"
+      - text left m-3: "<b>Math Teacher:</b> Ah, that's a great question. Let me explain. Imagine we have a function $$f(x)$$ that we want to integrate over an interval $$[a,b]$$. We can divide the interval into $$n$$ subintervals of equal width, where the width is given by $$(b-a)/n$$. We can then choose a point $$x_i$$ in each subinterval and calculate the area of the rectangle with base $$x_i$$ and height $$f(x_i)$$. Adding up all these rectangles gives us the Riemann sum, which is an approximation of the area under the curve. 😊"
+      - text left m-3: "<b>Student:</b> Okay, I think I get it. But how do we make the approximation more accurate? 🤔"
+      - text left m-3: "<b>Math Teacher:</b> Good question. We can make the approximation more accurate by taking a limit as n approaches infinity, which gives us an infinitesimal sum. This sum is represented by the integral symbol and is given by the limit of the Riemann sum as $$n$$ approaches infinity. 😃"
+      - text left m-3: "<b>Student:</b> Oh, I see! So, the integral is like an infinite summation of infinitesimal areas under the curve. 😮"
+      - text left m-3: "<b>Math Teacher:</b> Exactly! And just like how derivatives can give us important information about the behavior of functions, integrals can give us important information about the accumulated behavior of functions over a given interval. 😊"
+
+
+# FUNDAMENTAL THEOREM OF CALCULUS
+
+    - title m-5 pt-5: Fundamental Theorem of Calculus
+    - text left m-5: "The fundamental theorem of calculus, discovered independently by Isaac Newton and Gottfried Leibniz, states that integration and differentiation are inverse operations. In other words, if we differentiate an integral, we get the original function, and if we integrate a derivative, we get the original function. This theorem provides a powerful tool for solving problems in calculus, and forms the basis for much of modern mathematics and science."
+
+    - text left m-5: "The Fundamental Theorem of Calculus establishes a relationship between derivatives and integrals, and it has two parts."
+
+    - stem: "Part I: The Indefinite Integral"
+    - text left m-5: "The first part of the Fundamental Theorem of Calculus states that if we have a continuous function $$f(x)$$, then the function $$F(x)$$ defined by the indefinite integral of $$f(x)$$ is differentiable and $$F'(x) = f(x)$$. In other words, the derivative of the indefinite integral of a function is the original function."
+
+    - text left m-5: "Let's demonstrate this with an example. Suppose we have the function $$f(x) = 2x$$. We can find its indefinite integral by integrating with respect to x:"
+    - text: " $$\\int 2x dx = x^2 + C$$"
+      
+    - text left m-5: "where $$C$$ is the constant of integration. Now, we can take the derivative of $$F(x) = x^2 + C$$:"
+    - text: " $$F'(x) = (x^2 + C)' = 2x$$"
+      
+    - text left m-5: "We can see that the derivative of the indefinite integral of $$f(x)$$ is equal to $$f(x)$$, as expected."
+
+    - stem: "Part II: The Definite Integral"
+    - text left m-5: "The second part of the Fundamental Theorem of Calculus states that if we have a continuous function $$f(x)$$ defined on the interval $$[a, b]$$, then the definite integral of $$f(x)$$ over the interval $$[a, b]$$ can be calculated by evaluating the indefinite integral of $$f(x)$$ at the endpoints and subtracting:"
+
+    - text: " $$\\int_{a}^{b} f(x) dx = F(b) - F(a)$$"
+      
+    - text left m-5: "Let's demonstrate this with our previous example. Suppose we want to find the definite integral of $$f(x) = 2x$$ over the interval $$[0, 1]$$. We can first find its indefinite integral:"
+    - text: " $$\\int 2x dx = x^2 + C$$"
+      
+    - text left m-5: "Now, we can evaluate the indefinite integral at the endpoints and subtract:"
+    - text: " $$\\int_{0}^{1} 2x dx = [x^2]_{0}^{1} = 1 - 0 = 1$$"
+      
+    - text left m-5: "So, we can see that the definite integral of $$f(x)$$ over the interval $$[0, 1]$$ is equal to 1."
+
+
+# INTEGRATION RULES AND PROPERTIES
+
+    - title m-5 pt-5: Integration Rules
+    - text left m-5: "Integration rules are a set of formulas and techniques that allow us to evaluate integrals of various types of functions. The most basic integration rule is the power rule, which states that the indefinite integral of a function of the form $$f(x) = x^n$$ is given by the formula $$\\int f(x) dx = \\frac{1}{n+1}x^{n+1} + C$$, where $$C$$ is the constant of integration."
+
+    - stem: Properties of Integrals
+    - text left m-5: "The properties of integrals include:"
+    - item left mx-5 my-3: "The integral of a constant function is equal to the constant times the variable of integration." 
+    - text mx-5 my-3: "For example, $$\\int 3 dx = 3x + C,$$ where C is the constant of integration."
+    - item left mx-5 my-3: "The integral of the sum or difference of two functions is equal to the sum or difference of their integrals." 
+    - text mx-5 my-3: "For example, $$\\int (f(x) + g(x)) dx = \\int f(x) dx + \\int g(x) dx.$$"
+    - item left mx-5 my-3: "The power rule: the integral of $$x^n$$ is $$\\frac{x^{n+1}}{n+1} + C$$, where C is the constant of integration." 
+    - text mx-5 my-3: "For example, $$\\int x^2 dx = \\frac{x^3}{3} + C.$$"
+    - item left mx-5 my-3: "The product rule: the integral of a product is equal to the integral of the first function times the integral of the second function, minus the integral of the derivative of the first function times the integral of the second function." 
+    - text mx-5 my-3: "For example, $$\\int x \\cos(x) dx = x \\sin(x) - \\int \\sin(x) dx.$$"
+    - item left mx-5 my-3: "Integration by substitution: this rule allows us to integrate a function by making a substitution for a variable. This can often simplify the integral and make it easier to solve." 
+    - text mx-5 my-3: "For example, if we have the integral $$\\int 2x \\cos(x^2) dx,$$ we can use the substitution $$u = x^2$$ to get $$\\int \\cos(u) du = \\sin(u) + C = \\sin(x^2) + C.$$"
+    - item left mx-5 my-3: "Integration by parts: this rule allows us to integrate the product of two functions by breaking it down into simpler parts and applying the product rule in reverse."
+    - text mx-5 my-3: "For example, if we have the integral $$\\int x \\cos(x) dx,$$ we can use integration by parts to get $$\\int x \\cos(x) dx = x \\sin(x) - \\int \\sin(x) dx = x \\sin(x) + \\cos(x) + C.$$"
+
+    - stem: Some Integration Rules
+    - Table:
+        header:
+        - row:
+          - is-size-5: Function 
+          - is-size-5: Integral Formula
+        body:
+        - row : [Constant, $$\int k dx = kx + C$$]
+        - row: [Power Rule, "$$\\int x^n dx = \\frac{x^{n+1}}{n+1} + C$$"]
+        - row: [Exponential, $$\int e^x dx = e^x + C$$]
+        - row: [Natural Logarithm, $$\int \ln x dx = x \ln x - x + C$$]
+        - row: [Sine, $$\int \sin x dx = -\cos x + C$$]
+        - row: [Cosine, $$\int \cos x dx = \sin x + C$$]
+        - row: [Tangent, $$\int \tan x dx = \ln |\sec x| + C$$]
+        type: is-bordered is-narrow is-hoverable is-fullwidth
+
+    - block parallax:
+      img: MathProfessor.png
+      style: height:300px;
+
+# QUESTIONNAIRE
+
+    - title my-5: Questionnaire
+    - subtitle: Please answer the following questions.
+
+    - stem: What is the Fundamental Theorem of Calculus?
+    - instruction: "Select all the correct answers."
+    - Question:
+        id: Q1
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "The Fundamental Theorem of Calculus relates differentiation and integration, stating that differentiation and integration are inverse operations."
+          display:
+          - block:
+            - text: "The Fundamental Theorem of Calculus relates differentiation and integration, stating that differentiation and integration are inverse operations."
+            style: max-width:300px;
+          credit: 1
+          feedback: "Correct! This is a statement of the Fundamental Theorem of Calculus."
+        - value: "The Fundamental Theorem of Algebra, but for calculus."
+          display:
+          - block:
+            - text: "The Fundamental Theorem of Algebra, but for calculus."
+            style: max-width:300px;
+          credit: 0
+          feedback: "Incorrect. The Fundamental Theorem of Calculus is a different theorem from the Fundamental Theorem of Algebra."
+        - value: "The theorem that the area under a curve is equal to the anti-derivative of the function."
+          display:
+          - block:
+            - text: "The theorem that the area under a curve is equal to the anti-derivative of the function."
+            style: max-width:300px;
+          credit: 1
+          feedback: "Correct! This is another way of stating the Fundamental Theorem of Calculus."
+
+    - stem: What is the definite integral of a function?
+    - instruction: "Select the correct answer."
+    - Question:
+        id: Q2
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "The definite integral of a function is the area between the function and the x-axis over a given interval."
+          display:
+          - block:
+            - text: "The definite integral of a function is the area between the function and the x-axis over a given interval."
+            style: max-width:250px;
+          credit: 1
+          feedback: "Correct! This is the definition of a definite integral."
+        - value: "The derivative of a function at a specific point."
+          display:
+          - block:
+            - text: "The derivative of a function at a specific point."
+            style: max-width:250px;
+          credit: 0
+          feedback: "Incorrect. This is not the definition of a definite integral."
+        - value: "The sum of a function over a given interval."
+          display:
+          - block:
+            - text: "The sum of a function over a given interval."
+            style: max-width:250px;
+          credit: 0
+          feedback: "Incorrect. This is not the definition of a definite integral."
+
+    - stem: "Calculate the definite integral $$\\int_0^2 2x^2 + 3x + 1 dx$$."
+    - instruction: "Select the correct answer."
+    - Question:
+        id: Q3
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "$$12$$"
+          display: "$$12$$"
+          credit: 0
+          feedback:
+            - text: "That is incorrect. Please check your calculation."
+        - value: "$$18$$"
+          display: "$$18$$"
+          credit: 0
+          feedback:
+            - text: "That is incorrect. Please check your calculation."
+        - value: "$$20$$"
+          display: "$$20$$"
+          credit: 1
+          feedback:
+            - Mathjax:
+              - text: "Correct! The integral evaluates to $$\\left[\\frac{2x^3}{3} + \\frac{3x^2}{2} + x\\right]_0^2 = \\left(\\frac{16}{3} + 6 + 2\\right) - \\left(0 + 0 + 0\\right) = 20$$."
+
+    - stem: "Calculate the indefinite integral of $$f(x) = 3x^2 - 2x + 1$$."
+    - instruction: "Select the correct answer."
+    - Question:
+        id: Q4
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "$$x^3 - x^2 + x + C$$"
+          display: "$$x^3 - x^2 + x + C$$"
+          credit: 1
+          feedback:
+            - Mathjax:
+              - text: "Correct! The integral of $$f(x) = 3x^2 - 2x + 1$$ is $$\\int f(x) dx = x^3 - x^2 + x + C$$."
+        - value: "$$3x^2 - 2x + 1$$"
+          display: "$$3x^2 - 2x + 1$$"
+          credit: 0
+          feedback:
+            - text: "That is incorrect. Please check your calculation."
+        - value: "$$9x^2 - x + C$$"
+          display: "$$9x^2 - x + C$$"
+          credit: 0
+          feedback:
+            - text: "That is incorrect. Please check your calculation."
+
+    - stem: "What is the value of the definite integral $$\\int_0^1 x^2 dx$$?"
+    - instruction: "Select the correct answer."
+
+    - Question:
+        id: Q7
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "$$\\frac{1}{3}$$"
+          display: "$$\\frac{1}{3}$$"
+          credit: 1
+          feedback:
+            - Mathjax:
+              - text: "Correct! The antiderivative of $$x^2$$ is $$\\frac{1}{3}x^3$$, and evaluating this antiderivative from $$0$$ to $$1$$ gives $$\\frac{1}{3} - 0 = \\frac{1}{3}.$$"
+        - value: "$$\\frac{1}{2}$$"
+          display: "$$\\frac{1}{2}$$"
+          credit: 0
+          feedback:
+            - Mathjax:
+              - text: "Incorrect. The correct value is $$\\frac{1}{3}.$$"
+        - value: "$$\\frac{1}{4}$$"
+          display: "$$\\frac{1}{4}$$"
+          credit: 0
+          feedback:
+            - Mathjax:
+              - text: "Incorrect. The correct value is $$\\frac{1}{3}.$$"
+
+# CONCLUSION
+
+    - title m-5 pt-5: Conclusion
+    - subtitle left m-4: Congratulations on completing the Integrals chapter! Here are some final thoughts on this topic.
+    - stem: The Importance of Integrals
+    - text left m-5: Integrals are a fundamental concept in calculus that allow us to find the area under a curve and solve problems related to accumulation and rates of change. They are used to model a wide range of phenomena in mathematics, physics, engineering, economics, and biology. Without integrals, many areas of modern technology and research would not be possible.
+    - stem: Practical Applications of Integrals
+    - text left m-5: Integrals have many practical applications in fields such as physics, engineering, economics, and biology. They can be used to calculate volumes and areas, find the center of mass of an object, determine the work done by a force, and solve differential equations. Knowing how to calculate integrals and apply them to real-world problems is an important skill for success in many careers.
+    - stem: Further Study
+    - text left m-5: This chapter has provided an introduction to integrals and their properties, but there is much more to learn about this topic. If you are interested in pursuing calculus further, there are many resources available to help you, including textbooks, online courses, and academic programs. With dedication and hard work, you can develop a deep understanding of integrals and their applications.
+    - text left m-5: We hope that you have found this chapter informative and engaging. Please don't hesitate to reach out if you have any questions or feedback. Good luck in your studies!
+
+    style: max-width:800px;margin:auto;
