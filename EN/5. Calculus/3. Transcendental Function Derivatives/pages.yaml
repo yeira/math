@@ -34,11 +34,11 @@
       - text mx-3 my-3: "$$f'(x) = e^x$$"
       - text left m-3: "<b>Student:</b> That seems too easy. Are there any other transcendental functions with simple derivatives like this? 🤨"
       - text left m-3: "<b>Math Teacher:</b> Yes, the derivative of the sine function is the cosine function, and the derivative of the cosine function is the negative sine function. In other words:"
-      - text mx-3 my-3: "$$(sin(x))' = cos(x)$$"
-      - text mx-3 my-3: "$$(cos(x))' = -sin(x)$$"
+      - text mx-3 my-3: "$$(\\sin(x))' = \\cos(x)$$"
+      - text mx-3 my-3: "$$(\\cos(x))' = -\\sin(x)$$"
       - text left m-3: "<b>Student:</b> Wow, that's pretty neat! Do you have any other examples? 😃"
       - text left m-3: "<b>Math Teacher:</b> Yes, the derivative of the natural logarithm function is simply $$\\frac{1}{x}$$, that is:"
-      - text mx-3 my-3: "$$(ln(x))' = \\frac{1}{x}$$"
+      - text mx-3 my-3: "$$(\\ln(x))' = \\frac{1}{x}$$"
       - text left m-3: "<b>Student:</b> Hold on a minute, professor! All that is great and all, but how do you know for sure? I mean, you certainly prefer your students to think rather than memorize, right? 🤔"
       - text left m-3: "<b>Math Teacher:</b> Ahh, I was not expecting less from you. Glad you made this point. In fact, there is a way in which you can obtain all the derivative formulas that you want... 🤓"
       - text left m-3: "<b>Student:</b> Really? How? 🤔"
@@ -63,39 +63,39 @@
         - header: Step 2
           content:
           - stem: Consider the Function
-          - text left m-5: "Let $$f(x) = cos(x)$$. We want to find the derivative of $$f(x)$$."
+          - text left m-5: "Let $$f(x) = \\cos(x)$$. We want to find the derivative of $$f(x)$$."
           - text left m-5: "Using the definition of derivative, we have:"
-          - text mx-5 my-3: "$$f'(x) = \\lim_{h \\to 0} \\frac{cos(x + h) - cos(x)}{h}$$"
+          - text mx-5 my-3: "$$f'(x) = \\lim_{h \\to 0} \\frac{\\cos(x + h) - \\cos(x)}{h}$$"
 
         - header: Step 3
           content:
           - stem: Rewrite the Numerator
           - text left m-5: "We can use the trigonometric identity:"
-          - text mx-5 my-3: "$$cos(a + b) = cos(a)cos(b) - sin(a)sin(b)$$"
+          - text mx-5 my-3: "$$\\cos(a + b) = \\cos(a)\\cos(b) - \\sin(a)\\sin(b)$$"
           - text left m-5: "to rewrite the numerator of the fraction:"
-          - text mx-5 my-3: "$$cos(x + h) - cos(x) = [cos(x)cos(h) - sin(x)sin(h)] - cos(x)$$"
+          - text mx-5 my-3: "$$\\cos(x + h) - \\cos(x) = [\\cos(x)\\cos(h) - \\sin(x)\\sin(h)] - \\cos(x)$$"
           - text left m-5: "Simplifying, we get:"
-          - text mx-5 my-3: "$$cos(x + h) - cos(x) = -sin(x)sin(h)$$"
+          - text mx-5 my-3: "$$\\cos(x + h) - \\cos(x) = -\\sin(x)\\sin(h)$$"
 
         - header: Step 4
           content:
           - stem: Substitute the Numerator into the Derivative Expression
           - text left m-5: "Substituting this result into the derivative expression, we have:"
-          - text mx-5 my-3: "$$f'(x) = \\lim_{h \\to 0} \\frac{-sin(x)sin(h)}{h}$$"
+          - text mx-5 my-3: "$$f'(x) = \\lim_{h \\to 0} \\frac{-\\sin(x)\\sin(h)}{h}$$"
 
         - header: Step 5
           content:
           - stem: Apply the Limit Rule
           - text left m-5: "Since $$-sin(x)$$ is a constant as seen by the limit in $$h$$, we can apply the rule of the limit of a function multiplied by a constant, which states that:"
-          - text mx-5 my-3: "$$\\lim_{h \\to 0} (-sin(x)\\cdot \\frac{sin(h)}{h}) = -sin(x) \\cdot \\lim_{h \\to 0} \\frac{sin(h)}{h}$$"
+          - text mx-5 my-3: "$$\\lim_{h \\to 0} (-\\sin(x)\\cdot \\frac{\\sin(h)}{h}) = -\\sin(x) \\cdot \\lim_{h \\to 0} \\frac{\\sin(h)}{h}$$"
           
         - header: Step 6
           content:
           - stem: Evaluate the Limit
-          - text left m-5: "Since $$\\lim_{h \\to 0} \\frac{sin(h)}{h} = 1$$, we have:"
-          - text mx-5 my-3: "$$f'(x) = -sin(x)$$"
+          - text left m-5: "Since $$\\lim_{h \\to 0} \\frac{\\sin(h)}{h} = 1$$, we have:"
+          - text mx-5 my-3: "$$f'(x) = -\\sin(x)$$"
           - text left m-5: "Therefore, the derivative of the cosine function is:"
-          - text mx-5 my-3: "$$(cos(x))' = -sin(x)$$"
+          - text mx-5 my-3: "$$(cos(x))' = -\\sin(x)$$"
 
 # OBTAINING THE RULE FOR DERIVATION OF EXPONENTIAL FUNCTION
 
@@ -278,17 +278,17 @@
         random: true
         options: 
         - value: "3cos(3x)"
-          display: "$$3cos(3x)$$"
+          display: "$$3\\cos(3x)$$"
           credit: 1
           feedback: 
           - text: "Correct! This is the derivative of the given function."
         - value: "cos(3x)"
-          display: "$$cos(3x)$$"
+          display: "$$\\cos(3x)$$"
           credit: 0
           feedback:
           - text: "That is incorrect. Please review the rules of differentiation."
         - value: "3sin(3x)"
-          display: "$$3sin(3x)$$"
+          display: "$$3\\sin(3x)$$"
           credit: 0
           feedback:
           - text: "That is not the correct derivative of the given function."
