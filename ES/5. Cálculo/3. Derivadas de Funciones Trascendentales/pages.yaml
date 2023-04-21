@@ -1,1 +1,318 @@
 - page:
+  - head: |
+      <style>
+      .MathJax {
+        display: inline !important;
+      }
+      </style>
+  - Mathjax:
+  - block:
+
+# TRANSCENDENTAL FUNCTION DERIVATIVES
+
+    - title m-5 pt-5: Derivadas de funciones trascendentales
+    - subtitle left m-4: En esta sección, exploraremos las derivadas de las funciones trascendentales, las cuales son esenciales para comprender el comportamiento de muchas funciones en matemáticas y ciencias.
+    - stem: ¿Qué son las funciones trascendentales?
+    - text left m-5: Las funciones trascendentales son funciones que no pueden ser expresadas utilizando solo operaciones algebraicas, como suma, resta, multiplicación y división. Incluyen funciones como las exponenciales, logarítmicas, trigonométricas y trigonométricas inversas. Estas funciones son importantes en muchas áreas de las matemáticas y las ciencias, incluyendo el cálculo, la física y la ingeniería.
+    - stem: Derivadas de las funciones trascendentales
+    - text left m-5: Las derivadas de las funciones trascendentales siguen un conjunto de reglas que se basan en las propiedades de estas funciones. Estas reglas nos permiten encontrar las derivadas de funciones complejas descomponiéndolas en componentes más simples. En esta sección, exploraremos las reglas para encontrar las derivadas de las funciones exponenciales, logarítmicas, trigonométricas y trigonométricas inversas.
+    - stem: Aplicaciones de las derivadas de las funciones trascendentales
+    - text left m-5: Las derivadas de las funciones trascendentales son esenciales para comprender el comportamiento de muchas funciones en matemáticas y ciencias. Se utilizan en una amplia gama de aplicaciones, desde la física y la ingeniería hasta las finanzas y la economía. Al comprender estas derivadas, podemos modelar y analizar sistemas y fenómenos complejos en el mundo que nos rodea.
+
+
+# STUDENT ASKS
+
+    - box has-background-success-light:
+      - stem: Un Estudiante Pregunta Sobre Las Derivadas de Funciones Trascendentales
+      - Image: BoardProf.png
+      - text left m-3: "<b>Estudiante:</b> Profesor, tengo una pregunta sobre las derivadas de funciones trascendentales."
+      - text left m-3: "<b>Profesor de Matemáticas:</b> Claro, ¿qué tienes en mente? 😊"
+      - text left m-3: "<b>Estudiante:</b> Entiendo cómo tomar derivadas de funciones básicas como polinomios, pero estoy teniendo problemas con funciones como seno, coseno y funciones exponenciales. 😕"
+      - text left m-3: "<b>Profesor de Matemáticas:</b> Esas se llaman funciones trascendentales y pueden ser un poco difíciles de diferenciar al principio. Pero no te preocupes, hay reglas y técnicas que puedes usar para encontrar sus derivadas. 😎"
+      - text left m-3: "<b>Estudiante:</b> ¿Puedes mostrarme un ejemplo? 🤔"
+      - text left m-3: "<b>Profesor de Matemáticas:</b> Claro, empecemos con la función exponencial $$f(x) = e^x$$. La derivada de esta función es simplemente ella misma, es decir:"
+      - text mx-3 my-3: "$$f'(x) = e^x$$"
+      - text left m-3: "<b>Estudiante:</b> Eso parece demasiado fácil. ¿Hay otras funciones trascendentales con derivadas simples como esta? 🤨"
+      - text left m-3: "<b>Profesor de Matemáticas:</b> Sí, la derivada de la función seno es la función coseno, y la derivada de la función coseno es la función seno negativa. En otras palabras:"
+      - text mx-3 my-3: "$$(\\sin(x))' = \\cos(x)$$"
+      - text mx-3 my-3: "$$(\\cos(x))' = -\\sin(x)$$"
+      - text left m-3: "<b>Estudiante:</b> ¡Guau, eso es bastante interesante! ¿Tienes otros ejemplos? 😃"
+      - text left m-3: "<b>Profesor de Matemáticas:</b> Sí, la derivada de la función logarítmica natural es simplemente $$\\frac{1}{x}$$, es decir:"
+      - text mx-3 my-3: "$$(\\ln(x))' = \\frac{1}{x}$$"
+      - text left m-3: "<b>Estudiante:</b> ¡Espera un minuto, profesor! Todo eso es genial y todo, pero ¿cómo lo sabes con seguridad? Quiero decir, seguramente prefieres que tus estudiantes piensen en lugar de memorizar, ¿verdad? 🤔"
+      - text left m-3: "<b>Profesor de Matemáticas:</b> Ahh, no esperaba menos de ti. Me alegra que hayas mencionado eso. De hecho, hay una manera en la que puedes obtener todas las fórmulas de derivadas que desees... 🤓"
+
+      - text left m-3: "<b>Estudiante:</b> ¿De verdad? ¿Cómo? 🤔"
+      - text left m-3: "<b>Profesor de Matemáticas:</b> Implica el uso de la definición límite de la derivada para obtener la fórmula de la derivada de cualquier función. ¿Quieres ver cómo? 😎"
+      - text left m-3: "<b>Estudiante:</b> ¡Claro, no puedo esperar para saber más sobre esto! 😃"
+
+
+# OBTAINING THE RULE FOR DERIVATION OF COSINE FUNCTION
+
+    - title m-5 pt-5: Derivada de la función coseno
+    - subtitle left m-4: En esta sección, mostraremos paso a paso cómo usar la definición de la derivada para obtener la regla para encontrar la derivada de la función coseno.
+
+    - box:
+      - Steps:
+        - header: Paso 1
+          content:
+          - stem: Comprender la definición de derivada
+          - text left m-5: "La derivada de una función $$f(x)$$ con respecto a $$x$$ se define como:"
+          - text mx-5 my-3: "$$f'(x) = \\lim_{h \\to 0} \\frac{f(x + h) - f(x)}{h}$$"
+          - text left m-5: "Esta definición nos da la tasa de cambio instantánea de $$f(x)$$ en un punto dado $$x$$. Al aplicar esta definición a varios tipos de funciones, podemos derivar reglas para encontrar la derivada de esas funciones."
+
+        - header: Paso 2
+          content:
+          - stem: Considera la función
+          - text left m-5: "Sea $$f(x) = \\cos(x)$$. Queremos encontrar la derivada de $$f(x)$$."
+          - text left m-5: "Usando la definición de la derivada, tenemos:"
+          - text mx-5 my-3: "$$f'(x) = \\lim_{h \\to 0} \\frac{\\cos(x + h) - \\cos(x)}{h}$$"
+
+        - header: Paso 3
+          content:
+          - stem: Reescribe el numerador
+          - text left m-5: "Podemos usar la identidad trigonométrica:"
+          - text mx-5 my-3: "$$\\cos(a + b) = \\cos(a)\\cos(b) - \\sin(a)\\sin(b)$$"
+          - text left m-5: "para reescribir el numerador de la fracción:"
+          - text mx-5 my-3: "$$\\cos(x + h) - \\cos(x) = [\\cos(x)\\cos(h) - \\sin(x)\\sin(h)] - \\cos(x)$$"
+          - text left m-5: "Simplificando, obtenemos:"
+          - text mx-5 my-3: "$$\\cos(x + h) - \\cos(x) = -\\sin(x)\\sin(h)$$"
+
+
+        - header: Paso 4
+          content:
+          - stem: Sustituir el numerador en la expresión de la derivada
+          - text left m-5: "Sustituyendo este resultado en la expresión de la derivada, tenemos:"
+          - text mx-5 my-3: "$$f'(x) = \\lim_{h \\to 0} \\frac{-\\sin(x)\\sin(h)}{h}$$"
+
+        - header: Paso 5
+          content:
+          - stem: Aplicar la regla del límite
+          - text left m-5: "Como $$-sin(x)$$ es una constante, como se ve en el límite de $$h$$, podemos aplicar la regla del límite de una función multiplicada por una constante, que establece que:"
+          - text mx-5 my-3: "$$\\lim_{h \\to 0} (-\\sin(x)\\cdot \\frac{\\sin(h)}{h}) = -\\sin(x) \\cdot \\lim_{h \\to 0} \\frac{\\sin(h)}{h}$$"
+
+        - header: Paso 6
+          content:
+          - stem: Evaluar el límite
+          - text left m-5: "Como $$\\lim_{h \\to 0} \\frac{\\sin(h)}{h} = 1$$, tenemos:"
+          - text mx-5 my-3: "$$f'(x) = -\\sin(x)$$"
+          - text left m-5: "Por lo tanto, la derivada de la función coseno es:"
+          - text mx-5 my-3: "$$(cos(x))' = -\\sin(x)$$"
+
+
+# OBTAINING THE RULE FOR DERIVATION OF EXPONENTIAL FUNCTION
+
+    - title m-5 pt-5: Derivada de la función exponencial
+    - subtitle left m-4: En esta sección, mostraremos paso a paso cómo usar la definición de la derivada para obtener la regla para encontrar la derivada de la función exponencial.
+
+    - box:
+      - Steps:
+        - header: Paso 1
+          content:
+          - stem: Entender la definición de la derivada
+          - text left m-5: "La derivada de una función $$f(x)$$ con respecto a $$x$$ se define como:"
+          - text mx-5 my-3: "$$f'(x) = \\lim_{h \\to 0} \\frac{f(x + h) - f(x)}{h}$$"
+          - text left m-5: "Esta definición nos da la tasa de cambio instantánea de $$f(x)$$ en un punto dado $$x$$. Al aplicar esta definición a varios tipos de funciones, podemos derivar reglas para encontrar la derivada de esas funciones."
+
+        - header: Paso 2
+          content:
+          - stem: Considerar la función
+          - text left m-5: "Sea $$f(x) = e^x$$. Queremos encontrar la derivada de $$f(x)$$."
+          - text left m-5: "Usando la definición de la derivada, tenemos:"
+          - text mx-5 my-3: "$$f'(x) = \\lim_{h \\to 0} \\frac{e^{x + h} - e^x}{h}$$"
+
+        - header: Paso 3
+          content:
+          - stem: Aplicar la definición de la derivada
+          - text left m-5: "Simplificando la expresión, obtenemos:"
+          - text mx-5 my-3: "$$f'(x) = e^x \\lim_{h \\to 0} \\frac{e^h - 1}{h}$$"
+          - text left m-5: "Un gran avance, pero ahora necesitamos resolver ese límite, y parece que es indeterminado cuando reemplazamos directamente $$h = 0$$." 
+
+        - header: Paso 4
+          content:
+          - stem: Hablemos de la regla de L'Hôpital
+          - text left m-5: "La regla de L'Hôpital es una técnica utilizada para evaluar límites de formas indeterminadas de la forma $$\\frac{0}{0}$$ o $$\\frac{\\infty}{\\infty}$$. Si tenemos un límite de la forma $$\\lim_{x \\to a} \\frac{f(x)}{g(x)}$$ donde $$f(a) = g(a) = 0$$ o $$\\pm \\infty$$, entonces:"
+          - text mx-5 my-3: "$$\\lim_{x \\to a} \\frac{f(x)}{g(x)} = \\lim_{x \\to a} \\frac{f'(x)}{g'(x)}$$"
+          - text left m-5: "donde $$f'(x)$$ y $$g'(x)$$ son las derivadas de $$f(x)$$ y $$g(x)$$, respectivamente, siempre y cuando el límite de la proporción de las derivadas exista."
+
+
+        - header: Paso 5
+          content:
+          - stem: Evaluar el límite
+          - text left m-5: "Ahora necesitamos encontrar este límite:"
+          - text mx-5 my-3: "$$\\lim_{x \\to 0} \\frac{e^x - 1}{x}$$"
+          - text left m-5: "Podemos evaluar el límite de la siguiente manera:"
+          - text left m-5: "Sea $$f(x) = e^x - 1$$ y $$g(x) = x$$."
+          - text left m-5: "Entonces, podemos reescribir el límite original como:"
+          - text mx-5 my-3: "$$\\lim_{x \\to 0} \\frac{e^x - 1}{x} = \\lim_{x \\to 0} \\frac{f(x)}{g(x)}$$"
+          - text left m-5: "Aplicando la regla de L'Hôpital a este límite, obtenemos:"
+          - text mx-5 my-3: "$$\\lim_{x \\to 0} \\frac{f'(x)}{g'(x)} = \\lim_{x \\to 0} \\frac{e^x}{1} = 1$$"
+
+        - header: Paso 6
+          content:
+          - stem: Reemplazar en la ecuación original
+          - text left m-5: "Recordando que la derivada se obtiene como:"
+          - text mx-5 my-3: "$$f'(x) = e^x \\lim_{h \\to 0} \\frac{e^h - 1}{h}$$"
+          - text left m-5: "Por lo tanto, la derivada de la función exponencial es:"
+          - text mx-5 my-3: "$$(e^x)' = e^x$$"
+
+
+
+    - text left m-5: "Podemos utilizar el mismo proceso para derivar las reglas para otras funciones trigonométricas, así como también para funciones logarítmicas y otros tipos de funciones. Al utilizar la definición de la derivada y aplicar nuestros conocimientos de álgebra y trigonometría, podemos encontrar las derivadas de una amplia gama de funciones."
+    - text left m-5: "Recuerda que entender las reglas de derivación para las funciones trascendentales es esencial para el éxito en cálculo y en muchas otras áreas de las matemáticas y la ciencia. Con práctica y esfuerzo, puedes dominar este tema importante y aplicarlo a una variedad de problemas y aplicaciones."
+
+
+# STUDENT ASKS
+
+    - box has-background-success-light:
+      - stem: 🧑‍🎓 Estudiante pregunta sobre las derivadas de funciones trascendentales
+      - Image: BoardProf.png
+      - text left m-3: "<b>Estudiante:</b> Profesor, tengo una pregunta sobre las derivadas de funciones trascendentales. 🤔"
+      - text left m-3: "<b>Profesor de matemáticas:</b> Claro, ¿qué tienes en mente? 😊"
+      - text left m-3: "<b>Estudiante:</b> Bueno, me preguntaba si las funciones trascendentales también pueden tener discontinuidades y derivadas indefinidas como algunas otras funciones. 🤔"
+      - text left m-3: "<b>Profesor de matemáticas:</b> Absolutamente. De hecho, muchas funciones trascendentales tienen discontinuidades o derivadas indefinidas en ciertos puntos. Por ejemplo, la función logarítmica natural, denotada por ln(x), tiene una discontinuidad en x = 0 y su derivada es indefinida en ese punto. 😮"
+      - text left m-3: "<b>Estudiante:</b> ¡Wow, no tenía idea! ¿Y las funciones trigonométricas? 🤔"
+      - text left m-3: "<b>Profesor de matemáticas:</b> Sí, incluso las funciones trigonométricas pueden tener discontinuidades y derivadas indefinidas. Por ejemplo, la función tangente, denotada por tan(x), tiene una discontinuidad en x = π/2 y su derivada es indefinida en ese punto. 😲"
+      - text left m-3: "<b>Estudiante:</b> ¡Esto me está volando la cabeza! ¿Hay alguna otra función con propiedades similares? 🤔"
+      - text left m-3: "<b>Profesor de matemáticas:</b> De hecho, las hay, y explorarlas es lo que hace que el cálculo sea tan fascinante. Pero eso es un tema para otro día. Por ahora, recuerda que comprender el comportamiento de las funciones y sus derivadas es clave para dominar el cálculo. 😎"
+
+
+    - block parallax:
+      img: MathProfessor.png
+      style: height:300px;
+
+# QUESTIONNAIRE
+
+    - title my-5: Cuestionario
+    - subtitle: Por favor, responda las siguientes preguntas.
+
+    - stem: ¿Qué es una función trascendental?
+    - Question:
+        id: Q1
+        points: 8
+        display: grid
+        random: true
+        options:
+        - value: "Una función que no es algebraica."
+          display: "Una función que no es algebraica."
+          credit: 1
+          feedback: "¡Correcto! Una función trascendental es una función que no es algebraica."
+        - value: "Una función que solo está definida en números trascendentales."
+          display: "Una función que solo está definida en números trascendentales."
+          credit: 0
+          feedback: "Incorrecto. Esta no es la definición de una función trascendental."
+        - value: "Una función que es continua en todas partes."
+          display: "Una función que es continua en todas partes."
+          credit: 0
+          feedback: "Incorrecto. Esta no es la definición de una función trascendental."
+
+
+    - stem: ¿Puede una función trascendental tener una discontinuidad?
+    - Question:
+        id: Q2
+        points: 8
+        display: grid
+        random: true
+        options:
+        - value: "Sí, una función trascendental puede tener una discontinuidad."
+          display: "Sí, una función trascendental puede tener una discontinuidad."
+          credit: 1
+          feedback: "¡Correcto! Una función trascendental puede tener una discontinuidad en ciertos puntos."
+        - value: "No, una función trascendental siempre es continua."
+          display: "No, una función trascendental siempre es continua."
+          credit: 0
+          feedback: "Incorrecto. Una función trascendental puede tener una discontinuidad en ciertos puntos."
+        - value: "Depende de la función trascendental específica."
+          display: "Depende de la función trascendental específica."
+          credit: 0
+          feedback: "Incorrecto. Una función trascendental puede tener una discontinuidad en ciertos puntos."
+
+
+    - stem: "¿Cuál es la derivada de la función $$f(x) = e^{2x}?$$"
+    - instruction: "Pista: Recuerda la regla de la cadena para las derivadas"
+    - Question: 
+        id: Q3
+        points: 10
+        display: grid
+        random: true
+        options: 
+        - value: "2e^{2x}"
+          display: "$$2e^{2x}$$"
+          credit: 1
+          feedback: 
+          - text: "¡Correcto! Esta es la derivada de la función dada."
+        - value: "e^{2x} + 1"
+          display: "$$e^{2x} + 1$$"
+          credit: 0
+          feedback:
+          - text: "Eso es incorrecto. Por favor, revisa las reglas de la diferenciación."
+        - value: "2e^{2x} + 1"
+          display: "$$2e^{2x} + 1$$"
+          credit: 0
+          feedback:
+          - text: "Esa no es la derivada correcta de la función dada."
+
+
+    - stem: "¿Cuál es la derivada de la función $$f(x) = ln(x^3)?$$"
+    - instruction: "Pista: Recuerda la regla de la cadena para las derivadas"
+    - Question: 
+        id: Q4
+        points: 10
+        display: grid
+        random: true
+        options: 
+        - value: "3/x"
+          display: "$$\\frac{3}{x}$$"
+          credit: 1
+          feedback: 
+          - text: "¡Correcto! Esta es la derivada de la función dada."
+        - value: "ln(x) + 3"
+          display: "$$ln(x) + 3$$"
+          credit: 0
+          feedback:
+          - text: "Eso es incorrecto. Por favor, revisa las reglas de la diferenciación."
+        - value: "x^2"
+          display: "$$x^2$$"
+          credit: 0
+          feedback:
+          - text: "Esa no es la derivada correcta de la función dada."
+
+          
+    - stem: "What is the derivative of the function $$f(x) = sin(3x)?$$"
+    - instruction: "Hint: Remember the chain rule for derivatives"
+    - Question: 
+        id: Q5
+        points: 10
+        display: grid
+        random: true
+        options: 
+        - value: "3cos(3x)"
+          display: "$$3\\cos(3x)$$"
+          credit: 1
+          feedback: 
+          - text: "Correct! This is the derivative of the given function."
+        - value: "cos(3x)"
+          display: "$$\\cos(3x)$$"
+          credit: 0
+          feedback:
+          - text: "That is incorrect. Please review the rules of differentiation."
+        - value: "3sin(3x)"
+          display: "$$3\\sin(3x)$$"
+          credit: 0
+          feedback:
+          - text: "That is not the correct derivative of the given function."
+
+
+# CONCLUSION
+
+    - title m-5 pt-5: Conclusión
+    - subtitle left m-4: ¡Felicitaciones por completar el capítulo de Derivadas de Funciones Trascendentales! Aquí tienes algunos pensamientos finales sobre este tema.
+    - stem: La importancia de las derivadas de funciones trascendentales
+    - text left m-5: Las derivadas de funciones trascendentales son un concepto fundamental en cálculo que nos permiten estudiar la tasa de cambio de estas funciones. Se utilizan para modelar una amplia gama de fenómenos en matemáticas, ciencias e ingeniería, desde el comportamiento de fenómenos naturales como la desintegración radiactiva y el crecimiento poblacional hasta sistemas artificiales como los mercados financieros y el diseño de algoritmos informáticos. Sin las derivadas, muchas áreas de la tecnología y la investigación moderna no serían posibles.
+    - stem: Aplicaciones prácticas de las derivadas de funciones trascendentales
+    - text left m-5: Las derivadas de funciones trascendentales tienen muchas aplicaciones prácticas en campos como la física, la ingeniería, la economía y la biología. Se pueden utilizar para optimizar procesos, diseñar sistemas eficientes y comprender el comportamiento complejo en sistemas naturales y artificiales. Saber cómo calcular las derivadas de funciones trascendentales y aplicarlas a problemas del mundo real es una habilidad importante para el éxito en muchas carreras.
+    - stem: Estudio adicional
+    - text left m-5: Este capítulo ha proporcionado una introducción a las derivadas de funciones trascendentales y sus propiedades, pero hay mucho más que aprender sobre este tema. Si estás interesado en seguir estudiando cálculo, hay muchos recursos disponibles para ayudarte, como libros de texto, cursos en línea y programas académicos. Con dedicación y trabajo duro, puedes desarrollar una comprensión profunda de las derivadas de funciones trascendentales y sus aplicaciones.
+    - text left m-5: Esperamos que hayas encontrado este capítulo informativo y atractivo. Por favor, no dudes en contactarnos si tienes alguna pregunta o comentario. ¡Buena suerte en tus estudios!
+
+    style: max-width:800px;margin:auto;

@@ -1,1 +1,184 @@
 - page:
+  - head: |
+      <style>
+      .MathJax {
+        display: inline !important;
+      }
+      </style>
+  - Mathjax:
+  - block:
+
+# DERIVATIVES IN PHYSICS
+
+    - title m-5 pt-5: Derivadas en Física
+    - text left m-5: "El cálculo es una herramienta poderosa para entender el comportamiento de los sistemas físicos, y las tasas de cambio son un concepto fundamental en este sentido. Las tasas de cambio se utilizan para describir cómo una cantidad física, como la posición, la velocidad o la aceleración, cambia con el tiempo, y están estrechamente relacionadas con el concepto de derivada."
+    - text left m-5: "En este capítulo, exploraremos un par de problemas de física que hacen uso de las derivadas. Esto demostrará cómo el aparentemente abstracto concepto de las derivadas es en realidad altamente aplicable a situaciones del mundo real."
+
+
+# MOTION AND CLASSICAL MECHANICS
+
+    - title m-5 pt-5: Movimiento y Mecánica Clásica
+    - text left m-5: "La mecánica clásica es la rama de la física que trata sobre el movimiento de los objetos bajo la influencia de fuerzas. El cálculo desempeña un papel fundamental en la mecánica clásica, ya que nos permite describir y analizar el movimiento de los objetos utilizando tasas de cambio, como la velocidad y la aceleración."
+    - text left m-5: "La velocidad es la tasa de cambio de la posición con respecto al tiempo, mientras que la aceleración es la tasa de cambio de la velocidad con respecto al tiempo. Tanto la velocidad como la aceleración se pueden medir utilizando el cálculo, encontrando las derivadas de la posición y la velocidad con respecto al tiempo, respectivamente."
+    - text left m-5: "Por ejemplo, si tenemos una partícula moviéndose en línea recta, podemos medir su velocidad encontrando la derivada de su posición con respecto al tiempo. Si la posición de la partícula está dada por la función $$x(t) = 3t^2 + 2t + 1$$, entonces su velocidad está dada por la derivada de la función, que es $$v(t) = x'(t) = 6t + 2$$."
+    - text left m-5: "La aceleración también es un concepto importante en la mecánica clásica, ya que está relacionada con las fuerzas que actúan sobre un sistema físico. Por ejemplo, la aceleración de un objeto es proporcional a la fuerza neta que actúa sobre él, según la segunda ley de Newton del movimiento."
+
+
+
+# DERIVATIVES IN PHYSICS
+
+    - stem: Movimiento de Caída Libre
+    - text left m-5: "Una de las aplicaciones más fundamentales del cálculo en la física es el estudio del movimiento de caída libre. El movimiento de caída libre se refiere al movimiento de un objeto que solo está sujeto a la fuerza de la gravedad, y es un ejemplo de movimiento uniformemente acelerado."
+    - text left m-5: "La posición de un objeto en caída libre se puede determinar utilizando el cálculo, específicamente encontrando la derivada de la función de velocidad con respecto al tiempo. Las fórmulas clave para el movimiento de caída libre son:"
+    - item left mx-5 my-3: "La función de posición: $$s(t) = \\frac{1}{2}gt^2 + v_0t + s_0$$ donde $$s_0$$ es la posición inicial, $$v_0$$ es la velocidad inicial, $$g$$ es la aceleración debido a la gravedad (aproximadamente 9.8 m/s^2), y $$t$$ es el tiempo."
+    - item left mx-5 my-3: "La función de velocidad: $$v(t) = gt + v_0$$ donde $$v_0$$ es la velocidad inicial, $$g$$ es la aceleración debido a la gravedad, y $$t$$ es el tiempo."
+    - item left mx-5 my-3: "La función de aceleración: $$a(t) = g$$ donde $$g$$ es la aceleración debido a la gravedad, y es una constante."
+    - text left m-5: "Utilizando estas fórmulas, podemos modelar el movimiento de objetos en caída libre y hacer predicciones sobre su comportamiento. Comprender el movimiento de caída libre es esencial en muchas áreas de la física e ingeniería, desde el diseño de paracaídas y bolsas de aire hasta el estudio del comportamiento de los cuerpos celestes."
+
+
+# STUDENT ASKS
+
+    - box has-background-success-light:
+      - stem: Un Estudiante Pregunta Sobre el Movimiento de Caída Libre
+      - Image: BoardProf.png
+      - text left m-3: "<b>Estudiante:</b> Profesor, tengo una pregunta, perdón si no tiene nada que ver con las derivadas, pero me preguntaba cómo se puede saber el tiempo que tarda un objeto en caída libre en llegar al suelo."
+      - text left m-3: "<b>Profesor:</b> En realidad, es una excelente pregunta, y está más relacionada con las derivadas de lo que podrías pensar. Una forma de resolver este problema es usar el cálculo y las ecuaciones de movimiento, que involucran derivadas de la posición y el tiempo. ¡Así que estás en el tema correcto! 😄"
+      - text left m-3: "<b>Estudiante:</b> ¿En serio? ¡Pensé que se me caía la cara de la pena por hacer una pregunta fuera de lugar!"
+      - text left m-3: "<b>Profesor:</b> ¡No te preocupes! Aquí no dejamos nada caer. Pero hablando de caídas, ¿sabías que el famoso físico Galileo Galilei realizó experimentos con objetos en caída libre dejándolos caer desde la Torre Inclinada de Pisa?"
+      - text left m-3: "<b>Estudiante:</b> ¡Wow, en serio? ¡Eso es algo loco!"
+      - text left m-3: "<b>Profesor:</b> ¡Sí, lo es! Pero demuestra que incluso las cosas más inesperadas pueden llevar a descubrimientos científicos. Así que no tengas miedo de hacer preguntas aparentemente no relacionadas, nunca sabes a dónde pueden llevar."
+
+
+    - stem: Ejemplo de Caída Libre
+    - text left m-5: "Supongamos que dejamos caer una pelota desde la cima de un edificio de 100 metros de altura. La posición de la pelota en cualquier momento t se puede describir mediante la función:"
+    - text center my-3: $$s(t) = 100 - \frac{1}{2}gt^2$$
+    - text left m-5: "Donde g es la aceleración debido a la gravedad (aproximadamente 9.8 metros por segundo al cuadrado)."
+    - text left m-5: "Para encontrar la velocidad de la pelota en cualquier momento t, podemos tomar la primera derivada de la función de posición:"
+    - text center my-3: $$v(t) = s'(t) = -gt$$
+    - text left m-5: "Para encontrar la aceleración de la pelota en cualquier momento t, podemos tomar la segunda derivada de la función de posición:"
+    - text center my-3: $$a(t) = v'(t) = s''(t) = -g$$
+    - text left m-5: "Note que la aceleración es constante y igual a la aceleración debido a la gravedad. Esto tiene sentido, ya que la única fuerza que actúa sobre la pelota es la gravedad, que es una fuerza constante."
+    - text left m-5: "Utilizando estas ecuaciones, podemos responder preguntas como cuánto tiempo tarda la pelota en golpear el suelo. Esto ocurre cuando la posición de la pelota es igual a cero:"
+    - text center my-3: $$0 = 100 - \frac{1}{2}gt^2$$
+    - text left m-5: "Resolviendo para t da:"
+    - text center my-3: $$t = \sqrt{\frac{200}{g}} \approx 4.52$$
+    - text left m-5: "Por lo tanto, la pelota golpea el suelo aproximadamente 4.52 segundos después de ser soltada."
+
+
+    - block parallax:
+      img: MathProfessor.png
+      style: height:300px;
+
+# QUESTIONNAIRE
+
+    - title my-5: Cuestionario
+    - subtitle: Por favor responde las siguientes preguntas.
+
+    - stem: ¿Cuál es la definición de una derivada?
+    - Question:
+        id: Q1
+        points: 8
+        display: grid
+        random: true
+        options:
+        - value: "La tasa de cambio de una función con respecto a su entrada."
+          display: "La tasa de cambio de una función con respecto a su entrada."
+          credit: 1
+          feedback: "¡Correcto! La derivada de una función es la tasa de cambio de la función con respecto a su entrada."
+        - value: "El valor de una función en un punto específico."
+          display: "El valor de una función en un punto específico."
+          credit: 0
+          feedback: "Incorrecto. Esta no es la definición de una derivada."
+        - value: "La integral de una función."
+          display: "La integral de una función."
+          credit: 0
+          feedback: "Incorrecto. Esta no es la definición de una derivada."
+
+
+    - stem: ¿Cuál es la relación entre la velocidad y la aceleración?
+    - Question:
+        id: Q2
+        points: 8
+        display: grid
+        random: true
+        options:
+        - value: "La aceleración es la tasa de cambio de la velocidad con respecto al tiempo."
+          display: "La aceleración es la tasa de cambio de la velocidad con respecto al tiempo."
+          credit: 1
+          feedback: "¡Correcto! La aceleración es la tasa de cambio de la velocidad con respecto al tiempo."
+        - value: "La velocidad es la tasa de cambio de la aceleración con respecto al tiempo."
+          display: "La velocidad es la tasa de cambio de la aceleración con respecto al tiempo."
+          credit: 0
+          feedback: "Incorrecto. Esta no es la relación entre la velocidad y la aceleración."
+        - value: "La velocidad y la aceleración son cantidades independientes."
+          display: "La velocidad y la aceleración son cantidades independientes."
+          credit: 0
+          feedback: "Incorrecto. La velocidad y la aceleración son cantidades relacionadas."
+
+
+    - stem: "Supongamos que se lanza una pelota hacia arriba desde el suelo con una velocidad inicial de 20 m/s. ¿Cuál es su velocidad a una altura de 50 metros? (No se considera la resistencia del aire)"
+    - instruction: "Pista: Utiliza la ecuación de movimiento para la caída libre."
+    - Question:
+        id: Q4
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "10 m/s"
+          display: "10 m/s"
+          credit: 1
+          feedback:
+          - text: "¡Correcto! Se puede resolver este problema utilizando la ecuación de movimiento para la caída libre y encontrando la velocidad a una altura de 50 metros."
+        - value: "20 m/s"
+          display: "20 m/s"
+          credit: 0
+          feedback:
+          - text: "Incorrecto. Recuerda que la aceleración debido a la gravedad hace que la velocidad disminuya a medida que la pelota sube."
+        - value: "0 m/s"
+          display: "0 m/s"
+          credit: 0
+          feedback:
+          - text: "Incorrecto. Recuerda que la pelota todavía tiene cierta velocidad hacia arriba cuando alcanza una altura de 50 metros."
+
+          
+    - stem: "Un automóvil que viaja a una velocidad constante de 60 km/h acelera uniformemente hasta una velocidad de 90 km/h en una distancia de 300 metros. ¿Cuál es su aceleración?"
+    - instruction: "Pista: Utiliza la ecuación para la aceleración en términos de velocidades inicial y final, y distancia."
+    - Question:
+        id: Q5
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "2.78 m/s^2"
+          display: "2.78 m/s^2"
+          credit: 1
+          feedback:
+          - text: "¡Correcto! Se puede utilizar la ecuación para la aceleración en términos de velocidades inicial y final, y distancia, para resolver la aceleración."
+        - value: "9.81 m/s^2"
+          display: "9.81 m/s^2"
+          credit: 0
+          feedback:
+          - text: "Incorrecto. Esta es la aceleración debido a la gravedad, pero no es relevante para este problema."
+        - value: "0.93 m/s^2"
+          display: "0.93 m/s^2"
+          credit: 0
+          feedback:
+          - text: "Incorrecto. Por favor, revisa la ecuación para la aceleración en términos de velocidades inicial y final, y distancia."
+
+
+
+# CONCLUSION
+
+    - title m-5 pt-5: Conclusión
+    - subtitle left m-4: ¡Felicitaciones por completar el capítulo de Derivadas en Física! Aquí hay algunos pensamientos finales sobre este tema.
+    - stem: La importancia de las derivadas en física
+    - text left m-5: Las derivadas son un concepto fundamental en física que nos permiten estudiar el comportamiento de los sistemas físicos. Se utilizan para describir las tasas de cambio de las cantidades físicas, como la posición, la velocidad y la aceleración, y son esenciales para comprender el movimiento de los objetos, el comportamiento de los fluidos y la transferencia de energía en los sistemas. Sin las derivadas, no podríamos hacer predicciones precisas o diseñar sistemas eficientes en muchas áreas de la física.
+    - stem: Aplicaciones prácticas de las derivadas en física
+    - text left m-5: Las derivadas tienen muchas aplicaciones prácticas en campos como la mecánica, la termodinámica, la dinámica de fluidos y muchos más. Se pueden utilizar para modelar el movimiento de los objetos, diseñar sistemas eficientes para la transferencia de energía y optimizar procesos en una variedad de sistemas naturales y artificiales. Saber cómo aplicar las derivadas a problemas del mundo real es una habilidad importante para tener éxito en muchas carreras relacionadas con la física.
+    - stem: Estudios posteriores
+    - text left m-5: Este capítulo ha proporcionado una introducción a las derivadas en física y sus aplicaciones, pero hay mucho más que aprender sobre este tema. Si estás interesado en seguir estudiando física, hay muchos recursos disponibles para ayudarte, incluyendo libros de texto, cursos en línea y programas académicos. Con dedicación y trabajo duro, puedes desarrollar una comprensión profunda de las derivadas y sus aplicaciones en la física.
+    - text left m-5: Esperamos que hayas encontrado este capítulo informativo y atractivo. Por favor, no dudes en ponerte en contacto si tienes alguna pregunta o comentario. ¡Buena suerte en tus estudios!
+
+
+
+    style: max-width:800px;margin:auto;

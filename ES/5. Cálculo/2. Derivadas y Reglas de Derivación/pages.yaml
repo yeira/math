@@ -1,1 +1,284 @@
 - page:
+  - head: |
+      <style>
+      .MathJax {
+        display: inline !important;
+      }
+      </style>
+  - Mathjax:
+  - block:
+
+# ¿QUÉ SON LAS DERIVADAS?
+
+    - title m-5 pt-5: ¿Qué son las derivadas?
+    - subtitle left m-4: Las derivadas son un concepto fundamental en cálculo que describen la tasa de cambio de una función en un punto dado. En esta sección, definiremos las derivadas y exploraremos algunos de los conceptos clave y aplicaciones de esta importante herramienta del cálculo.
+
+    - stem: Definición de una derivada
+    - text left m-5: "Una derivada es la tasa de cambio instantánea de una función en un punto dado. Describe cuánto está cambiando la función en ese punto específico, y en qué dirección. La derivada se define como el límite del cociente diferencial, a medida que el cambio en la entrada se acerca a cero."
+
+    - subtitle: $$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$$
+
+    - instruction: Puedes leer esta expresión como "<i>La derivada de f de x es igual al límite cuando h se acerca a cero de la cantidad f de x más h menos f de x sobre h.</i>"
+
+    - text left m-5: "Esta expresión representa la definición formal de una derivada. Nos dice que la derivada de una función f en un punto x es igual al límite del cociente diferencial a medida que h se acerca a cero. En otras palabras, la derivada nos da la pendiente de la recta tangente a la gráfica de la función en ese punto específico." 
+
+
+    - stem: Aplicaciones de las Derivadas
+    - text left m-5: "Las derivadas tienen muchas aplicaciones en matemáticas, ciencias, ingeniería y otros campos. Algunas de las principales aplicaciones incluyen:"
+    - item left mx-5 my-3: "Encontrar los valores máximos y mínimos de una función"
+    - item left mx-5 my-3: "Resolver problemas de optimización"
+    - item left mx-5 my-3: "Describir las tasas de cambio en física e ingeniería"
+    - item left mx-5 my-3: "Modelar sistemas y fenómenos complejos"
+
+    - text left m-5: "Al comprender el concepto de las derivadas y sus aplicaciones, podemos obtener una comprensión más profunda del comportamiento de las funciones y resolver una amplia gama de problemas del mundo real."
+
+    - title: Propiedades de las Derivadas
+    - text left m-5: "Las propiedades de las derivadas incluyen:"
+    - item left mx-5 my-3: "La derivada de una función constante es cero"
+    - item left mx-5 my-3: "La derivada de la función identidad es uno"
+    - item left mx-5 my-3: "La regla de la potencia: la derivada de $$x^n$$ es $$nx^{n-1}$$"
+    - item left mx-5 my-3: "Las reglas de la suma y la diferencia: la derivada de una suma o diferencia es la suma o diferencia de las derivadas"
+    - item left mx-5 my-3: "La regla del producto: la derivada de un producto es la primera función por la derivada de la segunda función, más la segunda función por la derivada de la primera función"
+    - item left mx-5 my-3: "La regla del cociente: la derivada de un cociente es el denominador por la derivada del numerador, menos el numerador por la derivada del denominador, todo dividido por el cuadrado del denominador"
+
+
+    - stem: Derivadas de Orden Superior
+    - text left m-5: "La derivada de una función puede ser tomada más de una vez. La segunda derivada de una función es la derivada de la derivada, y mide la tasa a la que la pendiente de la función está cambiando. Las derivadas de orden superior también pueden ser definidas, aunque se usan menos comúnmente."
+
+    - stem: Diferenciación Implícita
+    - text left m-5: "La diferenciación implícita es una técnica utilizada para encontrar la derivada de una función que está definida implícitamente por una ecuación. Implica diferenciar ambos lados de la ecuación con respecto a la variable independiente, y luego resolver para la derivada de la variable dependiente. La diferenciación implícita se utiliza a menudo en problemas que involucran curvas y superficies."
+
+# STUDENT ASKS
+
+    - box has-background-success-light:
+
+      - stem: Un estudiante pregunta sobre las derivadas
+      - Image: BoardProf.png
+      - text left m-3: "<b>Estudiante:</b> ¡Oye, profesor! He estado pensando en las derivadas y creo que finalmente entiendo lo que son."
+      - text left m-3: "<b>Profesor de matemáticas:</b> ¡Genial escuchar eso! Entonces, ¿qué piensas que es una derivada?"
+      - text left m-3: "<b>Estudiante:</b> Bueno, creo que es como el café que tomé esta mañana. Cuando doy un sorbo, estoy obteniendo el cambio en la temperatura y el sabor todo de una vez. 🤔"
+      - text left m-3: "<b>Profesor de matemáticas:</b> (sorprendido) Mmm, ¡ciertamente es una forma interesante de pensarlo! Pero de alguna manera, tienes razón. La derivada de una función nos da información sobre cómo cambia con respecto a la variable de entrada, tal como tomar un sorbo de café nos da información sobre cómo están cambiando su temperatura y sabor."
+      - text left m-3: "<b>Estudiante:</b> ¡Vaya, nunca lo había pensado así antes! El cálculo es bastante guay. 😎"
+      - text left m-3: "<b>Profesor de matemáticas:</b> (sonriendo) Sí, lo es. Y hay mucho más por aprender, así que sigamos adelante. ☕️📈"
+
+      - text left m-3: "Aunque <b>las derivadas pueden parecer un tema seco y técnico</b>, en realidad pueden ser bastante fascinantes y estar relacionadas con muchos aspectos de nuestra vida diaria. Ya sea que hablemos de la tasa de cambio de una función, la pendiente de una curva o incluso el tiempo óptimo de preparación de una taza de café, comprender estos conceptos puede ayudarnos a dar sentido al mundo que nos rodea. 😃"
+
+
+    # APPLYING THE DEFINITION OF DERIVATIVE
+
+    - title m-5 pt-5: Aplicando la Definición de Derivada
+    - subtitle left m-4: En esta sección, mostraremos cómo la definición de derivada se puede usar para obtener las reglas de derivación para varios tipos de funciones.
+
+    - stem: Definición de Derivada
+    - text left m-5: "La derivada de una función $$f(x)$$ con respecto a $$x$$ se define como:"
+    - text mx-5 my-3: "$$f'(x) = \\lim_{h \\to 0} \\frac{f(x + h) - f(x)}{h}$$"
+    - text left m-5: "Esta definición nos da la tasa de cambio instantánea de $$f(x)$$ en un punto dado $$x$$. Al aplicar esta definición a varios tipos de funciones, podemos derivar reglas para encontrar la derivada de esas funciones."
+
+    - stem: La regla de la constante
+    - text left m-5: "Veamos qué sucede cuando se aplica la definición de derivada a una constante."
+    - text mx-5 my-3: "$$\\frac{d}{dx}(c) = \\lim_{h\\to 0} \\frac{c-c}{h} = 0$$"
+    - text left m-5: "Esto significa que la derivada de una constante siempre es 0, ya que el valor de la función no cambia."
+    - text left m-5: "Ahora veamos qué sucede cuando tomamos la derivada de $$x$$ con respecto a $$x$$."
+    - text mx-5 my-3: "$$\\frac{d}{dx}(x) = \\lim_{h\\to 0} \\frac{(x+h) - x}{h} = \\lim_{h\\to 0} \\frac{h}{h} = 1$$"
+    - text left m-5: "Por lo tanto, la derivada de $$x$$ con respecto a $$x$$ es 1. Esto puede parecer trivial, pero es un resultado importante que surgirá una y otra vez en cálculo." 
+
+
+    - stem: Reglas de la Suma y la Diferencia
+    - text left m-5: "Las reglas de la suma y la diferencia establecen que la derivada de una suma o diferencia de dos funciones $$f(x)$$ y $$g(x)$$ es:"
+    - text mx-5 my-3: "$$(f(x) \\pm g(x))' = f'(x) \\pm g'(x)$$"
+    - text left m-5: "Para derivar estas reglas, podemos aplicar la definición de derivada de la siguiente manera:"
+    - text mx-5 my-3: "$$(f(x) + g(x))' = \\lim_{h \\to 0} \\frac{f(x+h) + g(x+h) - f(x) - g(x)}{h}$$"
+    - text mx-5 my-3: "$$= \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h} + \\frac{g(x+h) - g(x)}{h}$$"
+    - text mx-5 my-3: "$$= f'(x) + g'(x)$$"
+    - text mx-5 my-3: "$$(f(x) - g(x))' = \\lim_{h \\to 0} \\frac{f(x+h) - g(x+h) - f(x) + g(x)}{h}$$"
+    - text mx-5 my-3: "$$= \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h} - \\frac{g(x+h) - g(x)}{h}$$"
+    - text mx-5 my-3: "$$= f'(x) - g'(x)$$"
+
+    - stem: La Regla del Producto
+    - text left m-5: "La regla del producto es una regla para encontrar la derivada de un producto de dos funciones. Según la regla del producto, si $$f(x) = g(x)h(x)$$, entonces:"
+    - text mx-5: "$$f'(x) = g'(x)h(x) + g(x)h'(x)$$"
+    - text left m-5: "donde $$g'(x)$$ y $$h'(x)$$ son las derivadas de $$g(x)$$ y $$h(x)$$, respectivamente."
+
+    - stem: La Regla de la Razón
+    - text left m-5: "La regla de la razón es una regla para encontrar la derivada de una cociente de dos funciones. Según la regla de la razón, si $$f(x) = \\frac{g(x)}{h(x)}$$, donde $$h(x) \\neq 0$$, entonces:"
+    - text mx-5: "$$f'(x) = \\frac{g'(x)h(x) - g(x)h'(x)}{(h(x))^2}$$"
+    - text left m-5: "donde $$g'(x)$$ y $$h'(x)$$ son las derivadas de $$g(x)$$ y $$h(x)$$, respectivamente."
+
+
+    - stem: La Regla de la Potencia
+    - text left m-5: "La regla de la potencia es una regla útil para encontrar la derivada de una función de la forma $$f(x) = x^n$$ donde $$n$$ es una constante. De acuerdo a la definición de la derivada, tenemos:"
+    - text mx-5: "$$f'(x) = \\lim_{h \\to 0} \\frac{(x+h)^n - x^n}{h}$$"
+    - text left m-5: "Expandiendo el binomio y cancelando términos semejantes, obtenemos:"
+    - text mx-5: "$$f'(x) = \\lim_{h \\to 0} \\frac{x^n + nx^{n-1}h + \\text{(términos con } h^2 \\text{ o potencias más altas)}}{h}$$"
+    - text left m-5: "A medida que $$h$$ se acerca a 0, todos los términos con potencias más altas de $$h$$ se vuelven insignificantes, y nos queda:"
+    - text mx-5: "$$f'(x) = \\lim_{h \\to 0} \\frac{x^n + nx^{n-1}h}{h}$$"
+    - text left m-5: "Factorizando $$x^{n-1}$$, obtenemos:"
+    - text mx-5: "$$f'(x) = \\lim_{h \\to 0} \\frac{x^{n-1}(x + nh)}{h}$$"
+    - text left m-5: "A medida que $$h$$ se acerca a 0, el término $$x+nh$$ se acerca a $$x$$, y nos queda:"
+    - text mx-5: "$$f'(x) = \\lim_{h \\to 0} \\frac{x^{n-1}(x + nh)}{h} = \\lim_{h \\to 0} (x^{n-1}(x + nh))' = x^{n-1} \\cdot 1 = nx^{n-1}$$"
+    - text left m-5: "Así, hemos obtenido la regla de la potencia: si $$f(x) = x^n$$, entonces $$f'(x) = nx^{n-1}$$."
+
+    - stem: La regla de la composición
+    - text left m-5: La regla de la composición, también conocida como la regla de la cadena, es una de las reglas más importantes en cálculo, ya que aparece con frecuencia en muchos cálculos de derivadas. Se utiliza para encontrar la derivada de una función compuesta, que es una función de otra función.
+    - text left m-5: "De acuerdo con la regla de la composición, si $$f(x) = g(h(x))$$, entonces:"
+    - text mx-5: "$$f'(x) = g'(h(x))h'(x)$$"
+    - text left m-5: "donde $$g'(x)$$ y $$h'(x)$$ son las derivadas de $$g(x)$$ y $$h(x)$$, respectivamente, y se utiliza la regla de la cadena para evaluar $$g'(h(x))$$."
+
+
+
+    - box has-background-success-light:
+
+      - stem: Un estudiante pregunta acerca de las derivadas
+      - Image: BoardProf.png
+      - text left m-3: "<b>Estudiante:</b> Profesor, creo que descubrí algo acerca de las derivadas. 🤔"
+      - text left m-3: "<b>Profesor de matemáticas:</b> Oh, genial, ¿y qué es eso? 🧐"
+      - text left m-3: "<b>Estudiante:</b> Me di cuenta de que a veces no existen. Como en los bordes de un gráfico. ¡Si no se puede graficar, no existe! 🤷‍♀️"
+      - text left m-3: "<b>Profesor de matemáticas:</b> Bueno, esa es una observación interesante, pero no por las razones correctas. Si bien es cierto que algunas funciones pueden no tener una derivada en ciertos puntos, no es porque no se puedan graficar. De hecho, algunas funciones que tienen una discontinuidad todavía se pueden graficar, pero no tienen una derivada bien definida en el punto de la discontinuidad. 😎"
+      - text left m-3: "<b>Estudiante:</b> Espera, ¿entonces qué es exactamente una discontinuidad? ¿Y por qué afecta la derivada? 🤔"
+      - text left m-3: "<b>Profesor de matemáticas:</b> Una discontinuidad es un punto donde una función no es continua. En otras palabras, es un punto donde la función tiene un salto repentino, un agujero o una oscilación infinita. Como la derivada mide la tasa de cambio de una función, no puede estar bien definida en un punto donde la función es discontinua. Por lo tanto, aunque la función todavía se pueda graficar, su derivada no está definida en el punto de discontinuidad. 🤯"
+      - text left m-3: "<b>Estudiante:</b> Ah, ya veo. Eso tiene sentido ahora. Gracias por explicármelo, profesor. 😄"
+      - text left m-3: "<b>Profesor de matemáticas:</b> De nada, siempre es un placer ayudar. Recuerda, entender el comportamiento de las funciones y sus derivadas es clave para dominar el cálculo. 🧑‍🏫"
+
+
+
+    - block parallax:
+      img: MathProfessor.png
+      style: height:300px;
+
+# QUESTIONNAIRE
+
+    - title my-5: Cuestionario
+    - subtitle: Por favor, responde las siguientes preguntas.
+
+    - stem: ¿Qué es una derivada?
+    - Question:
+        id: Q1
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "La tasa a la que una función cambia en un punto específico."
+          display: "La tasa a la que una función cambia en un punto específico."
+          credit: 1
+          feedback: "¡Correcto! Esta es la definición de una derivada."
+        - value: "El valor más alto de una función."
+          display: "El valor más alto de una función."
+          credit: 0
+          feedback: "Incorrecto. Esta no es la definición de una derivada."
+        - value: "El valor más bajo de una función."
+          display: "El valor más bajo de una función."
+          credit: 0
+          feedback: "Incorrecto. Esta no es la definición de una derivada."
+
+          
+    - stem: ¿Cuál es el propósito de la derivada?
+    - Question:
+        id: Q2
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "Describir la tasa de cambio de una función en un punto específico."
+          display: "Describir la tasa de cambio de una función en un punto específico."
+          credit: 1
+          feedback: "¡Correcto! Este es el propósito de una derivada."
+        - value: "Encontrar el valor más alto de una función."
+          display: "Encontrar el valor más alto de una función."
+          credit: 0
+          feedback: "Incorrecto. Este no es el propósito de una derivada."
+        - value: "Encontrar el valor más bajo de una función."
+          display: "Encontrar el valor más bajo de una función."
+          credit: 0
+          feedback: "Incorrecto. Este no es el propósito de una derivada."
+
+    - stem: "¿Cuál es la derivada de la función $$f(x) = 3x^2 - 2x + 1?$$"
+    - Question:
+        id: Q3
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "6x - 2"
+          display: "$$6x - 2$$"
+          credit: 1
+          feedback:
+          - text: "¡Correcto! Esta es la derivada de la función dada."
+        - value: "3x^3 - x^2 + x"
+          display: "$$3x^3 - x^2 + x$$"
+          credit: 0
+          feedback:
+          - text: "Eso es incorrecto. Por favor revise las reglas de diferenciación."
+        - value: "3x^2 - 2x"
+          display: "$$3x^2 - 2x$$"
+          credit: 0
+          feedback:
+          - text: "Esa no es la derivada correcta de la función dada."
+
+          
+    - stem: "¿Cuál es la derivada de la función $$g(x) = \\sqrt{2x - 1}?$$"
+    - Question:
+        id: Q4
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "$$\\frac{1}{\\sqrt{2x - 1}}$$"
+          display: "$$\\frac{1}{\\sqrt{2x - 1}}$$"
+          credit: 1
+          feedback:
+          - text: "¡Correcto! Esta es la derivada de la función dada."
+        - value: "$$\\frac{1}{2\\sqrt{2x - 1}}$$"
+          display: "$$\\frac{1}{2\\sqrt{2x - 1}}$$"
+          credit: 0
+          feedback:
+          - text: "Eso es incorrecto. Por favor revise las reglas de diferenciación."
+        - value: "$$\\sqrt{2x - 1}$$"
+          display: "$$\\sqrt{2x - 1}$$"
+          credit: 0
+          feedback:
+          - text: "Esa no es la derivada correcta de la función dada."
+
+
+    - stem: "¿Cuál es la derivada de la función $$f(x) = |x|$$ en $$x = 0$$?"
+    - instruction: "Seleccione la respuesta correcta."
+
+    - Question:
+        id: Q5
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "$$1$$"
+          display: "$$1$$"
+          credit: 0
+          feedback:
+            - text: "Eso es incorrecto. La derivada no existe en x = 0."
+        - value: "$$-1$$"
+          display: "$$-1$$"
+          credit: 0
+          feedback:
+            - text: "Eso es incorrecto. La derivada no existe en x = 0."
+        - value: "indeterminado"
+          display: "indeterminado"
+          credit: 1
+          feedback:
+            - text: "¡Correcto! La derivada no existe en x = 0 porque la función tiene una esquina afilada en ese punto. Sin embargo, es interesante observar que la derivada cuando se aproxima desde la derecha es 1, mientras que la derivada cuando se aproxima desde la izquierda es -1." 
+
+
+
+
+# CONCLUSION
+
+    - title m-5 pt-5: Conclusión
+    - subtitle left m-4: ¡Felicitaciones por completar el capítulo de Derivadas! Aquí hay algunas reflexiones finales sobre este tema.
+    - stem: La importancia de las derivadas
+    - text left m-5: Las derivadas son un concepto fundamental en cálculo que nos permiten estudiar la tasa de cambio de las funciones. Se utilizan para modelar una amplia gama de fenómenos en matemáticas, ciencias e ingeniería, desde el movimiento de objetos y el crecimiento de las poblaciones hasta el comportamiento de los mercados financieros y el diseño de algoritmos informáticos. Sin las derivadas, muchas áreas de la tecnología moderna y la investigación no serían posibles.
+    - stem: Aplicaciones prácticas de las derivadas
+    - text left m-5: Las derivadas tienen muchas aplicaciones prácticas en campos como la física, la ingeniería, la economía y la biología. Se pueden utilizar para optimizar procesos, diseñar sistemas eficientes y comprender el comportamiento complejo en sistemas naturales y artificiales. Saber cómo calcular derivadas y aplicarlas a problemas del mundo real es una habilidad importante para tener éxito en muchas carreras.
+    - stem: Estudio adicional
+    - text left m-5: Este capítulo ha proporcionado una introducción a las derivadas y sus propiedades, pero hay mucho más que aprender sobre este tema. Si está interesado en profundizar en cálculo, hay muchos recursos disponibles para ayudarlo, como libros de texto, cursos en línea y programas académicos. Con dedicación y trabajo duro, puede desarrollar una comprensión profunda de las derivadas y sus aplicaciones.
+    - text left m-5: Esperamos que haya encontrado este capítulo informativo y atractivo. No dude en comunicarse con nosotros si tiene alguna pregunta o comentario. ¡Buena suerte en sus estudios! 
+
+
+
+    style: max-width:800px;margin:auto;

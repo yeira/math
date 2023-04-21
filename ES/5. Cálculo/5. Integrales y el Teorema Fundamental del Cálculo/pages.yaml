@@ -1,0 +1,305 @@
+- page:
+  - head: |
+      <style>
+      .MathJax {
+        display: inline !important;
+      }
+      </style>
+  - Mathjax:
+  - block:
+
+# INDEFINITE INTEGRALS AND INTEGRATION RULES
+
+
+    - title m-5 pt-5: Integrales y el Teorema Fundamental del Cálculo
+    - subtitle left m-4: La integral es el opuesto de la derivada y es un concepto fundamental en el cálculo. En esta sección, definiremos la integral y exploraremos algunos de los conceptos y aplicaciones clave de esta importante herramienta del cálculo.
+
+    - stem: Aplicaciones de la integral
+    - text left m-5: "La integral tiene muchas aplicaciones en matemáticas, ciencias e ingeniería. Se utiliza para encontrar áreas bajo curvas, volúmenes de sólidos de revolución y las soluciones a ecuaciones diferenciales. La capacidad de evaluar integrales es una habilidad crucial en muchos campos, incluyendo la física, la economía y la estadística."
+
+    - stem: La historia de las integrales
+    - text left m-5: "El concepto de integración tiene sus raíces en las civilizaciones antiguas, donde las personas utilizaban métodos numéricos para resolver problemas relacionados con la búsqueda del área de las formas. Por ejemplo, los egipcios usaban una fórmula para el área de un trapecio que era equivalente a integrar una función lineal. Sin embargo, no fue hasta la invención del cálculo que la integral se convirtió en un concepto bien definido."
+
+    - stem: La idea de una suma
+    - text left m-5: "La idea de una integral se basa en el concepto de una suma. Una suma es el proceso de sumar una secuencia de números, y se puede utilizar para encontrar el área bajo una curva dividiéndola en pequeños rectángulos y sumando sus áreas."
+
+    - stem: La suma infinitesimal
+    - text left m-5: "En el siglo XVII, los matemáticos comenzaron a utilizar el concepto de lo infinitesimal para definir la integral. La idea era dividir una curva en un número infinito de rectángulos infinitesimales, cada uno con un ancho de dx y una altura de f(x). El área de cada rectángulo se da por f(x)dx, y el área total bajo la curva es la suma de todos estos rectángulos."
+
+
+
+# STUDENT ASKS
+
+    - box has-background-success-light:
+      - stem: Estudiante pregunta sobre integrales
+      - Image: BoardProf.png
+      - text left m-3: "<b>Estudiante:</b> Las integrales son como sumas y las derivadas son como la operación opuesta, que serían las diferencias, ¿verdad, profesor? 🤔"
+      - text left m-3: "<b>Profesor de matemáticas:</b> Sí, esa es una buena manera de verlo. 👍"
+      - text left m-3: "<b>Estudiante:</b> Entonces, ¿por qué en cálculo comenzamos primero con las derivadas y luego con las integrales? Es como aprender primero a restar y luego a sumar. 🤔"
+      - text left m-3: "<b>Profesor de matemáticas:</b> ¡Esa es una gran pregunta! La razón por la que comenzamos con las derivadas es porque son más fáciles de entender y calcular que las integrales. Las derivadas nos dan información sobre cómo cambia una función en un punto particular, lo que a menudo es más útil que solo saber el cambio total en un intervalo. Una vez que entendemos bien las derivadas, podemos pasar a las integrales, que nos dan información sobre el cambio total en un intervalo. Por lo tanto, aunque pueda parecer al revés, comenzar con las derivadas en realidad es una progresión natural hacia la comprensión de las integrales. ¿Tiene sentido? 🤔👨‍🏫"
+
+
+    - title m-5 pt-5: Integrales Definidas e Indefinidas
+    - text left m-5: "Existen dos tipos de integrales: las definidas y las indefinidas. Una integral definida se utiliza para encontrar el área bajo una curva entre dos puntos específicos, y se denota por el símbolo $$\\int_a^b f(x)dx$$. Una integral indefinida se utiliza para encontrar una función que, al ser derivada, da como resultado la función original, y se denota por el símbolo $$\\int f(x)dx$$. El proceso de encontrar una integral indefinida se llama integración, y es esencialmente el proceso inverso a la diferenciación."
+
+    - stem: Definición de una Integral Indefinida
+    - text left m-5: "La integral indefinida de una función es una familia de funciones que tienen la función original como su derivada. También se llama antiderivada de la función. La integral indefinida se representa por el símbolo $$\\int f(x) dx$$, donde $$f(x)$$ es la función que se está integrando, y $$dx$$ representa la variable de integración. El proceso de encontrar la integral indefinida se llama integración."
+
+    - stem: Definición de una Integral Definida
+    - text left m-5: "La integral definida de una función es un número que representa el área bajo la curva de la función sobre un intervalo específico. Se representa por el símbolo $$\\int_a^b f(x) dx$$, donde $$f(x)$$ es la función que se está integrando, y $$a$$ y $$b$$ representan los límites inferior y superior del intervalo de integración, respectivamente. El proceso de encontrar la integral definida se llama integración, y el resultado es un valor numérico." 
+
+
+    - box has-background-success-light:
+      - stem: El estudiante pregunta sobre integrales
+      - Image: BoardProf.png
+      - text left m-3: "<b>Estudiante:</b> Vale, puedo entender por qué primero aprendemos límites, luego derivadas y luego integrales, ya que es la mejor manera de explicarlo. Pero, ¿estos conceptos se desarrollaron juntos y en ese orden también? 🤔"
+      - text left m-3: "<b>Profesor de matemáticas:</b> Bueno, en ese momento, los matemáticos estaban interesados en resolver diferentes tipos de problemas, y se dieron cuenta de que estos dos conceptos estaban estrechamente relacionados pero eran distintos. Las derivadas eran útiles para estudiar tasas de cambio y pendientes de curvas, mientras que las integrales eran útiles para calcular áreas, volúmenes y acumulaciones. No fue hasta mucho más tarde que se entendió completamente la conexión entre derivadas e integrales, y ahora se conoce como el Teorema Fundamental del Cálculo. 😉"
+      - text left m-3: "<b>Estudiante:</b> Ya veo, eso tiene sentido. Entonces, ¿cómo pasamos de una sumatoria a una integral? 🤔"
+      - text left m-3: "<b>Profesor de matemáticas:</b> Ah, esa es una gran pregunta. Déjame explicarte. Imagina que tenemos una función $$f(x)$$ que queremos integrar en un intervalo $$[a,b]$$. Podemos dividir el intervalo en $$n$$ subintervalos de ancho igual, donde el ancho se da por $$(b-a)/n$$. Luego podemos elegir un punto $$x_i$$ en cada subintervalo y calcular el área del rectángulo con base $$x_i$$ y altura $$f(x_i)$$. Sumando todos estos rectángulos obtenemos la sumatoria de Riemann, que es una aproximación del área bajo la curva. 😊"
+      - text left m-3: "<b>Estudiante:</b> Vale, creo que lo entiendo. Pero, ¿cómo hacemos la aproximación más precisa? 🤔"
+      - text left m-3: "<b>Profesor de matemáticas:</b> Buena pregunta. Podemos hacer la aproximación más precisa tomando el límite cuando $$n$$ se acerca al infinito, lo que nos da una sumatoria infinitesimal. Esta sumatoria se representa con el símbolo de integral y se da por el límite de la sumatoria de Riemann cuando $$n$$ se acerca al infinito. 😃"
+      - text left m-3: "<b>Estudiante:</b> Oh, ¡ya veo! Entonces, la integral es como una sumatoria infinita de áreas infinitesimales bajo la curva. 😮"
+      - text left m-3: "<b>Profesor de matemáticas:</b> ¡Exactamente! Y al igual que las derivadas pueden darnos información importante sobre el comportamiento de las funciones, las integrales pueden darnos información importante sobre el comportamiento acumulado de las funciones en un intervalo dado. 😊"
+
+
+
+# FUNDAMENTAL THEOREM OF CALCULUS
+
+    - title m-5 pt-5: Teorema Fundamental del Cálculo
+    - text left m-5: "El teorema fundamental del cálculo, descubierto de manera independiente por Isaac Newton y Gottfried Leibniz, establece que la integración y la diferenciación son operaciones inversas. En otras palabras, si diferenciamos una integral, obtenemos la función original, y si integramos una derivada, obtenemos la función original. Este teorema proporciona una herramienta poderosa para resolver problemas en cálculo, y forma la base de gran parte de las matemáticas y la ciencia modernas."
+
+    - text left m-5: "El Teorema Fundamental del Cálculo establece una relación entre las derivadas y las integrales, y tiene dos partes."
+
+    - stem: "Parte I: La Integral Indefinida"
+    - text left m-5: "La primera parte del Teorema Fundamental del Cálculo establece que si tenemos una función continua $$f(x)$$, entonces la función $$F(x)$$ definida por la integral indefinida de $$f(x)$$ es diferenciable y $$F'(x) = f(x)$$. En otras palabras, la derivada de la integral indefinida de una función es la función original."
+
+    - text left m-5: "Demostraremos esto con un ejemplo. Supongamos que tenemos la función $$f(x) = 2x$$. Podemos encontrar su integral indefinida integrando con respecto a x:"
+    - text: " $$\\int 2x dx = x^2 + C$$"
+      
+    - text left m-5: "donde $$C$$ es la constante de integración. Ahora, podemos tomar la derivada de $$F(x) = x^2 + C$$:"
+    - text: " $$F'(x) = (x^2 + C)' = 2x$$"
+      
+    - text left m-5: "Podemos ver que la derivada de la integral indefinida de $$f(x)$$ es igual a $$f(x)$$, como se esperaba."
+
+    - stem: "Parte II: La Integral Definida"
+    - text left m-5: "La segunda parte del Teorema Fundamental del Cálculo establece que si tenemos una función continua $$f(x)$$ definida en el intervalo $$[a, b]$$, entonces la integral definida de $$f(x)$$ sobre el intervalo $$[a, b]$$ se puede calcular evaluando la integral indefinida de $$f(x)$$ en los extremos y restando:"
+      
+    - text: " $$\\int_{a}^{b} f(x) dx = F(b) - F(a)$$"
+      
+    - text left m-5: "Demostraremos esto con nuestro ejemplo anterior. Supongamos que queremos encontrar la integral definida de $$f(x) = 2x$$ en el intervalo $$[0, 1]$$. Primero podemos encontrar su integral indefinida:"
+    - text: " $$\\int 2x dx = x^2 + C$$"
+      
+    - text left m-5: "Ahora, podemos evaluar la integral indefinida en los extremos y restar:"
+    - text: " $$\\int_{0}^{1} 2x dx = [x^2]_{0}^{1} = 1 - 0 = 1$$"
+      
+    - text left m-5: "Así que podemos ver que la integral definida de $$f(x)$$ en el intervalo $$[0, 1]$$ es igual a 1."
+
+
+
+# INTEGRATION RULES AND PROPERTIES
+
+    - title m-5 pt-5: Reglas de Integración
+    - text left m-5: "Las reglas de integración son un conjunto de fórmulas y técnicas que nos permiten evaluar integrales de varios tipos de funciones. La regla de integración más básica es la regla de la potencia, que establece que la integral indefinida de una función de la forma $$f(x) = x^n$$ se da por la fórmula $$\\int f(x) dx = \\frac{1}{n+1}x^{n+1} + C$$, donde $$C$$ es la constante de integración."
+
+
+    - stem: Propiedades de las integrales
+    - text left m-5: "Las propiedades de las integrales incluyen:"
+    - item left mx-5 my-3: "La integral de una función constante es igual a la constante multiplicada por la variable de integración."
+    - text mx-5 my-3: "Por ejemplo, $$\\int 3 dx = 3x + C,$$ donde C es la constante de integración."
+    - item left mx-5 my-3: "La integral de la suma o diferencia de dos funciones es igual a la suma o diferencia de sus integrales."
+    - text mx-5 my-3: "Por ejemplo, $$\\int (f(x) + g(x)) dx = \\int f(x) dx + \\int g(x) dx.$$"
+    - item left mx-5 my-3: "La regla de la potencia: la integral de $$x^n$$ es $$\\frac{x^{n+1}}{n+1} + C$$, donde C es la constante de integración."
+    - text mx-5 my-3: "Por ejemplo, $$\\int x^2 dx = \\frac{x^3}{3} + C.$$"
+    - item left mx-5 my-3: "La regla del producto: la integral de un producto es igual a la integral de la primera función multiplicada por la integral de la segunda función, menos la integral de la derivada de la primera función multiplicada por la integral de la segunda función."
+    - text mx-5 my-3: "Por ejemplo, $$\\int x \\cos(x) dx = x \\sin(x) - \\int \\sin(x) dx.$$"
+    - item left mx-5 my-3: "Integración por sustitución: esta regla nos permite integrar una función haciendo una sustitución por una variable. Esto a menudo puede simplificar la integral y hacer que sea más fácil de resolver."
+    - text mx-5 my-3: "Por ejemplo, si tenemos la integral $$\\int 2x \\cos(x^2) dx,$$ podemos usar la sustitución $$u = x^2$$ para obtener $$\\int \\cos(u) du = \\sin(u) + C = \\sin(x^2) + C.$$"
+    - item left mx-5 my-3: "Integración por partes: esta regla nos permite integrar el producto de dos funciones dividiéndolo en partes más simples y aplicando la regla del producto en reversa."
+    - text mx-5 my-3: "Por ejemplo, si tenemos la integral $$\\int x \\cos(x) dx,$$ podemos usar la integración por partes para obtener $$\\int x \\cos(x) dx = x \\sin(x) - \\int \\sin(x) dx = x \\sin(x) + \\cos(x) + C.$$"
+
+
+    - stem: Algunas reglas de integración
+    - Table:
+        header:
+        - row:
+          - is-size-5: Función 
+          - is-size-5: Fórmula de la integral
+        body:
+        - row : [Constante, $$\int k dx = kx + C$$]
+        - row: [Regla de la potencia, "$$\\int x^n dx = \\frac{x^{n+1}}{n+1} + C$$"]
+        - row: [Exponencial, $$\int e^x dx = e^x + C$$]
+        - row: [Logaritmo natural, $$\int \ln x dx = x \ln x - x + C$$]
+        - row: [Seno, $$\int \sin x dx = -\cos x + C$$]
+        - row: [Coseno, $$\int \cos x dx = \sin x + C$$]
+        - row: [Tangente, $$\int \tan x dx = \ln |\sec x| + C$$]
+        type: is-bordered is-narrow is-hoverable is-fullwidth
+
+
+    - block parallax:
+      img: MathProfessor.png
+      style: height:300px;
+
+# QUESTIONNAIRE
+
+    - title my-5: Cuestionario
+    - subtitle: Por favor, responda las siguientes preguntas.
+
+    - stem: ¿Cuál es el Teorema Fundamental del Cálculo?
+    - instruction: "Seleccione todas las respuestas correctas."
+    - Question:
+        id: Q1
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "El Teorema Fundamental del Cálculo relaciona la diferenciación y la integración, estableciendo que la diferenciación y la integración son operaciones inversas."
+          display:
+          - block:
+            - text: "El Teorema Fundamental del Cálculo relaciona la diferenciación y la integración, estableciendo que la diferenciación y la integración son operaciones inversas."
+            style: max-width:300px;
+          credit: 1
+          feedback: "¡Correcto! Esta es una afirmación del Teorema Fundamental del Cálculo."
+        - value: "El Teorema Fundamental del Álgebra, pero para cálculo."
+          display:
+          - block:
+            - text: "El Teorema Fundamental del Álgebra, pero para cálculo."
+            style: max-width:300px;
+          credit: 0
+          feedback: "Incorrecto. El Teorema Fundamental del Cálculo es un teorema diferente al Teorema Fundamental del Álgebra."
+        - value: "El teorema de que el área bajo una curva es igual a la antiderivada de la función."
+          display:
+          - block:
+            - text: "El teorema de que el área bajo una curva es igual a la antiderivada de la función."
+            style: max-width:300px;
+          credit: 1
+          feedback: "¡Correcto! Esta es otra forma de enunciar el Teorema Fundamental del Cálculo."
+
+
+    - stem: ¿Qué es la integral definida de una función?
+    - instruction: "Seleccione la respuesta correcta."
+    - Question:
+        id: Q2
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "La integral definida de una función es el área entre la función y el eje x sobre un intervalo dado."
+          display:
+          - block:
+            - text: "La integral definida de una función es el área entre la función y el eje x sobre un intervalo dado."
+            style: max-width:250px;
+          credit: 1
+          feedback: "¡Correcto! Esta es la definición de una integral definida."
+        - value: "La derivada de una función en un punto específico."
+          display:
+          - block:
+            - text: "La derivada de una función en un punto específico."
+            style: max-width:250px;
+          credit: 0
+          feedback: "Incorrecto. Esta no es la definición de una integral definida."
+        - value: "La suma de una función sobre un intervalo dado."
+          display:
+          - block:
+            - text: "La suma de una función sobre un intervalo dado."
+            style: max-width:250px;
+          credit: 0
+          feedback: "Incorrecto. Esta no es la definición de una integral definida."
+
+
+    - stem: "Calcula la integral definida $$\\int_0^2 2x^2 + 3x + 1 dx$$."
+    - instruction: "Seleccione la respuesta correcta."
+    - Question:
+        id: Q3
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "$$12$$"
+          display: "$$12$$"
+          credit: 0
+          feedback:
+            - text: "Incorrecto. Por favor verifica tus cálculos."
+        - value: "$$18$$"
+          display: "$$18$$"
+          credit: 0
+          feedback:
+            - text: "Incorrecto. Por favor verifica tus cálculos."
+        - value: "$$20$$"
+          display: "$$20$$"
+          credit: 1
+          feedback:
+            - Mathjax:
+              - text: "¡Correcto! La integral se evalúa como $$\\left[\\frac{2x^3}{3} + \\frac{3x^2}{2} + x\\right]_0^2 = \\left(\\frac{16}{3} + 6 + 2\\right) - \\left(0 + 0 + 0\\right) = 20$$."
+
+
+    - stem: "Calcula la integral indefinida de $$f(x) = 3x^2 - 2x + 1$$."
+    - instruction: "Seleccione la respuesta correcta."
+    - Question:
+        id: Q4
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "$$x^3 - x^2 + x + C$$"
+          display: "$$x^3 - x^2 + x + C$$"
+          credit: 1
+          feedback:
+            - Mathjax:
+              - text: "¡Correcto! La integral de $$f(x) = 3x^2 - 2x + 1$$ es $$\\int f(x) dx = x^3 - x^2 + x + C$$."
+        - value: "$$3x^2 - 2x + 1$$"
+          display: "$$3x^2 - 2x + 1$$"
+          credit: 0
+          feedback:
+            - text: "Incorrecto. Por favor verifica tus cálculos."
+        - value: "$$9x^2 - x + C$$"
+          display: "$$9x^2 - x + C$$"
+          credit: 0
+          feedback:
+            - text: "Incorrecto. Por favor verifica tus cálculos."
+
+
+    - stem: "¿Cuál es el valor de la integral definida $$\\int_0^1 x^2 dx$$?"
+    - instruction: "Seleccione la respuesta correcta."
+    - Question:
+        id: Q5
+        points: 10
+        display: grid
+        random: true
+        options:
+        - value: "$$\\frac{1}{3}$$"
+          display: "$$\\frac{1}{3}$$"
+          credit: 1
+          feedback:
+            - Mathjax:
+              - text: "¡Correcto! La antiderivada de $$x^2$$ es $$\\frac{1}{3}x^3$$, y al evaluar esta antiderivada de $$0$$ a $$1$$ obtenemos $$\\frac{1}{3} - 0 = \\frac{1}{3}.$$"
+        - value: "$$\\frac{1}{2}$$"
+          display: "$$\\frac{1}{2}$$"
+          credit: 0
+          feedback:
+            - Mathjax:
+              - text: "Incorrecto. El valor correcto es $$\\frac{1}{3}.$$"
+        - value: "$$\\frac{1}{4}$$"
+          display: "$$\\frac{1}{4}$$"
+          credit: 0
+          feedback:
+            - Mathjax:
+              - text: "Incorrecto. El valor correcto es $$\\frac{1}{3}.$$"
+
+
+# CONCLUSION
+    - title m-5 pt-5: Conclusión
+    - subtitle left m-4: ¡Felicitaciones por completar el capítulo de Integrales! Aquí hay algunas reflexiones finales sobre este tema.
+
+    - stem: La importancia de las integrales
+    - text left m-5: Las integrales son un concepto fundamental en cálculo que nos permiten encontrar el área bajo una curva y resolver problemas relacionados con la acumulación y las tasas de cambio. Se utilizan para modelar una amplia gama de fenómenos en matemáticas, física, ingeniería, economía y biología. Sin integrales, muchas áreas de la tecnología moderna y la investigación no serían posibles.
+
+    - stem: Aplicaciones prácticas de las integrales
+    - text left m-5: Las integrales tienen muchas aplicaciones prácticas en campos como la física, la ingeniería, la economía y la biología. Se pueden utilizar para calcular volúmenes y áreas, encontrar el centro de masa de un objeto, determinar el trabajo realizado por una fuerza y resolver ecuaciones diferenciales. Saber cómo calcular integrales y aplicarlas a problemas del mundo real es una habilidad importante para tener éxito en muchas carreras.
+
+    - stem: Estudio adicional
+    - text left m-5: Este capítulo ha proporcionado una introducción a las integrales y sus propiedades, pero hay mucho más que aprender sobre este tema. Si está interesado en seguir estudiando cálculo, hay muchos recursos disponibles para ayudarlo, incluyendo libros de texto, cursos en línea y programas académicos. Con dedicación y trabajo duro, puede desarrollar una comprensión profunda de las integrales y sus aplicaciones.
+
+    - text left m-5: Esperamos que haya encontrado este capítulo informativo y atractivo. No dude en ponerse en contacto si tiene alguna pregunta o comentario. ¡Buena suerte en sus estudios!
+
+
+    style: max-width:800px;margin:auto;
